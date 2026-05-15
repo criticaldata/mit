@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Ken\\\\Documents\\\\GitHub\\\\lcp\" -Directory)",
+      "Bash(Select-Object Name)",
+      "Bash(ls -la /c/dev/github/ | head -20)",
+      "Read(//c/dev/github//**)",
+      "Bash(git -C /c/dev/github/lcp log --oneline --all)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Ken\\\\Documents\\\\GitHub\\\\\" -ErrorAction SilentlyContinue | Select-Object -Property Name)",
+      "Bash(ls -la \"C:\\\\\\\\Users\\\\\\\\Ken\\\\\\\\Documents\\\\\\\\GitHub\\\\\\\\\")",
+      "Bash(cp c:/dev/github/lcp/1-onboarding/README.md c:/dev/github/mit/docs/onboarding/README.md)",
+      "Bash(cp c:/dev/github/lcp/1-onboarding/Intro-to-Mark-Lab-250317.md c:/dev/github/mit/docs/onboarding/intro-to-mark-lab-250317.md)",
+      "Bash(cp 'c:/dev/github/lcp/1-onboarding/ORCD MIT - Access computing MIT resources/Cheat sheet to access Computing MIT Resources.md' c:/dev/github/mit/docs/onboarding/orcd-mit-access-computing/cheat-sheet-computing-mit-resources.md)",
+      "Bash(cp 'c:/dev/github/lcp/1-onboarding/ORCD MIT - Access computing MIT resources/video_hd_quickaccess_link.md' c:/dev/github/mit/docs/onboarding/orcd-mit-access-computing/video-hd-quickaccess-link.md)",
+      "Bash(cp 'c:/dev/github/lcp/1-onboarding/ORCD MIT - Access computing MIT resources/Cheat sheet to access Computing MIT Resources.docx' c:/dev/github/mit/docs/onboarding/orcd-mit-access-computing/cheat-sheet-computing-mit-resources.docx)",
+      "Bash(python scripts/generate_people_table.py)",
+      "Bash(python3 scripts/generate_people_table.py)",
+      "Bash(where py *)",
+      "Bash(where python3.exe)",
+      "Read(//usr/**)",
+      "Bash(/c/Users/kepai/AppData/Local/Microsoft/WindowsApps/python3.exe scripts/generate_people_table.py)",
+      "Bash(py install *)",
+      "Bash(py scripts/generate_people_table.py)",
+      "Bash(py -m pip install pyyaml)"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+name: Ryohei Kobayashi (Yamamoto)
+email: royhei11@mit.edu
+role: Visiting Scientist
+status: collaborator
+institution: Fukushima Medical University
+start_date: 2025-09-01
+end_date: 2027-08-31
+photo: ryohei-kobayashi.jpg
+bio: |
+  Physician-researcher and epidemiologist from Fukushima Medical University. Studies critical care outcomes using causal inference methods and predictive modeling to bridge data and bedside decisions.
+research_interests: |
+  Critical care epidemiology; causal inference (potential outcomes, DAGs, TTE); predictive model evaluation (discrimination, calibration, decision curves); AKI and ICU outcomes; patient-centered outcome utilities.

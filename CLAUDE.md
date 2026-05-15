@@ -73,7 +73,8 @@ Standard update frontmatter:
     name:                  # REQUIRED
     email:                 # REQUIRED
     role:                  # REQUIRED — PI, Postdoc, PhD Student, Master's,
-                           # Undergrad, Admin, Affiliate
+                           # Undergrad, Admin, Affiliate, Research Scientist,
+                           # Research Engineer, Visiting Scientist, Visiting Scholar
     status:                # REQUIRED — active, alumni, collaborator
     institution:
     department:
@@ -189,9 +190,25 @@ Reference related records informally in the issue body.
 - Skills and tags: lowercase only — validation script normalizes case
 - Scripts live in scripts/, not alongside data files
 
+## Scratchpad
+
+Claude Code must maintain `docs/working-notes.md` as a running log across sessions. This file is local only and is excluded from Git via .gitignore.
+
+Rules:
+- Always read `docs/working-notes.md` at the start of each session for context
+- Always append a new entry at the end of each session before closing — never rewrite existing entries
+- Each entry must be prefixed with the date (YYYY-MM-DD)
+- For large or focused tasks (e.g. data migration), maintain a separate dated log in `docs/` (e.g. `docs/migration-notes.md`)
+
+Each entry should include:
+- Tasks completed
+- Decisions made and why
+- Known issues or gotchas
+- Suggested next steps
+
 ## Lab context
 - GitHub org: criticaldata
 - This repo: criticaldata/mit
 - Related repos: MIT-LCP/mimic-code, MIT-LCP/physionet-build
-- Primary tools: AWS, Notion (legacy), GitHub Actions, Python
+- Primary tools: AWS, GitHub Actions, Python
 - Team: internationally distributed, mixed technical levels
