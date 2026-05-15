@@ -1,6 +1,6 @@
 # Events
 
-## Upcoming (44)
+## Upcoming (42)
 
 | Date | Event | Location | Type | Status | Lead |
 |---|---|---|---|---|---|
@@ -29,12 +29,10 @@
 | 23 Jul 2026 | [ACOG](2026/acog/event.yaml) | Boston, MA | other | Prospect |  |
 | 27–30 Jul 2026 | [Brazil](2026/brazil/event.yaml) | Brazil | other | Prospect |  |
 | 14–15 Aug 2026 | [Denmark](2026/denmark/event.yaml) | Denmark | other | Prospect |  |
-| 01 Sep 2026 | [Toronto](2026/toronto/event.yaml) | Toronto | other | Prospect |  |
 | 4–05 Sep 2026 | [Italy](2026/italy/event.yaml) | Italy | other | Prospect |  |
 | 10 Sep 2026 | [National Library of Medicine](2026/national-library-of-medicine/event.yaml) | US | other | Prospect |  |
 | 18–19 Sep 2026 | [Ireland](2026/ireland/event.yaml) | Ireland | other | Prospect |  |
 | 24 Sep 2026 | [Conv2x Symposium](2026/conv2x-symposium/event.yaml) | Cambridge, MA | other | Prospect |  |
-| 26 Sep 2026 | [Dublin Hackathon](2026/dublin-hackathon/event.yaml) | Dublin | hackathon | Planned | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
 | 28–30 Sep 2026 | [Chile](2026/chile/event.yaml) | Chile | other | Prospect |  |
 | 15–17 Oct 2026 | [Korea](2026/korea/event.yaml) | Seoul, Korea | other | Prospect |  |
 | 18–19 Oct 2026 | [Thailand](2026/thailand/event.yaml) | Thailand | other | Prospect |  |
@@ -77,6 +75,16 @@
 | 19 Aug 2025 | [AMA August 2025](2025/ama-aug/event.yaml) |  | other | Completed |  |
 | 18 Aug 2025 | [MITHIC Workshop 2025](2025/workshop-mithic/event.yaml) | Cambridge, United States | workshop | Completed |  |
 | 17–19 Jul 2025 | [Thailand Datathon 2025](2025/datathon-thailand/event.yaml) | Thailand | hackathon | Completed |  |
+
+</details>
+
+<details>
+<summary><strong>Cancelled (2)</strong></summary>
+
+| Date | Event | Location | Type | Status | Lead |
+|---|---|---|---|---|---|
+| 26 Sep 2026 | [Dublin Hackathon](2026/dublin-hackathon/event.yaml) | Dublin | hackathon | Cancelled | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
+| 01 Sep 2026 | [Toronto](2026/toronto/event.yaml) | Toronto | other | Cancelled |  |
 
 </details>
 
