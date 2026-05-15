@@ -28,7 +28,14 @@
       "Bash(py scripts/generate_schedule.py --upcoming)",
       "Bash(py scripts/import_notion.py)",
       "Bash(Remove-Item \"c:\\\\dev\\\\github\\\\mit\\\\.github\\\\workflows\\\\validate.yml\")",
-      "Bash(del \"c:\\\\dev\\\\github\\\\mit\\\\.github\\\\workflows\\\\validate.yml\")"
+      "Bash(del \"c:\\\\dev\\\\github\\\\mit\\\\.github\\\\workflows\\\\validate.yml\")",
+      "Bash(git check-ignore *)",
+      "Bash(gh run *)",
+      "PowerShell(gh run list --repo criticaldata/mit --limit 10)",
+      "Bash(xargs -I{} cat data/projects/{}/project.yaml)",
+      "Bash(py scripts/generate_projects_table.py)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
