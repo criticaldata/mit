@@ -56,7 +56,7 @@ def photo_cell(person):
     if not photo:
         return ""
     slug = person["_slug"]
-    src = f"data/people/{slug}/{photo}"
+    src = f"{slug}/{photo}"
     first = person.get("name", "").split()[0]
     return f'<img src="{src}" alt="{first}" width="120"/>'
 
