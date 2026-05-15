@@ -1,17 +1,13 @@
 # Lab Members
 
-## Active (8)
+## Active (4)
 
 | Name | Role | Email | Photo |
 |---|---|---|---|
-| [Benjamin Moody](benjamin-moody/person.yaml) | Research Engineer | bmoody@mit.edu | <img src="benjamin-moody/missing.jpg" alt="Benjamin" width="120"/> |
-| [Brian Gow](brian-gow/person.yaml) | Research Engineer | bgow@mit.edu | <img src="brian-gow/brian-gow.jpg" alt="Brian" width="120"/> |
 | [Jesse Raffa](jesse-raffa/person.yaml) | Research Scientist | jraffa@mit.edu | <img src="jesse-raffa/jesse-raffa.jpg" alt="Jesse" width="120"/> |
 | [Kenneth Paik](kenneth-paik/person.yaml) | Research Scientist | kepaik@mit.edu | <img src="kenneth-paik/kenneth-paik.jpg" alt="Kenneth" width="120"/> |
 | [Leo Anthony Celi](leo-celi/person.yaml) | PI | lceli@mit.edu | <img src="leo-celi/leo-celi.jpg" alt="Leo" width="120"/> |
-| [Li-wei Lehman](liwei-lehman/person.yaml) | Research Scientist | lilehman@mit.edu | <img src="liwei-lehman/liwei.jpg" alt="Li-wei" width="120"/> |
 | [Roger Mark](roger-mark/person.yaml) | PI | rgmark@mit.edu | <img src="roger-mark/roger-mark.jpg" alt="Roger" width="120"/> |
-| [Tom Pollard](tom-pollard/person.yaml) | Research Scientist | tpollard@mit.edu | <img src="tom-pollard/tom-pollard.png" alt="Tom" width="120"/> |
 
 ## Current Visitors & Collaborators (18)
 
@@ -52,4 +48,4 @@
 | [Xiao Xiang](xiao-xiang/person.yaml) | Apr 2025–Aug 2025 | Master's | EPFL | xiao0605@mit.edu | <img src="xiao-xiang/xiao-xiang.jpg" alt="Xiao" width="120"/> |
 
 ---
-_Generated from `data/people/` — 36 records total._
+_Generated from `data/people/` — 32 records total._
