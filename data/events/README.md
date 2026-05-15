@@ -1,6 +1,6 @@
 # Events
 
-## Upcoming (38)
+## Upcoming (44)
 
 | Date | Event | Location | Type | Status | Lead |
 |---|---|---|---|---|---|
@@ -22,21 +22,27 @@
 | 05 May 2026 | [Hartford](2026/hartford/event.yaml) | Hartford, CT | other | Prospect |  |
 | 07 May 2026 | [Cincinnati](2026/cincinnati/event.yaml) | Cincinnati, OH | other | Prospect |  |
 | 11–13 May 2026 | [Hong Kong](2026/hong-kong/event.yaml) | Hong Kong | other | Prospect |  |
-| 29 May 2026 | [MeHI’s AI Workshop for Primary](2026/mehis-ai-workshop-for-primary/event.yaml) |  | other | Prospect |  |
+| 29 May 2026 | [MeHI's AI Workshop for Primary Care Innovation Challenge](2026/mehis-ai-workshop-for-primary/event.yaml) | Boston, MA | other | Prospect |  |
 | 12–20 Jun 2026 | [China/Tibet](2026/chinatibet/event.yaml) | China, Tibet | other | Prospect |  |
 | 26–28 Jun 2026 | [Dominican Republic](2026/dominican-republic/event.yaml) | Dominican Republic | other | Prospect |  |
 | 22 Jul 2026 | [Annual Intensive Review of Internal Medicine](2026/annual-intensive-review-of-internal-medicine/event.yaml) | Boston, MA | other | Prospect |  |
 | 23 Jul 2026 | [ACOG](2026/acog/event.yaml) | Boston, MA | other | Prospect |  |
 | 27–30 Jul 2026 | [Brazil](2026/brazil/event.yaml) | Brazil | other | Prospect |  |
+| 14–15 Aug 2026 | [Denmark](2026/denmark/event.yaml) | Denmark | other | Prospect |  |
 | 01 Sep 2026 | [Toronto](2026/toronto/event.yaml) | Toronto | other | Prospect |  |
+| 4–05 Sep 2026 | [Italy](2026/italy/event.yaml) | Italy | other | Prospect |  |
+| 10 Sep 2026 | [National Library of Medicine](2026/national-library-of-medicine/event.yaml) | US | other | Prospect |  |
 | 18–19 Sep 2026 | [Ireland](2026/ireland/event.yaml) | Ireland | other | Prospect |  |
+| 24 Sep 2026 | [Conv2x Symposium](2026/conv2x-symposium/event.yaml) | Cambridge, MA | other | Prospect |  |
 | 26 Sep 2026 | [Dublin Hackathon](2026/dublin-hackathon/event.yaml) | Dublin | hackathon | Planned | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
 | 28–30 Sep 2026 | [Chile](2026/chile/event.yaml) | Chile | other | Prospect |  |
-| 15–18 Oct 2026 | [Korea](2026/korea/event.yaml) | Seoul, Korea | other | Prospect |  |
+| 15–17 Oct 2026 | [Korea](2026/korea/event.yaml) | Seoul, Korea | other | Prospect |  |
+| 18–19 Oct 2026 | [Thailand](2026/thailand/event.yaml) | Thailand | other | Prospect |  |
+| 20–21 Oct 2026 | [Taiwan](2026/taiwan/event.yaml) | Taiwan | other | Prospect |  |
 | 30 Oct–01 Nov 2026 | [Turkey](2026/turkey/event.yaml) | Turkey | other | Prospect |  |
 | 10–13 Nov 2026 | [AIMed](2026/aimed/event.yaml) | Orlando, FL | other | Prospect |  |
 | 21–22 Nov 2026 | [Vancouver](2026/vancouver/event.yaml) | Vancouver | other | Prospect |  |
-| 4–05 Dec 2026 | [France](2026/france/event.yaml) | France | other | Prospect |  |
+| 3–05 Dec 2026 | [France](2026/france/event.yaml) | France | other | Prospect |  |
 | 1–09 Feb 2027 | [India](2027/india/event.yaml) | India | other | Prospect |  |
 | 2–04 Apr 2027 | [Mayo Clinic Florida](2027/mayo-clinic-florida/event.yaml) | Florida | other | Prospect |  |
 | 31 Aug–03 Sep 2027 | [World Congress of Epidemiology](2027/world-congress-of-epidemiology/event.yaml) | Colombia | other | Prospect |  |
@@ -75,4 +81,4 @@
 </details>
 
 ---
-_Generated from `data/events/` — 61 records total._
+_Generated from `data/events/` — 67 records total._
