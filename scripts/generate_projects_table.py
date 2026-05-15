@@ -86,9 +86,15 @@ def main():
         if not projects:
             continue
         label = STATUS_LABELS[status]
-        print(f"## {label} ({len(projects)})\n")
-        print(projects_table(projects))
-        print()
+        table = projects_table(projects)
+        if status == "active":
+            print(f"## {label} ({len(projects)})\n")
+            print(table)
+            print()
+        else:
+            print(f"<details>\n<summary><strong>{label} ({len(projects)})</strong></summary>\n")
+            print(table)
+            print("\n</details>\n")
 
     print(f"---\n_Generated from `data/projects/` — {total} records total._")
 
