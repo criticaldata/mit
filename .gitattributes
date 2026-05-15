@@ -1,0 +1,6 @@
+# Generated files — always keep local version on merge conflict.
+# The Actions bot will regenerate them on the next push anyway.
+data/people/README.md   merge=ours
+data/projects/README.md merge=ours
+data/events/README.md   merge=ours
+data/talks/README.md    merge=ours
