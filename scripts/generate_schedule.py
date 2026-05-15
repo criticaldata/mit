@@ -66,7 +66,7 @@ def resolve_speaker(talk):
     if link_slug:
         person_file = PEOPLE_DIR / link_slug / "person.yaml"
         if person_file.exists():
-            name = f"[{name}](data/people/{link_slug}/person.yaml)"
+            name = f"[{name}](../people/{link_slug}/person.yaml)"
     return name
 
 

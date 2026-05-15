@@ -49,7 +49,7 @@ def resolve_lead(slug):
         with open(person_file, encoding="utf-8") as f:
             p = yaml.safe_load(f) or {}
         name = p.get("name", slug)
-        return f"[{name}](data/people/{slug}/person.yaml)"
+        return f"[{name}](../people/{slug}/person.yaml)"
     return slug
 
 
@@ -63,7 +63,7 @@ def projects_table(projects):
     rows = ["| Project | Lead | Tags | GitHub |", "|---|---|---|---|"]
     for p in projects:
         slug = p["_slug"]
-        title = f"[{p['title']}](data/projects/{slug}/project.yaml)"
+        title = f"[{p['title']}]({slug}/project.yaml)"
         lead  = resolve_lead(p.get("lead"))
         tags  = tags_cell(p.get("tags") or [])
         repo  = p.get("github_repo", "")
