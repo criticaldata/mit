@@ -39,6 +39,8 @@ This repository is the lab's operational database — plain-text YAML files trac
           output.yaml
           updates/
             2026-01-15.md
+      talks/            # Lab presentation schedule — one file per talk
+        2026-05-15-leo-celi.yaml
     scripts/            # Validation, automation, and utility scripts
     docs/               # Schema documentation, onboarding guides, conventions
 
@@ -48,7 +50,7 @@ kebab-case matching the person or project (e.g. alice-smith, mimic-iv).
 Relations between records use the folder name without any extension.
 
 ## Relations map
-- people    <- linked from projects, events, funding, outputs
+- people    <- linked from projects, events, funding, outputs, talks
 - funding   <- linked from projects, events
 - projects  <- linked from outputs
 - events    <- linked from outputs
@@ -167,6 +169,26 @@ Standard update frontmatter:
     github_repo:
     description: |
     tags: []               # lowercase kebab-case, topic/theme
+
+### talks
+
+Talks live as flat files in `data/talks/`, named `YYYY-MM-DD-speaker-slug.yaml`.
+The date prefix keeps the directory self-sorted chronologically.
+
+    # Required: title, speaker, date, status
+    title:                 # REQUIRED
+    speaker:               # REQUIRED — freeform name (guest or lab member)
+    speaker_affiliation:   # optional — institution or company
+    speaker_link:          # optional — links to data/people/ if lab member
+    date:                  # REQUIRED — YYYY-MM-DD
+    time:                  # HH:MM timezone, e.g. 11:00 ET
+    type:                  # lab-meeting, journal-club, external, invited, other
+    status:                # REQUIRED — scheduled, completed, cancelled
+    abstract: |
+    slides_url:
+    recording_url:
+    notes: |               # post-talk notes or discussion summary
+    tags: []               # lowercase kebab-case
 
 ## Task tracking
 Tasks are managed via GitHub Issues, not YAML files.

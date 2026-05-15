@@ -5,7 +5,7 @@
 | 📋 Resources | 📊 Directory |
 |---|---|
 | 🚀 [Onboarding](docs/onboarding/) | 👥 [People](data/people/README.md) |
-| 📅 [Presentation schedule](docs/presentation-schedule.md) | 📁 [Active projects](data/projects/README.md) |
+| 📅 [Presentation schedule](data/talks/) | 📁 [Active projects](data/projects/README.md) |
 | | 🗓️ [Upcoming events](data/events/README.md) |
 
 ---
@@ -21,6 +21,7 @@ This repository is the operational database for MIT Critical Data. It tracks our
 - **events/** — conferences, workshops, datathons, and talks
 - **funding/** — grants, sponsored research, and other funding sources
 - **outputs/** — papers, datasets, software, and other lab products
+- **talks/** — lab presentation schedule, one YAML file per talk
 - **scripts/** — automation and validation utilities
 - **docs/** — schema documentation and contribution guides
 
@@ -41,6 +42,52 @@ Examples:
 The date prefix is the only required convention — it keeps updates sorted chronologically and findable. No reformatting of raw transcript exports is needed; upload them as-is.
 
 To update a project's core details (status, team, funding links), edit `project.yaml` directly in the same folder.
+
+---
+
+## 📅 Scheduling a presentation
+
+Lab meetings are held **every Tuesday**. Each talk is a single YAML file in `data/talks/`.
+
+**File naming:** `YYYY-MM-DD-speaker-slug.yaml` (e.g. `2026-06-10-jane-smith.yaml`)
+
+**Minimal example:**
+
+```yaml
+title: My Research Talk
+speaker: Jane Smith
+speaker_affiliation: Stanford Medicine
+date: 2026-06-10
+time: "11:00 ET"
+type: invited
+status: scheduled
+```
+
+**Full fields:**
+
+| Field | Required | Notes |
+|---|---|---|
+| `title` | ✅ | Talk title |
+| `speaker` | ✅ | Freeform name — guest or lab member |
+| `speaker_affiliation` | | Institution or company |
+| `speaker_link` | | Folder name in `data/people/` if the speaker is a lab member |
+| `date` | ✅ | `YYYY-MM-DD` |
+| `time` | | e.g. `"11:00 ET"` |
+| `type` | | `lab-meeting`, `journal-club`, `external`, `invited`, `other` |
+| `status` | ✅ | `scheduled`, `completed`, `cancelled` |
+| `abstract` | | Free text |
+| `slides_url` | | Link to slides — title becomes clickable |
+| `recording_url` | | Link to recording — title becomes clickable |
+| `notes` | | Post-talk discussion summary |
+| `tags` | | Lowercase kebab-case list |
+
+**Generate the schedule:**
+
+```bash
+py scripts/generate_schedule.py
+```
+
+This prints a Markdown table of every Tuesday for the next 4 months, with booked slots filled in and empty slots shown as blank rows.
 
 ---
 

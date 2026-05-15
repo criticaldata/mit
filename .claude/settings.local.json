@@ -21,7 +21,11 @@
       "Bash(/c/Users/kepai/AppData/Local/Microsoft/WindowsApps/python3.exe scripts/generate_people_table.py)",
       "Bash(py install *)",
       "Bash(py scripts/generate_people_table.py)",
-      "Bash(py -m pip install pyyaml)"
+      "Bash(py -m pip install pyyaml)",
+      "Bash(gh api *)",
+      "WebFetch(domain:github.com)",
+      "Bash(py scripts/generate_schedule.py)",
+      "Bash(py scripts/generate_schedule.py --upcoming)"
     ]
   }
 }
