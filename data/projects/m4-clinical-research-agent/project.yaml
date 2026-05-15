@@ -1,0 +1,19 @@
+title: 'M4: Clinical Research Agent (MCP)'
+status: active
+lead: hannes-ill
+team:
+- ahram-han
+- ryohei-kobayashi-yamamoto
+- marlene-louisa-moerig
+- dukyong-yoon
+- takeshi-tohyama
+start_date: '2025-10-01'
+end_date: '2026-10-01'
+github_repo: https://github.com/hannesill/m4
+description: 'Infrastructure for AI-assisted clinical research enabling natural-language exploration of ICU datasets (MIMIC-IV,
+  eICU). Operates as an MCP server (Claude Desktop, Cursor) and Python API with clinician-authored Agent Skills modules. Evaluation
+  framework: L1 SQL accuracy, L2 clinical artifact generation, L3 research reproduction. Preprint target April 2026.'
+tags:
+- ai
+- ml-infrastructure
+- tooling

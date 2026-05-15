@@ -6,7 +6,11 @@ institution: Technical University of Munich
 start_date: 2025-11-01
 end_date: 2026-04-30
 photo: hannes-ill.jpg
-bio: |
-  Robotics, Cognition, Intelligence Masters Student at the Technical University of Munich (TUM).
-research_interests: |
-  Foundation Models, RL, Multimodal Deep Learning, Software Engineering, Representation Learning.
+bio: 'Robotics, Cognition, Intelligence Masters Student at the Technical University of Munich (TUM).
+
+  '
+research_interests: 'Foundation Models, RL, Multimodal Deep Learning, Software Engineering, Representation Learning.
+
+  '
+whatsapp: '"+49 152 24140743"'
+timezone: EST

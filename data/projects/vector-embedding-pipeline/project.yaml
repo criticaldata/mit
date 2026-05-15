@@ -1,0 +1,12 @@
+title: Vector Embedding Pipeline (v1)
+status: active
+lead: kenneth-paik
+team:
+- ahram-han
+- takeshi-tohyama
+- norman-pedersen
+start_date: '2025-09-10'
+end_date: '2026-03-10'
+description: Pipeline to extract vector embeddings from pre-trained transformers. Final stages of v1.
+tags:
+- vector-embeddings

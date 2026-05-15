@@ -1,0 +1,11 @@
+title: Multimodal Data Discordance
+status: active
+lead: leo-celi
+team:
+- takeshi-tohyama
+start_date: '2026-01-01'
+end_date: '2026-12-30'
+description: Evaluating AI performance, entropy, and calibration in discordant data across multiple modalities.
+tags:
+- multimodal-ehr
+- vector-embeddings

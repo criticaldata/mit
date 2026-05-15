@@ -1,0 +1,15 @@
+title: Impact Analysis of Prediction Models (Causal Inference)
+status: active
+lead: ryohei-kobayashi-yamamoto
+team:
+- takeshi-tohyama
+- ahram-han
+- norman-pedersen
+start_date: '2025-09-30'
+end_date: '2027-09-30'
+github_repo: https://github.com/ryohei-hey/mimiciv-rox-strategy-impact-analysis
+description: 'Evaluating whether prediction models improve patient outcomes before clinical implementation. Methods: target
+  trial emulation, interrupted time series, difference-in-difference, and other causal inference approaches.'
+tags:
+- clinical-prediction
+- causal-inference

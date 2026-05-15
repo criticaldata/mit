@@ -6,7 +6,14 @@ institution: Fukushima Medical University
 start_date: 2025-09-01
 end_date: 2027-08-31
 photo: ryohei-kobayashi.jpg
-bio: |
-  Physician-researcher and epidemiologist from Fukushima Medical University. Studies critical care outcomes using causal inference methods and predictive modeling to bridge data and bedside decisions.
-research_interests: |
-  Critical care epidemiology; causal inference (potential outcomes, DAGs, TTE); predictive model evaluation (discrimination, calibration, decision curves); AKI and ICU outcomes; patient-centered outcome utilities.
+bio: 'Physician-researcher and epidemiologist from Fukushima Medical University. Studies critical care outcomes using causal
+  inference methods and predictive modeling to bridge data and bedside decisions.
+
+  '
+research_interests: 'Critical care epidemiology; causal inference (potential outcomes, DAGs, TTE); predictive model evaluation
+  (discrimination, calibration, decision curves); AKI and ICU outcomes; patient-centered outcome utilities.
+
+  '
+email_secondary: ryoheiyamamoto11@gmail.com
+whatsapp: '"+81 80-3577-6740"'
+timezone: EST or JST

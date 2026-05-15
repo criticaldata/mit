@@ -1,0 +1,12 @@
+title: 'MedScope: Pain Documentation Bias'
+status: active
+lead: boya-zhang
+start_date: '2025-11-03'
+end_date: '2026-04-30'
+github_repo: https://github.com/tinaboya/MedScope
+description: Measuring how pain is documented across clinical notes (BRIDGE) and standardized exam questions (WorldMedQA)
+  to uncover systematic bias in data and models.
+tags:
+- bias
+- fairness
+- representation

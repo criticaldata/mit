@@ -6,7 +6,17 @@ institution: University of Copenhagen
 start_date: 2025-09-08
 end_date: 2025-12-21
 photo: norman-pedersen.jpeg
-bio: |
-  PhD student at University of Copenhagen.
-research_interests: |
-  Medical AI, waveform prediction, transformer architecture, multimodal health data.
+bio: 'PhD student at University of Copenhagen.
+
+  '
+research_interests: 'Medical AI, waveform prediction, transformer architecture, multimodal health data.
+
+  '
+email_secondary: norman.pedersen@ward247.com
+whatsapp: '"+4560744404"'
+timezone: GMT +1
+skills:
+- python
+- machine learning
+- data preprocessing
+- healthcare data analysis

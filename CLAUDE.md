@@ -74,6 +74,7 @@ Standard update frontmatter:
     # Required: name, email, role, status
     name:                  # REQUIRED
     email:                 # REQUIRED
+    email_secondary:       # personal or non-institutional email
     role:                  # REQUIRED — PI, Postdoc, PhD Student, Master's,
                            # Undergrad, Admin, Affiliate, Research Scientist,
                            # Research Engineer, Visiting Scientist, Visiting Scholar

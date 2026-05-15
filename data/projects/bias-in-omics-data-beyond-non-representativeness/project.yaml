@@ -1,0 +1,11 @@
+title: Bias in Omics Data Beyond Non-Representativeness
+status: active
+lead: leo-celi
+start_date: '2024-08-11'
+end_date: '2026-02-28'
+github_repo: https://github.com/criticaldata/omics-bias
+description: Systematic review investigating sources of bias across the full lifecycle of OMICS data (genomics, transcriptomics,
+  proteomics, metabolomics). Covers data production, technical/instrumental, computational/analytical, and reporting stages.
+  ~179 articles reviewed.
+tags:
+- systematic-review

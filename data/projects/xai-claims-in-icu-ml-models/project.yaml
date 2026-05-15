@@ -1,0 +1,12 @@
+title: XAI Claims in ICU ML Models (Scoping Review)
+status: active
+lead: marlene-louisa-moerig
+team:
+- louis-agha-mir-salim
+- leo-celi
+start_date: '2025-04-01'
+end_date: '2026-05-01'
+description: PRISMA-ScR scoping review systematically mapping, analyzing, and assessing claims about explainability in ML
+  models for diagnostic/prognostic decision-making in intensive care.
+tags:
+- systematic-review

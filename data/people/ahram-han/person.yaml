@@ -5,7 +5,13 @@ status: collaborator
 institution: Seoul National University Hospital
 start_date: 2024-09-01
 end_date: 2026-08-30
-bio: |
-  Transplant (kidney) & vascular surgeon working in Seoul National University Hospital, Korea.
-research_interests: |
-  Data-driven approaches to transplantation and vascular disease, across immunosuppressant pharmacogenomics, transplant immunology, vascular interventions, and biosignal analysis. Generating clinically meaningful evidence that informs decision-making and improves graft and patient outcomes.
+bio: 'Transplant (kidney) & vascular surgeon working in Seoul National University Hospital, Korea.
+
+  '
+research_interests: 'Data-driven approaches to transplantation and vascular disease, across immunosuppressant pharmacogenomics,
+  transplant immunology, vascular interventions, and biosignal analysis. Generating clinically meaningful evidence that informs
+  decision-making and improves graft and patient outcomes.
+
+  '
+whatsapp: '"821062950538"'
+timezone: EST

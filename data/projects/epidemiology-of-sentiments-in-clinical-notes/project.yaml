@@ -1,0 +1,9 @@
+title: Epidemiology of Sentiments in Clinical Notes
+status: active
+lead: leo-celi
+start_date: '2025-03-01'
+end_date: '2026-07-01'
+description: Curated repository of open-source sentiment analysis tools for healthcare documents (text, audio, video modalities).
+  Maps sentiment patterns in clinical documentation to patient characteristics, outcomes, and resource utilization.
+tags:
+- systematic-review

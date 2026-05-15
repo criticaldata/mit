@@ -6,7 +6,21 @@ institution: Yonsei University College of Medicine
 start_date: 2025-03-01
 end_date: 2026-02-28
 photo: dukyong-yoon.jpg
-bio: |
-  Associate professor in Medical Informatics at Yonsei University College of Medicine.
-research_interests: |
-  Medical AI, Clinical NLP, ECG/physiological signal analysis, Bias mitigation, Data quality control.
+bio: 'Associate professor in Medical Informatics at Yonsei University College of Medicine.
+
+  '
+research_interests: 'Medical AI, Clinical NLP, ECG/physiological signal analysis, Bias mitigation, Data quality control.
+
+  '
+email_secondary: dukyong.yoon@yonsei.ac.kr
+whatsapp: '"+82 10-9300-5862"'
+timezone: Korean Standard Time
+skills:
+- medical informatics and clinical ai
+- large language model (llm) applications in healthcare
+- mimic data analysis and reproducible pipelines
+- model context protocol (m4) skill development
+- bias and fairness evaluation in medical ai
+- clinical data quality metrics and governance
+- ecg-based deep learning and multimodal modeling
+- research-to-deployment translation in hospital settings

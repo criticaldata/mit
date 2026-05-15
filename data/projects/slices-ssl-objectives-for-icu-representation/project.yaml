@@ -1,0 +1,12 @@
+title: 'SLICES: SSL Objectives for ICU Representation'
+status: active
+lead: hannes-ill
+start_date: '2025-11-01'
+end_date: '2026-04-30'
+github_repo: https://github.com/hannesill/SLICES
+description: Modular framework comparing self-supervised learning (SSL) objectives on ICU patient representation tasks. Master's
+  thesis project.
+tags:
+- ai
+- ml-infrastructure
+- tooling

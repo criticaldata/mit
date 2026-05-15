@@ -25,7 +25,8 @@
       "Bash(gh api *)",
       "WebFetch(domain:github.com)",
       "Bash(py scripts/generate_schedule.py)",
-      "Bash(py scripts/generate_schedule.py --upcoming)"
+      "Bash(py scripts/generate_schedule.py --upcoming)",
+      "Bash(py scripts/import_notion.py)"
     ]
   }
 }

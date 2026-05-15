@@ -1,0 +1,13 @@
+title: Snapshot Embedding for EHR Data
+status: active
+lead: takeshi-tohyama
+team:
+- ahram-han
+- hannes-ill
+start_date: '2025-09-01'
+end_date: '2026-04-30'
+github_repo: https://github.com/ttohya/clinemb
+description: Improving snapshot embeddings of EHR data using multimodal data. Version 1 in final stages.
+tags:
+- multimodal-ehr
+- vector-embeddings

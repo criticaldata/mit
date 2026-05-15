@@ -4,7 +4,12 @@ role: Research Scientist
 status: active
 institution: MIT
 photo: jesse-raffa.jpg
-bio: |
-  Biostatistician providing statistical and epidemiological expertise. Specializes in analysis of complex longitudinal data relevant to critical care settings.
-research_interests: |
-  Latent variable models, hidden Markov Models, complex longitudinal data, heterogenous prediction models, eICU, GOSSIS, reproducible research.
+bio: 'Biostatistician providing statistical and epidemiological expertise. Specializes in analysis of complex longitudinal
+  data relevant to critical care settings.
+
+  '
+research_interests: 'Latent variable models, hidden Markov Models, complex longitudinal data, heterogenous prediction models,
+  eICU, GOSSIS, reproducible research.
+
+  '
+timezone: EST

@@ -1,0 +1,11 @@
+title: 'WorldmedQA: Cross-Cultural Pain Concepts'
+status: active
+lead: leo-celi
+team:
+- marlene-louisa-moerig
+description: Comparing how concepts like 'pain' are represented across cultures and languages using BRIDGE and WorldMedQA
+  datasets (~30 countries).
+tags:
+- bias
+- fairness
+- representation

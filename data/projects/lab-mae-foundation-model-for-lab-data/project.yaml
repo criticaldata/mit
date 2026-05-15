@@ -1,0 +1,13 @@
+title: 'Lab-MAE: Foundation Model for Lab Data'
+status: active
+lead: yugang-jia
+team:
+- boya-zhang
+github_repo: https://github.com/dsrestrepo/Lab-MAE-Foundation-Tabular
+description: Transformer-based foundation model creating vector embeddings of laboratory test data from MIMIC. Contextualizes
+  lab values (e.g., creatinine 3.6 means something different per patient/time). Provides a knowledge graph of numeric clinical
+  data capturing physiological states.
+tags:
+- ai
+- ml-infrastructure
+- tooling

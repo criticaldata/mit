@@ -1,0 +1,13 @@
+title: 'BODHI: Medical AI as Epistemic Agent'
+status: active
+lead: leo-celi
+team:
+- sebastian-cajas
+start_date: '2026-02-19'
+end_date: '2027-03-03'
+github_repo: https://github.com/sebasmos/bodhi-llms
+description: 'Systems design framework reimagining medical AI as an epistemic agent: one that questions assumptions, reasons
+  under uncertainty, and recognizes the boundaries of its own knowledge.'
+tags:
+- ai-epistemics
+- framework-design

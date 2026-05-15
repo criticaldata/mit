@@ -1,0 +1,14 @@
+title: 'LabTube: 3D Temporal Modeling of ICU Labs'
+status: active
+lead: boya-zhang
+team:
+- tiger-krittaphas
+start_date: '2026-02-02'
+end_date: '2026-04-30'
+github_repo: https://github.com/tinaboya/LabTube
+description: VideoMAE-style modeling of ICU lab time series. Elevates time to a structural dimension ('the tube'). Unifies
+  time and lab space in one 3D tensor for spatio-temporal modeling. Described as successor to Lab-MAE.
+tags:
+- ai
+- ml-infrastructure
+- tooling
