@@ -35,7 +35,9 @@
       "Bash(xargs -I{} cat data/projects/{}/project.yaml)",
       "Bash(py scripts/generate_projects_table.py)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(py -c ' *)",
+      "Bash(py scripts/generate_events_table.py)"
     ]
   }
 }
