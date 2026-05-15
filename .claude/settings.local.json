@@ -26,7 +26,9 @@
       "WebFetch(domain:github.com)",
       "Bash(py scripts/generate_schedule.py)",
       "Bash(py scripts/generate_schedule.py --upcoming)",
-      "Bash(py scripts/import_notion.py)"
+      "Bash(py scripts/import_notion.py)",
+      "Bash(Remove-Item \"c:\\\\dev\\\\github\\\\mit\\\\.github\\\\workflows\\\\validate.yml\")",
+      "Bash(del \"c:\\\\dev\\\\github\\\\mit\\\\.github\\\\workflows\\\\validate.yml\")"
     ]
   }
 }

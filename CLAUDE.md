@@ -25,10 +25,12 @@ This repository is the lab's operational database — plain-text YAML files trac
           updates/
             2026-01-15.md
       events/           # Conferences, talks, workshops
-        symposium-2026/
-          event.yaml
-          updates/
-            2026-01-15.md
+        2026/
+          symposium/
+            event.yaml
+            updates/
+              2026-01-15.md
+        undated/          # Events with no confirmed date yet
       funding/          # Grants, sponsored research, and other funding sources
         nih-r01-2023/
           funding.yaml
@@ -40,7 +42,8 @@ This repository is the lab's operational database — plain-text YAML files trac
           updates/
             2026-01-15.md
       talks/            # Lab presentation schedule — one file per talk
-        2026-05-15-leo-celi.yaml
+        2026/
+          2026-05-15-leo-celi.yaml
     scripts/            # Validation, automation, and utility scripts
     docs/               # Schema documentation, onboarding guides, conventions
 
@@ -173,7 +176,7 @@ Standard update frontmatter:
 
 ### talks
 
-Talks live as flat files in `data/talks/`, named `YYYY-MM-DD-speaker-slug.yaml`.
+Talks live under `data/talks/<year>/`, named `YYYY-MM-DD-speaker-slug.yaml`.
 The date prefix keeps the directory self-sorted chronologically.
 
     # Required: title, speaker, date, status

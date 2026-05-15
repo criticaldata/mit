@@ -24,7 +24,7 @@ MONTHS_AHEAD = 4
 def load_talks():
     """Return a dict of date -> talk data."""
     talks = {}
-    for f in TALKS_DIR.glob("*.yaml"):
+    for f in TALKS_DIR.glob("*/*.yaml"):
         with open(f, encoding="utf-8") as fh:
             try:
                 data = yaml.safe_load(fh)
