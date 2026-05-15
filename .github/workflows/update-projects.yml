@@ -1,0 +1,30 @@
+name: Update Projects Table
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/projects/**"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install dependencies
+        run: pip install pyyaml
+      - name: Regenerate projects table
+        run: python scripts/generate_projects_table.py > data/projects/README.md
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/projects/README.md
+          git diff --cached --quiet || git commit -m "chore: regenerate projects table [skip ci]"
+          git push
