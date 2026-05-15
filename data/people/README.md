@@ -17,22 +17,22 @@
 
 | Name | Dates | Role | Institution | Email | Photo |
 |---|---|---|---|---|---|
-| [Ahram Han](data/people/ahram-han/person.yaml) | Sep 2024–Aug 2026 | Visiting Scientist | Seoul National University Hospital | ahramhan@mit.edu |  |
+| [Ahram Han](data/people/ahram-han/person.yaml) | Sep 2024â€“Aug 2026 | Visiting Scientist | Seoul National University Hospital | ahramhan@mit.edu |  |
 | [Aryan Bhattacharya](data/people/aryan-bhattacharya/person.yaml) | TBD | Affiliate |  |  |  |
 | [Benet Fite Abril](data/people/benet-fite-abril/person.yaml) | TBD | PhD Student | Harvard | benet_fite@hms.harvard.com |  |
 | [Boya Zhang](data/people/boya-zhang/person.yaml) | TBD | Visiting Scientist | MIT, UNIGE | boya_zh@mit.edu |  |
-| [David Restrepo](data/people/david-restrepo/person.yaml) | TBD | Affiliate | CentraleSupélec -  Université Paris-Saclay | davidres@mit.edu |  |
+| [David Restrepo](data/people/david-restrepo/person.yaml) | TBD | Affiliate | CentraleSupÃ©lec -  UniversitÃ© Paris-Saclay | davidres@mit.edu |  |
 | [Dimitrios Proios](data/people/dimitrios-proios/person.yaml) | TBD | Visiting Scientist | Faculty of Medicine Switzerland | dimi.proios@gmail.com |  |
 | [Fredrik Willumsen Haug](data/people/fredrik-willumsen-haug/person.yaml) | TBD | PhD Student | Harvard | fredrik_willumsenhaug@college.harvard.edu |  |
 | [Laurine Sprehe](data/people/laurine-sprehe/person.yaml) | TBD | PhD Student | MGH/HMS | lsprehe@mgh.harvard.edu |  |
 | [Louis Agha-mir-Salim](data/people/louis-agha-mir-salim/person.yaml) | TBD | Affiliate |  |  |  |
-| [Marlene Louisa Moerig](data/people/marlene-louisa-moerig/person.yaml) | TBD | Visiting Scientist | Charité | moerig@mit.edu |  |
+| [Marlene Louisa Moerig](data/people/marlene-louisa-moerig/person.yaml) | TBD | Visiting Scientist | CharitÃ© | moerig@mit.edu |  |
 | [Milit Patel](data/people/milit-patel/person.yaml) | TBD | Affiliate |  |  |  |
 | [Rodrigo Gameiro](data/people/rodrigo-gameiro/person.yaml) | TBD | Visiting Scientist | Harvard Medical School | rrgmd@mit.edu |  |
-| [Ryohei Kobayashi (Yamamoto)](data/people/ryohei-kobayashi-yamamoto/person.yaml) | Sep 2025–Aug 2027 | Visiting Scientist | Fukushima Medical University | royhei11@mit.edu | <img src="data/people/ryohei-kobayashi-yamamoto/ryohei-kobayashi.jpg" alt="Ryohei" width="120"/> |
+| [Ryohei Kobayashi (Yamamoto)](data/people/ryohei-kobayashi-yamamoto/person.yaml) | Sep 2025â€“Aug 2027 | Visiting Scientist | Fukushima Medical University | royhei11@mit.edu | <img src="data/people/ryohei-kobayashi-yamamoto/ryohei-kobayashi.jpg" alt="Ryohei" width="120"/> |
 | [Saleem Ameen](data/people/saleem-ameen/person.yaml) | TBD | Visiting Scientist | University of Tasmania & Harvard Medical School | saleemam@mit.edu |  |
 | [Sebastian Cajas](data/people/sebastian-cajas/person.yaml) | TBD | Affiliate | MIT Critical data | sebasmos@mit.edu |  |
-| [Sebastien Emile](data/people/sebastien-emile/person.yaml) | Nov 2025–present | Visiting Scientist |  | lydrale@gmail.com | <img src="data/people/sebastien-emile/sebastien-emile.jpg" alt="Sebastien" width="120"/> |
+| [Sebastien Emile](data/people/sebastien-emile/person.yaml) | Nov 2025â€“present | Visiting Scientist |  | lydrale@gmail.com | <img src="data/people/sebastien-emile/sebastien-emile.jpg" alt="Sebastien" width="120"/> |
 | [Tiger Krittaphas](data/people/tiger-krittaphas/person.yaml) | TBD | Affiliate |  |  |  |
 | [Yugang Jia](data/people/yugang-jia/person.yaml) | TBD | Affiliate |  |  |  |
 
@@ -40,16 +40,16 @@
 
 | Name | Dates | Role | Institution | Email | Photo |
 |---|---|---|---|---|---|
-| [Dukyong Yoon](data/people/dukyong-yoon/person.yaml) | Mar 2025–Feb 2026 | Visiting Scholar | Yonsei University College of Medicine | ydy8302@mit.edu | <img src="data/people/dukyong-yoon/dukyong-yoon.jpg" alt="Dukyong" width="120"/> |
-| [Francesca Giada Antonaci](data/people/francescagiada-antonaci/person.yaml) | Sep 2025–Dec 2025 | PhD Student | Polytechnic University of Turin | fga@mit.edu | <img src="data/people/francescagiada-antonaci/francescagiada-antonaci.jpg" alt="Francesca" width="120"/> |
-| [Hannes Ill](data/people/hannes-ill/person.yaml) | Nov 2025–Apr 2026 | Master's | Technical University of Munich | illh534@mit.edu | <img src="data/people/hannes-ill/hannes-ill.jpg" alt="Hannes" width="120"/> |
-| [Lukas Liss](data/people/lukas-liss/person.yaml) | Jul 2025–Sep 2025 | PhD Student | RWTH Aachen University | lukasl@mit.edu | <img src="data/people/lukas-liss/lukas-liss.jpg" alt="Lukas" width="120"/> |
-| [Norman Pedersen](data/people/norman-pedersen/person.yaml) | Sep 2025–Dec 2025 | PhD Student | University of Copenhagen | nkp@mit.edu | <img src="data/people/norman-pedersen/norman-pedersen.jpeg" alt="Norman" width="120"/> |
-| [Rafi Al Attrach](data/people/rafi-attrach/person.yaml) | Mar 2025–Aug 2025 | Master's | Technical University of Munich | rafiaa@mit.edu | <img src="data/people/rafi-attrach/rafi-attrach.jpg" alt="Rafi" width="120"/> |
-| [Rajna Fani](data/people/rajna-fani/person.yaml) | Mar 2025–Aug 2025 | Master's | Technical University of Munich | rajnaf@mit.edu | <img src="data/people/rajna-fani/rajna-fani.jpg" alt="Rajna" width="120"/> |
-| [Shishuo Chen](data/people/shishuo-chen/person.yaml) | Nov 2025–Dec 2025 | Visiting Scientist |  | chocolidoo49@gmail.com | <img src="data/people/shishuo-chen/shishuo.jpg" alt="Shishuo" width="120"/> |
-| [Takeshi Tohyama](data/people/takeshi-tohyama/person.yaml) | Apr 2024–Mar 2026 | Postdoc | MIT | ttohyama@mit.edu | <img src="data/people/takeshi-tohyama/takeshi-tohyama.jpg" alt="Takeshi" width="120"/> |
-| [Xiao Xiang](data/people/xiao-xiang/person.yaml) | Apr 2025–Aug 2025 | Master's | EPFL | xiao0605@mit.edu | <img src="data/people/xiao-xiang/xiao-xiang.jpg" alt="Xiao" width="120"/> |
+| [Dukyong Yoon](data/people/dukyong-yoon/person.yaml) | Mar 2025â€“Feb 2026 | Visiting Scholar | Yonsei University College of Medicine | ydy8302@mit.edu | <img src="data/people/dukyong-yoon/dukyong-yoon.jpg" alt="Dukyong" width="120"/> |
+| [Francesca Giada Antonaci](data/people/francescagiada-antonaci/person.yaml) | Sep 2025â€“Dec 2025 | PhD Student | Polytechnic University of Turin | fga@mit.edu | <img src="data/people/francescagiada-antonaci/francescagiada-antonaci.jpg" alt="Francesca" width="120"/> |
+| [Hannes Ill](data/people/hannes-ill/person.yaml) | Nov 2025â€“Apr 2026 | Master's | Technical University of Munich | illh534@mit.edu | <img src="data/people/hannes-ill/hannes-ill.jpg" alt="Hannes" width="120"/> |
+| [Lukas Liss](data/people/lukas-liss/person.yaml) | Jul 2025â€“Sep 2025 | PhD Student | RWTH Aachen University | lukasl@mit.edu | <img src="data/people/lukas-liss/lukas-liss.jpg" alt="Lukas" width="120"/> |
+| [Norman Pedersen](data/people/norman-pedersen/person.yaml) | Sep 2025â€“Dec 2025 | PhD Student | University of Copenhagen | nkp@mit.edu | <img src="data/people/norman-pedersen/norman-pedersen.jpeg" alt="Norman" width="120"/> |
+| [Rafi Al Attrach](data/people/rafi-attrach/person.yaml) | Mar 2025â€“Aug 2025 | Master's | Technical University of Munich | rafiaa@mit.edu | <img src="data/people/rafi-attrach/rafi-attrach.jpg" alt="Rafi" width="120"/> |
+| [Rajna Fani](data/people/rajna-fani/person.yaml) | Mar 2025â€“Aug 2025 | Master's | Technical University of Munich | rajnaf@mit.edu | <img src="data/people/rajna-fani/rajna-fani.jpg" alt="Rajna" width="120"/> |
+| [Shishuo Chen](data/people/shishuo-chen/person.yaml) | Nov 2025â€“Dec 2025 | Visiting Scientist |  | chocolidoo49@gmail.com | <img src="data/people/shishuo-chen/shishuo.jpg" alt="Shishuo" width="120"/> |
+| [Takeshi Tohyama](data/people/takeshi-tohyama/person.yaml) | Apr 2024â€“Mar 2026 | Postdoc | MIT | ttohyama@mit.edu | <img src="data/people/takeshi-tohyama/takeshi-tohyama.jpg" alt="Takeshi" width="120"/> |
+| [Xiao Xiang](data/people/xiao-xiang/person.yaml) | Apr 2025â€“Aug 2025 | Master's | EPFL | xiao0605@mit.edu | <img src="data/people/xiao-xiang/xiao-xiang.jpg" alt="Xiao" width="120"/> |
 
 ---
-_Generated from `data/people/` — 36 records total._
+_Generated from `data/people/` â€” 36 records total._
