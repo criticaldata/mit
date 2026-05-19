@@ -1,5 +1,5 @@
-title: Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI
-agency: NHLBI
+title: 
+agency: KHIDI
 program:
 type: grant                 # grant, contract, sponsored-research, gift, fellowship, other
 grant_number: 
@@ -9,7 +9,7 @@ team: [kenneth-paik, ahram-han, takeshi-tohyama]               # folder names fr
 amount_requested:
 amount_awarded:
 currency: USD
-date_submission: 2026-05-15
+date_submission: 
 date_start:
 date_end:
 projects: []           # folder names from data/projects/
@@ -17,6 +17,10 @@ events: []             # folder names from data/events/<year>/
 url:
 description: |
 
-acknowledgment: |
+acknowledgment: >
+  This research was supported by a grant of the Korea Health Technology
+  R&D Project through the Korea Health Industry Development Institute
+  (KHIDI), funded by the Ministry of Health & Welfare, Republic of Korea
+  (grant number: RS-2024-00403047)
 
 tags: []               # lowercase kebab-case

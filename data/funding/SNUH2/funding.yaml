@@ -11,7 +11,7 @@ amount_awarded:
 currency: USD
 date_submission:
 date_start:
-date_end:
+date_end: 2026-12-31
 projects: []           # folder names from data/projects/
 events: []             # folder names from data/events/<year>/
 url:
