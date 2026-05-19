@@ -37,10 +37,11 @@ This repository is the lab's operational database — plain-text YAML files trac
           updates/
             2026-01-15.md
       outputs/          # Papers, datasets, software, posters, talks
-        paper-nejm-2025/
-          output.yaml
-          updates/
-            2026-01-15.md
+        2025/
+          paper-nejm/
+            output.yaml
+            updates/
+              2026-01-15.md
       talks/            # Lab presentation schedule — one file per talk
         2026/
           2026-05-15-leo-celi.yaml
