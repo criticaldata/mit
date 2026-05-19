@@ -44,42 +44,27 @@ def load_funding():
     return by_status
 
 
-def resolve_lead(slug):
-    if not slug:
-        return ""
-    person_file = PEOPLE_DIR / slug / "person.yaml"
-    if person_file.exists():
-        with open(person_file, encoding="utf-8") as f:
-            p = yaml.safe_load(f) or {}
-        name = p.get("name", slug)
-        return f"[{name}](../people/{slug}/person.yaml)"
-    return slug
+DATE_FIELD = {
+    "awarded":   ("date_end",        "End Date"),
+    "submitted": ("date_submission",  "Submitted"),
+    "drafting":  ("date_submission",  "Due"),
+    "prospect":  ("date_submission",  "Due"),
+    "rejected":  ("date_submission",  "Submitted"),
+    "withdrawn": ("date_submission",  "Submitted"),
+}
 
 
-def amount_cell(record):
-    awarded = record.get("amount_awarded")
-    requested = record.get("amount_requested")
-    currency = record.get("currency", "USD")
-    val = awarded or requested
-    if not val:
-        return ""
-    label = f"{currency} {val:,}" if isinstance(val, (int, float)) else f"{currency} {val}"
-    return f"{label}{'*' if not awarded and requested else ''}"
-
-
-def funding_table(records):
-    rows = ["| Fund | Agency | Grant # | Lead | Amount | Submission |",
-            "|---|---|---|---|---|---|"]
+def funding_table(records, status):
+    date_field, date_label = DATE_FIELD.get(status, ("date_submission", "Date"))
+    rows = [f"| Fund | Agency | Grant # | {date_label} |",
+            "|---|---|---|---|"]
     for r in records:
-        slug  = r["_slug"]
-        title = r.get("title") or slug
-        link  = f"[{title}]({slug}/funding.yaml)"
+        slug   = r["_slug"]
+        link   = f"[{slug}]({slug}/funding.yaml)"
         agency = r.get("agency") or ""
         grant  = r.get("grant_number") or ""
-        lead   = resolve_lead(r.get("lead"))
-        amount = amount_cell(r)
-        date_sub = str(r.get("date_submission", "")) if r.get("date_submission") else ""
-        rows.append(f"| {link} | {agency} | {grant} | {lead} | {amount} | {date_sub} |")
+        date   = str(r.get(date_field, "")) if r.get(date_field) else ""
+        rows.append(f"| {link} | {agency} | {grant} | {date} |")
     return "\n".join(rows)
 
 
@@ -96,7 +81,7 @@ def main():
         if not records:
             continue
         label = STATUS_LABELS[status]
-        table = funding_table(records)
+        table = funding_table(records, status)
         if status == "awarded":
             print(f"## {label} ({len(records)})\n")
             print(table)

@@ -1,27 +1,27 @@
 # Funding
 
-## Awarded (2)
+## Awarded (1)
 
-| Fund | Agency | Grant # | Lead | Amount | Submission |
-|---|---|---|---|---|---|
-| [NHLBI_2026](NHLBI_2026/funding.yaml) | KHIDI | RS-2024-00439677 | [Leo Anthony Celi](../people/leo-celi/person.yaml) |  |  |
-| [SNUH2](SNUH2/funding.yaml) | KHIDI | RS-2024-00439677 | [Leo Anthony Celi](../people/leo-celi/person.yaml) |  |  |
+| Fund | Agency | Grant # | End Date |
+|---|---|---|---|
+| [SNUH2](SNUH2/funding.yaml) | KHIDI | RS-2024-00439677 | 2026-12-31 |
 
 <details>
-<summary><strong>Submitted (1)</strong></summary>
+<summary><strong>Submitted (2)</strong></summary>
 
-| Fund | Agency | Grant # | Lead | Amount | Submission |
-|---|---|---|---|---|---|
-| [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](SNUH1/funding.yaml) | NHLBI |  | [Leo Anthony Celi](../people/leo-celi/person.yaml) |  | 2026-05-15 |
+| Fund | Agency | Grant # | Submitted |
+|---|---|---|---|
+| [NHLBI_2026](NHLBI_2026/funding.yaml) |  |  | 2026-05-15 |
+| [SNUH1](SNUH1/funding.yaml) | KHIDI |  |  |
 
 </details>
 
 <details>
 <summary><strong>Drafting (1)</strong></summary>
 
-| Fund | Agency | Grant # | Lead | Amount | Submission |
-|---|---|---|---|---|---|
-| [DOJO](DOJO/funding.yaml) |  |  | [Leo Anthony Celi](../people/leo-celi/person.yaml) |  |  |
+| Fund | Agency | Grant # | Due |
+|---|---|---|---|
+| [DOJO](DOJO/funding.yaml) |  |  |  |
 
 </details>
 
