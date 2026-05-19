@@ -3,7 +3,7 @@ agency: KHIDI
 program:
 type: grant                 # grant, contract, sponsored-research, gift, fellowship, other
 grant_number: 
-status: submitted               # prospect, drafting, submitted, awarded, rejected, withdrawn
+status: awarded               # prospect, drafting, submitted, awarded, rejected, withdrawn
 lead: leo-celi                 # folder name from data/people/
 team: [kenneth-paik, ahram-han, takeshi-tohyama]               # folder names from data/people/
 amount_requested:
