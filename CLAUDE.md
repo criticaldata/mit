@@ -151,6 +151,7 @@ Standard update frontmatter:
     events: []             # links to data/events/
     url:
     description: |
+    acknowledgment: |      # full award credit text for publications
     tags: []               # lowercase kebab-case, topic/theme
 
 ### outputs
