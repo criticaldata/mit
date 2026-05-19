@@ -175,6 +175,7 @@ Standard update frontmatter:
     url:
     github_repo:
     description: |
+    funding: []            # links to data/funding/
     tags: []               # lowercase kebab-case, topic/theme
 
 ### talks

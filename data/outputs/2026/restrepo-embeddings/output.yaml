@@ -1,8 +1,8 @@
 title: "Representation Learning for Clinical Data: A Practical Introduction to Embeddings"
 type: paper
 status: draft
-lead:
-team: []
+lead: david-restrepo
+team: [kenneth-paik, ahram-han, takeshi-tohyama, dukyong-yoon, norman-pedersen]
 projects: []
 events: []
 date_submitted:
@@ -13,4 +13,5 @@ url:
 github_repo:
 description: |
 
+funding: []            # folder names from data/funding/
 tags: []
