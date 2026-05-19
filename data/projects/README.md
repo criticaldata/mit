@@ -15,7 +15,7 @@
 | [LabTube: 3D Temporal Modeling of ICU Labs](labtube-3d-temporal-modeling-of-icu-labs/project.yaml) | [Boya Zhang](../people/boya-zhang/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/tinaboya/LabTube) |
 | [M4: Clinical Research Agent (MCP)](m4-clinical-research-agent/project.yaml) | [Hannes Ill](../people/hannes-ill/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/hannesill/m4) |
 | [MedScope: Pain Documentation Bias](medscope-pain-documentation-bias/project.yaml) | [Boya Zhang](../people/boya-zhang/) | `bias`, `fairness`, `representation` | [repo](https://github.com/tinaboya/MedScope) |
-| [MIT Critical Data Branding, Events & Comms](mit-critical-data-branding-events-comms/project.yaml) | [Kenneth Paik](../people/kenneth-paik/) | `lab-operations` |  |
+| [MIT Critical Data Branding, Events & Comms](mit-critical-data-branding-events-comms/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `lab-operations` |  |
 | [MIT Critical Data Central America](mit-critical-data-central-america/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `global-health`, `regional-data` |  |
 | [Model Drift in MIMIC](model-drift-in-mimic/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `clinical-prediction`, `causal-inference` | [repo](https://github.com/HamzaNabulsi/Data-Drift) |
 | [Multimodal Data Discordance](multimodal-data-discordance/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `multimodal-ehr`, `vector-embeddings` |  |
