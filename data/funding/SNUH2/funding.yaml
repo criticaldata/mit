@@ -16,6 +16,10 @@ events: []             # folder names from data/events/<year>/
 url:
 description: |
 
-acknowledgment: |
+acknowledgment: >
+  This research was supported by a grant of the Korea Health Technology
+  R&D Project through the Korea Health Industry Development Institute
+  (KHIDI), funded by the Ministry of Health & Welfare, Republic of Korea
+  (grant number: RS-2024-00439677)
 
 tags: []               # lowercase kebab-case
