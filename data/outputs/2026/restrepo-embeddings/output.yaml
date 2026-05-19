@@ -13,5 +13,5 @@ url:
 github_repo:
 description: |
 
-funding: []            # folder names from data/funding/
+funding: [SNUH2]
 tags: []
