@@ -18,5 +18,11 @@ _Research Scientist · active · MIT_
 | [SNUH1](../../funding/SNUH1/funding.yaml) | KHIDI | Team | awarded |
 | [SNUH2](../../funding/SNUH2/funding.yaml) | KHIDI | Team | awarded |
 
+## Talks
+
+| Talk | Date | Status |
+|---|---|---|
+| [Lab Repository](../../talks/2026/2026-05-19-kenneth-paik.yaml) | 19 May 2026 | scheduled |
+
 ---
 _Generated from lab records._
