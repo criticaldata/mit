@@ -5,3 +5,4 @@ data/projects/README.md merge=ours
 data/events/README.md   merge=ours
 data/talks/README.md    merge=ours
 data/funding/README.md  merge=ours
+data/people/*/README.md merge=ours
