@@ -2,8 +2,8 @@
 
 | Date | Speaker | Affiliation | Title | Type |
 |---|---|---|---|---|
-| Tue 19 May 2026 | | | | |
-| Tue 26 May 2026 11:00 ET | Test User |  | Deploying Claude | invited |
+| Tue 19 May 2026 12:00 ET | Sara Vardanega |  | how vital insights about data are often overlooked and how interdisciplinary thinking can reveal them | invited |
+| Tue 26 May 2026 | | | | |
 | Tue 02 Jun 2026 | | | | |
 | Tue 09 Jun 2026 | | | | |
 | Tue 16 Jun 2026 | | | | |
