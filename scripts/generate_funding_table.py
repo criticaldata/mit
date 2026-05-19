@@ -53,18 +53,23 @@ DATE_FIELD = {
     "withdrawn": ("date_submission",  "Submitted"),
 }
 
+# Statuses that show title instead of grant number
+SHOW_TITLE = {"submitted", "drafting", "prospect"}
+
 
 def funding_table(records, status):
     date_field, date_label = DATE_FIELD.get(status, ("date_submission", "Date"))
-    rows = [f"| Fund | Agency | Grant # | {date_label} |",
+    use_title = status in SHOW_TITLE
+    mid_header = "Title" if use_title else "Grant #"
+    rows = [f"| Fund | Agency | {mid_header} | {date_label} |",
             "|---|---|---|---|"]
     for r in records:
         slug   = r["_slug"]
         link   = f"[{slug}]({slug}/funding.yaml)"
         agency = r.get("agency") or ""
-        grant  = r.get("grant_number") or ""
+        mid    = r.get("title") or "" if use_title else r.get("grant_number") or ""
         date   = str(r.get(date_field, "")) if r.get(date_field) else ""
-        rows.append(f"| {link} | {agency} | {grant} | {date} |")
+        rows.append(f"| {link} | {agency} | {mid} | {date} |")
     return "\n".join(rows)
 
 
