@@ -4,7 +4,7 @@
 
 | Fund | Agency | Grant # | End Date |
 |---|---|---|---|
-| [SNUH1](SNUH1/funding.yaml) | KHIDI |  |  |
+| [SNUH1](SNUH1/funding.yaml) | KHIDI | RS-2024-00403047 |  |
 | [SNUH2](SNUH2/funding.yaml) | KHIDI | RS-2024-00439677 | 2026-12-31 |
 
 <details>
