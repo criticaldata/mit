@@ -137,6 +137,7 @@ Standard update frontmatter:
     program:
     type:                  # grant, contract, sponsored-research,
                            # gift, fellowship, other
+    grant_number:
     status:                # REQUIRED — prospect, drafting, submitted,
                            # awarded, rejected, withdrawn
     lead:                  # REQUIRED — links to data/people/

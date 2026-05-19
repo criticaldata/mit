@@ -1,10 +1,11 @@
 title:
 agency: KHIDI
 program:
-type:                  # grant, contract, sponsored-research, gift, fellowship, other
+type: grant                 # grant, contract, sponsored-research, gift, fellowship, other
+grant_number: RS-2024-00403047
 status: awarded               # prospect, drafting, submitted, awarded, rejected, withdrawn
 lead: leo-celi                 # folder name from data/people/
-team: [kenneth-paik]               # folder names from data/people/
+team: [kenneth-paik, ahram-han, takeshi-tohyama]               # folder names from data/people/
 amount_requested:
 amount_awarded:
 currency: USD
