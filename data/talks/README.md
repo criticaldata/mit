@@ -2,6 +2,7 @@
 
 | Date | Speaker | Affiliation | Title | Type |
 |---|---|---|---|---|
+| Tue 19 May 2026 11:00 ET | [Kenneth Paik](../people/kenneth-paik/person.yaml) |  | Lab Repository | lab-meeting |
 | Tue 19 May 2026 12:00 ET | Sara Vardanega |  | how vital insights about data are often overlooked and how interdisciplinary thinking can reveal them | invited |
 | Tue 26 May 2026 | | | | |
 | Tue 02 Jun 2026 | | | | |

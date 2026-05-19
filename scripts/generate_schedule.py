@@ -22,9 +22,9 @@ MONTHS_AHEAD = 4
 
 
 def load_talks():
-    """Return a dict of date -> talk data."""
+    """Return a dict of date -> list of talk data."""
     talks = {}
-    for f in TALKS_DIR.glob("*/*.yaml"):
+    for f in sorted(TALKS_DIR.glob("*/*.yaml")):
         with open(f, encoding="utf-8") as fh:
             try:
                 data = yaml.safe_load(fh)
@@ -40,7 +40,7 @@ def load_talks():
                 d = datetime.strptime(str(d), "%Y-%m-%d").date()
             except ValueError:
                 continue
-        talks[d] = data
+        talks.setdefault(d, []).append(data)
     return talks
 
 
@@ -82,29 +82,29 @@ def main():
 
     for tuesday in tuesdays(today, MONTHS_AHEAD):
         d_str = tuesday.strftime("%a %d %b %Y")
-        t = talks.get(tuesday)
-        if t:
-            status = t.get("status", "")
-            if status == "cancelled":
-                rows.append(f"| {d_str} | ~~cancelled~~ | | | |")
-                continue
-            speaker = t.get("speaker", "")
-            affiliation = t.get("speaker_affiliation", "")
-            link_slug = t.get("speaker_link")
-            if link_slug:
-                person_file = PEOPLE_DIR / link_slug / "person.yaml"
-                if person_file.exists():
-                    speaker = f"[{speaker}](data/people/{link_slug}/person.yaml)"
-            title = t.get("title", "")
-            if t.get("slides_url"):
-                title = f"[{title}]({t['slides_url']})"
-            elif t.get("recording_url"):
-                title = f"[{title} (recording)]({t['recording_url']})"
-            time_str = t.get("time", "")
-            if time_str:
-                d_str = f"{d_str} {time_str}"
-            talk_type = t.get("type", "")
-            rows.append(f"| {d_str} | {speaker} | {affiliation} | {title} | {talk_type} |")
+        day_talks = talks.get(tuesday)
+        if day_talks:
+            for t in day_talks:
+                status = t.get("status", "")
+                if status == "cancelled":
+                    rows.append(f"| {d_str} | ~~cancelled~~ | | | |")
+                    continue
+                speaker = t.get("speaker", "")
+                affiliation = t.get("speaker_affiliation", "")
+                link_slug = t.get("speaker_link")
+                if link_slug:
+                    person_file = PEOPLE_DIR / link_slug / "person.yaml"
+                    if person_file.exists():
+                        speaker = f"[{speaker}](../people/{link_slug}/person.yaml)"
+                title = t.get("title", "")
+                if t.get("slides_url"):
+                    title = f"[{title}]({t['slides_url']})"
+                elif t.get("recording_url"):
+                    title = f"[{title} (recording)]({t['recording_url']})"
+                time_str = t.get("time", "")
+                t_str = f"{d_str} {time_str}" if time_str else d_str
+                talk_type = t.get("type", "")
+                rows.append(f"| {t_str} | {speaker} | {affiliation} | {title} | {talk_type} |")
         else:
             rows.append(f"| {d_str} | | | | |")
 
