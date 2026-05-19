@@ -11,6 +11,7 @@ _PI · active · MIT_
 | [BODHI: Medical AI as Epistemic Agent](../../projects/bodhi-medical-ai-as-epistemic-agent/project.yaml) | Lead | active |
 | [Brown Mental Health LLM-athon (Feb 26-27, 2026)](../../projects/brown-mental-health-llm-athon/project.yaml) | Lead | active |
 | [Epidemiology of Sentiments in Clinical Notes](../../projects/epidemiology-of-sentiments-in-clinical-notes/project.yaml) | Lead | active |
+| [MIT Critical Data Branding, Events & Comms](../../projects/mit-critical-data-branding-events-comms/project.yaml) | Lead | active |
 | [MIT Critical Data Central America](../../projects/mit-critical-data-central-america/project.yaml) | Lead | active |
 | [Model Drift in MIMIC](../../projects/model-drift-in-mimic/project.yaml) | Lead | active |
 | [Multimodal Data Discordance](../../projects/multimodal-data-discordance/project.yaml) | Lead | active |
