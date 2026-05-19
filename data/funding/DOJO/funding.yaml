@@ -1,15 +1,15 @@
-title: Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI
-agency: NHLBI
+title: DOJO
+agency: 
 program:
 type: grant                 # grant, contract, sponsored-research, gift, fellowship, other
 grant_number: 
-status: submitted               # prospect, drafting, submitted, awarded, rejected, withdrawn
+status: drafting               # prospect, drafting, submitted, awarded, rejected, withdrawn
 lead: leo-celi                 # folder name from data/people/
-team: [kenneth-paik, ahram-han, takeshi-tohyama]               # folder names from data/people/
+team: [ahram-han, takeshi-tohyama, ryohei-kobayashi-yamamoto, kenneth-paik]               # folder names from data/people/
 amount_requested:
 amount_awarded:
 currency: USD
-date_submission: 2026-05-15
+date_submission:
 date_start:
 date_end:
 projects: []           # folder names from data/projects/

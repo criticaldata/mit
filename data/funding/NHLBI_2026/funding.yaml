@@ -1,0 +1,26 @@
+title:
+agency: KHIDI
+program:
+type: grant                 # grant, contract, sponsored-research, gift, fellowship, other
+grant_number: RS-2024-00439677
+status: awarded               # prospect, drafting, submitted, awarded, rejected, withdrawn
+lead: leo-celi                 # folder name from data/people/
+team: [kenneth-paik, ahram-han, takeshi-tohyama, dukyong-yoon, david-restrepo, norman-pedersen]               # folder names from data/people/
+amount_requested:
+amount_awarded:
+currency: USD
+date_submission:
+date_start:
+date_end:
+projects: []           # folder names from data/projects/
+events: []             # folder names from data/events/<year>/
+url:
+description: |
+
+acknowledgment: >
+  This research was supported by a grant of the Korea Health Technology
+  R&D Project through the Korea Health Industry Development Institute
+  (KHIDI), funded by the Ministry of Health & Welfare, Republic of Korea
+  (grant number: RS-2024-00439677)
+
+tags: []               # lowercase kebab-case
