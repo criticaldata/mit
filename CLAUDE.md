@@ -37,8 +37,8 @@ This repository is the lab's operational database — plain-text YAML files trac
           updates/
             2026-01-15.md
       outputs/          # Papers, datasets, software, posters, talks
-        2025/
-          paper-nejm/
+        2026/
+          restrepo-embeddings/  # slug = firstauthor-theme (no year, captured by folder)
             output.yaml
             updates/
               2026-01-15.md
