@@ -6,10 +6,10 @@
 |---|---|---|---|---|---|
 | 26 Feb 2026 | [Brown 2026](2026/brown-2026/event.yaml) |  | other | Planned |  |
 | 26 Feb 2026 | [Brown datathon](2026/brown-datathon/event.yaml) | Brown university | hackathon | Planned |  |
-| 19 Mar 2026 | [Brown University DSAIY AI-a-Thon](2026/brown-university-dsaiy-ai-a-thon/event.yaml) | Brown University: 225 Dyer St. Providence, RI | hackathon | Planned | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
-| 23–25 Mar 2026 | [AMA 2026](2026/ama-2026/event.yaml) | Chicago, IL | other | Confirmed | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
-| 27 Mar 2026 | [Meeting with Rifat Atun and his lab](2026/meeting-with-rifat-atun-and-his-lab/event.yaml) | Harvard Chan School of Public Health | other | Planned | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
-| 29–30 Mar 2026 | [Quebec](2026/quebec/event.yaml) | Quebec | other | Prospect | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
+| 19 Mar 2026 | [Brown University DSAIY AI-a-Thon](2026/brown-university-dsaiy-ai-a-thon/event.yaml) | Brown University: 225 Dyer St. Providence, RI | hackathon | Planned | [Leo Anthony Celi](../people/leo-celi/) |
+| 23–25 Mar 2026 | [AMA 2026](2026/ama-2026/event.yaml) | Chicago, IL | other | Confirmed | [Leo Anthony Celi](../people/leo-celi/) |
+| 27 Mar 2026 | [Meeting with Rifat Atun and his lab](2026/meeting-with-rifat-atun-and-his-lab/event.yaml) | Harvard Chan School of Public Health | other | Planned | [Leo Anthony Celi](../people/leo-celi/) |
+| 29–30 Mar 2026 | [Quebec](2026/quebec/event.yaml) | Quebec | other | Prospect | [Leo Anthony Celi](../people/leo-celi/) |
 | 09 Apr 2026 | [Mayo Datathon 2026 MIT](2026/mayo-datathon-2026-mit/event.yaml) |  | hackathon | Planned |  |
 | 10–12 Apr 2026 | [Mayo Clinic Florida](2026/mayo-clinic-florida/event.yaml) | Florida | other | Prospect |  |
 | 10 Apr 2026 | [Mayo Datathon](2026/mayo-datathon/event.yaml) | Jacksonville, FL | hackathon | Prospect |  |
@@ -62,7 +62,7 @@
 | 15 Jan 2026 | [AI as a Catalyst](2026/ai-as-a-catalyst/event.yaml) | MIT | workshop | Completed |  |
 | 10–12 Dec 2025 | [France Datathon 2025](2025/datathon-france/event.yaml) | France | hackathon | Completed |  |
 | 4–05 Dec 2025 | [AMA December 2025](2025/ama-dec/event.yaml) |  | other | Completed |  |
-| 19 Nov 2025 | [Philips excursion November 19, 2025](2025/philips-excursion-november-19-2025/event.yaml) | 222 Jacobs street, Cambridge | other | Completed | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
+| 19 Nov 2025 | [Philips excursion November 19, 2025](2025/philips-excursion-november-19-2025/event.yaml) | 222 Jacobs street, Cambridge | other | Completed | [Leo Anthony Celi](../people/leo-celi/) |
 | 15–16 Nov 2025 | [Vancouver Datathon 2025](2025/datathon-vancouver/event.yaml) | Vancouver, Canada | hackathon | Completed |  |
 | 27 Oct–02 Nov 2025 | [Mexico Datathon 2025](2025/datathon-mexico/event.yaml) | Mexico | hackathon | Completed |  |
 | 16–18 Oct 2025 | [Korea Datathon 2025](2025/datathon-korea/event.yaml) | South Korea | hackathon | Completed |  |
@@ -83,7 +83,7 @@
 
 | Date | Event | Location | Type | Status | Lead |
 |---|---|---|---|---|---|
-| 26 Sep 2026 | [Dublin Hackathon](2026/dublin-hackathon/event.yaml) | Dublin | hackathon | Cancelled | [Leo Anthony Celi](../people/leo-celi/person.yaml) |
+| 26 Sep 2026 | [Dublin Hackathon](2026/dublin-hackathon/event.yaml) | Dublin | hackathon | Cancelled | [Leo Anthony Celi](../people/leo-celi/) |
 | 01 Sep 2026 | [Toronto](2026/toronto/event.yaml) | Toronto | other | Cancelled |  |
 
 </details>

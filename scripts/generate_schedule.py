@@ -66,7 +66,7 @@ def resolve_speaker(talk):
     if link_slug:
         person_file = PEOPLE_DIR / link_slug / "person.yaml"
         if person_file.exists():
-            name = f"[{name}](../people/{link_slug}/person.yaml)"
+            name = f"[{name}](../people/{link_slug}/)"
     return name
 
 
@@ -95,7 +95,7 @@ def main():
                 if link_slug:
                     person_file = PEOPLE_DIR / link_slug / "person.yaml"
                     if person_file.exists():
-                        speaker = f"[{speaker}](../people/{link_slug}/person.yaml)"
+                        speaker = f"[{speaker}](../people/{link_slug}/)"
                 title = t.get("title", "")
                 if t.get("slides_url"):
                     title = f"[{title}]({t['slides_url']})"

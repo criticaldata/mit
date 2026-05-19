@@ -66,7 +66,7 @@ def member_table(people):
     rows = ["| Name | Role | Email | Photo |", "|---|---|---|---|"]
     for p in people:
         slug = p["_slug"]
-        name = f"[{p['name']}]({slug}/person.yaml)"
+        name = f"[{p['name']}]({slug}/)"
         rows.append(f"| {name} | {p.get('role', '')} | {p.get('email', '')} | {photo_cell(p)} |")
     return "\n".join(rows)
 
@@ -76,7 +76,7 @@ def visitor_table(people):
     rows = ["| Name | Dates | Role | Institution | Email | Photo |", "|---|---|---|---|---|---|"]
     for p in people:
         slug = p["_slug"]
-        name = f"[{p['name']}]({slug}/person.yaml)"
+        name = f"[{p['name']}]({slug}/)"
         dates = fmt_date_range(p.get("start_date"), p.get("end_date"))
         rows.append(
             f"| {name} | {dates} | {p.get('role', '')} | {p.get('institution', '')} | {p.get('email', '')} | {photo_cell(p)} |"

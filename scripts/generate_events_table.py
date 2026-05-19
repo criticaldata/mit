@@ -99,7 +99,7 @@ def resolve_lead(slug):
         with open(person_file, encoding="utf-8") as f:
             p = yaml.safe_load(f) or {}
         name = p.get("name", slug)
-        return f"[{name}](../people/{slug}/person.yaml)"
+        return f"[{name}](../people/{slug}/)"
     return slug
 
 
