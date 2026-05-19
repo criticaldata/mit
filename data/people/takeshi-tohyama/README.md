@@ -6,7 +6,7 @@ _Postdoc · alumni · MIT_
 
 | Project | Role | Status |
 |---|---|---|
-| [Brown Mental Health LLM-athon (Feb 26�27, 2026)](../../projects/brown-mental-health-llm-athon/project.yaml) | Team | active |
+| [Brown Mental Health LLM-athon (Feb 26-27, 2026)](../../projects/brown-mental-health-llm-athon/project.yaml) | Team | active |
 | [Impact Analysis of Prediction Models (Causal Inference)](../../projects/impact-analysis-of-prediction-models/project.yaml) | Team | active |
 | [M4: Clinical Research Agent (MCP)](../../projects/m4-clinical-research-agent/project.yaml) | Team | active |
 | [Multimodal Data Discordance](../../projects/multimodal-data-discordance/project.yaml) | Team | active |

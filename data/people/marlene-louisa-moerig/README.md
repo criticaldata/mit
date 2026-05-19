@@ -6,7 +6,7 @@ _Visiting Scientist · collaborator · Charité_
 
 | Project | Role | Status |
 |---|---|---|
-| [Brown Mental Health LLM-athon (Feb 26�27, 2026)](../../projects/brown-mental-health-llm-athon/project.yaml) | Team | active |
+| [Brown Mental Health LLM-athon (Feb 26-27, 2026)](../../projects/brown-mental-health-llm-athon/project.yaml) | Team | active |
 | [M4: Clinical Research Agent (MCP)](../../projects/m4-clinical-research-agent/project.yaml) | Team | active |
 | [MIT Critical Data Branding, Events & Comms](../../projects/mit-critical-data-branding-events-comms/project.yaml) | Team | active |
 | [WorldmedQA: Cross-Cultural Pain Concepts](../../projects/worldmedqa-cross-cultural-pain-concepts/project.yaml) | Team | active |
