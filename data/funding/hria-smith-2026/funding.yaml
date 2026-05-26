@@ -4,8 +4,8 @@ program: Smith Family Awards Program
 type: grant
 grant_number:
 status: drafting
-lead:
-team: []
+lead: kenneth-paik
+team: [leo-celi, milit-patel]
 amount_requested: 400000
 amount_awarded:
 currency: USD
