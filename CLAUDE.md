@@ -140,7 +140,7 @@ Standard update frontmatter:
                            # gift, fellowship, other
     grant_number:
     status:                # REQUIRED — prospect, drafting, submitted,
-                           # awarded, rejected, withdrawn
+                           # under-revision, awarded, rejected, withdrawn
     lead:                  # REQUIRED — links to data/people/
     team: []               # links to data/people/
     amount_requested:

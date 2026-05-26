@@ -15,14 +15,15 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 FUNDING_DIR = Path("data/funding")
 PEOPLE_DIR  = Path("data/people")
 
-STATUS_ORDER = ["awarded", "submitted", "drafting", "prospect", "rejected", "withdrawn"]
+STATUS_ORDER = ["awarded", "under-revision", "submitted", "drafting", "prospect", "rejected", "withdrawn"]
 STATUS_LABELS = {
-    "awarded":   "Awarded",
-    "submitted": "Submitted",
-    "drafting":  "Drafting",
-    "prospect":  "Prospect",
-    "rejected":  "Rejected",
-    "withdrawn": "Withdrawn",
+    "awarded":       "Awarded",
+    "under-revision": "Under Revision",
+    "submitted":     "Submitted",
+    "drafting":      "Drafting",
+    "prospect":      "Prospect",
+    "rejected":      "Rejected",
+    "withdrawn":     "Withdrawn",
 }
 
 
@@ -45,12 +46,13 @@ def load_funding():
 
 
 DATE_FIELD = {
-    "awarded":   ("date_end",        "End Date"),
-    "submitted": ("date_submission",  "Submitted"),
-    "drafting":  ("date_submission",  "Due"),
-    "prospect":  ("date_submission",  "Due"),
-    "rejected":  ("date_submission",  "Submitted"),
-    "withdrawn": ("date_submission",  "Submitted"),
+    "awarded":        ("date_end",        "End Date"),
+    "under-revision": ("date_submission", "Submitted"),
+    "submitted":      ("date_submission", "Submitted"),
+    "drafting":       ("date_submission", "Due"),
+    "prospect":       ("date_submission", "Due"),
+    "rejected":       ("date_submission", "Submitted"),
+    "withdrawn":      ("date_submission", "Submitted"),
 }
 
 # Statuses that show title instead of grant number
