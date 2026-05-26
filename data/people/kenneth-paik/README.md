@@ -14,6 +14,7 @@ _Research Scientist · active · MIT_
 | Fund | Agency | Role | Status |
 |---|---|---|---|
 | [DOJO](../../funding/dojo/funding.yaml) |  | Team | drafting |
+| [Smith Family Awards Program for Excellence in Biomedical Research](../../funding/hria-smith-2026/funding.yaml) | Health Resources in Action (HRiA) | Lead | drafting |
 | [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](../../funding/nhlbi-2026/funding.yaml) | NHLBI | Team | under-revision |
 | [snuh1](../../funding/snuh1/funding.yaml) | KHIDI | Team | awarded |
 | [snuh2](../../funding/snuh2/funding.yaml) | KHIDI | Team | awarded |
