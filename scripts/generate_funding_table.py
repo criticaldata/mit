@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate a funding summary from data/funding/*/funding.yaml.
-Awarded grants are shown expanded; all other statuses are collapsed.
+Awarded and in-progress grants are shown expanded; other statuses collapsed.
 Run from the repo root. Prints Markdown to stdout.
 """
 
@@ -15,20 +15,67 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 FUNDING_DIR = Path("data/funding")
 PEOPLE_DIR  = Path("data/people")
 
-STATUS_ORDER = ["awarded", "under-revision", "submitted", "drafting", "prospect", "rejected", "withdrawn"]
+ALL_STATUSES = [
+    "awarded", "drafting", "under-revision",
+    "submitted", "prospect", "rejected", "withdrawn",
+]
+
+# Groups define sections in render order.
+# expanded=True -> ## heading; False -> <details> block
+GROUPS = [
+    {
+        "label":    "Awarded",
+        "statuses": ["awarded"],
+        "expanded": True,
+    },
+    {
+        "label":    "In Progress",
+        "statuses": ["drafting", "under-revision"],
+        "expanded": True,
+    },
+    {
+        "label":    "Submitted",
+        "statuses": ["submitted"],
+        "expanded": False,
+    },
+    {
+        "label":    "Prospect",
+        "statuses": ["prospect"],
+        "expanded": False,
+    },
+    {
+        "label":    "Rejected / Withdrawn",
+        "statuses": ["rejected", "withdrawn"],
+        "expanded": False,
+    },
+]
+
+DATE_FIELD = {
+    "awarded":        ("date_end",        "End Date"),
+    "under-revision": ("date_submission", "Submitted"),
+    "submitted":      ("date_submission", "Submitted"),
+    "drafting":       ("date_submission", "Due"),
+    "prospect":       ("date_submission", "Due"),
+    "rejected":       ("date_submission", "Submitted"),
+    "withdrawn":      ("date_submission", "Submitted"),
+}
+
+# Statuses that show title instead of grant number
+SHOW_TITLE = {"drafting", "under-revision", "submitted", "prospect"}
+
 STATUS_LABELS = {
-    "awarded":       "Awarded",
+    "awarded":        "Awarded",
     "under-revision": "Under Revision",
-    "submitted":     "Submitted",
-    "drafting":      "Drafting",
-    "prospect":      "Prospect",
-    "rejected":      "Rejected",
-    "withdrawn":     "Withdrawn",
+    "submitted":      "Submitted",
+    "drafting":       "Drafting",
+    "prospect":       "Prospect",
+    "rejected":       "Rejected",
+    "withdrawn":      "Withdrawn",
 }
 
 
 def load_funding():
-    by_status = {s: [] for s in STATUS_ORDER}
+    by_status = {s: [] for s in ALL_STATUSES}
     for yaml_file in sorted(FUNDING_DIR.glob("*/funding.yaml")):
         with open(yaml_file, encoding="utf-8") as f:
             try:
@@ -45,33 +92,37 @@ def load_funding():
     return by_status
 
 
-DATE_FIELD = {
-    "awarded":        ("date_end",        "End Date"),
-    "under-revision": ("date_submission", "Submitted"),
-    "submitted":      ("date_submission", "Submitted"),
-    "drafting":       ("date_submission", "Due"),
-    "prospect":       ("date_submission", "Due"),
-    "rejected":       ("date_submission", "Submitted"),
-    "withdrawn":      ("date_submission", "Submitted"),
-}
+def funding_table(records, statuses):
+    multi_status = len(statuses) > 1
 
-# Statuses that show title instead of grant number
-SHOW_TITLE = {"submitted", "drafting", "prospect"}
+    # Pick date label: use the first status's label (they share the same field for mixed groups)
+    date_field, date_label = DATE_FIELD.get(statuses[0], ("date_submission", "Date"))
 
-
-def funding_table(records, status):
-    date_field, date_label = DATE_FIELD.get(status, ("date_submission", "Date"))
-    use_title = status in SHOW_TITLE
+    # For mixed-status groups, always show title (grant # may not exist yet)
+    use_title = multi_status or statuses[0] in SHOW_TITLE
     mid_header = "Title" if use_title else "Grant #"
-    rows = [f"| Fund | Agency | {mid_header} | {date_label} |",
-            "|---|---|---|---|"]
+
+    if multi_status:
+        rows = [f"| Fund | Agency | Status | {mid_header} | {date_label} |",
+                "|---|---|---|---|---|"]
+    else:
+        rows = [f"| Fund | Agency | {mid_header} | {date_label} |",
+                "|---|---|---|---|"]
+
     for r in records:
         slug   = r["_slug"]
         link   = f"[{slug}]({slug}/funding.yaml)"
         agency = r.get("agency") or ""
         mid    = r.get("title") or "" if use_title else r.get("grant_number") or ""
-        date   = str(r.get(date_field, "")) if r.get(date_field) else ""
-        rows.append(f"| {link} | {agency} | {mid} | {date} |")
+        r_status = r.get("status", "")
+        df, _  = DATE_FIELD.get(r_status, ("date_submission", ""))
+        date   = str(r.get(df, "")) if r.get(df) else ""
+        if multi_status:
+            status_label = STATUS_LABELS.get(r_status, r_status)
+            rows.append(f"| {link} | {agency} | {status_label} | {mid} | {date} |")
+        else:
+            rows.append(f"| {link} | {agency} | {mid} | {date} |")
+
     return "\n".join(rows)
 
 
@@ -83,13 +134,15 @@ def main():
     total = sum(len(v) for v in by_status.values())
 
     print("# Funding\n")
-    for status in STATUS_ORDER:
-        records = by_status[status]
+    for group in GROUPS:
+        records = []
+        for s in group["statuses"]:
+            records.extend(by_status.get(s, []))
         if not records:
             continue
-        label = STATUS_LABELS[status]
-        table = funding_table(records, status)
-        if status == "awarded":
+        label = group["label"]
+        table = funding_table(records, group["statuses"])
+        if group["expanded"]:
             print(f"## {label} ({len(records)})\n")
             print(table)
             print()
