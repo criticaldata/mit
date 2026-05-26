@@ -13,8 +13,8 @@ _PhD Student · alumni · University of Copenhagen_
 
 | Fund | Agency | Role | Status |
 |---|---|---|---|
-| [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](../../funding/NHLBI_2026/funding.yaml) | NHLBI | Team | submitted |
-| [SNUH2](../../funding/SNUH2/funding.yaml) | KHIDI | Team | awarded |
+| [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](../../funding/nhlbi-2026/funding.yaml) | NHLBI | Team | under-revision |
+| [snuh2](../../funding/snuh2/funding.yaml) | KHIDI | Team | awarded |
 
 ---
 _Generated from lab records._

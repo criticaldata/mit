@@ -34,10 +34,11 @@ _PI · active · MIT_
 
 | Fund | Agency | Role | Status |
 |---|---|---|---|
-| [DOJO](../../funding/DOJO/funding.yaml) |  | Lead | drafting |
-| [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](../../funding/NHLBI_2026/funding.yaml) | NHLBI | Lead | submitted |
-| [SNUH1](../../funding/SNUH1/funding.yaml) | KHIDI | Lead | awarded |
-| [SNUH2](../../funding/SNUH2/funding.yaml) | KHIDI | Lead | awarded |
+| [DOJO](../../funding/dojo/funding.yaml) |  | Lead | drafting |
+| [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](../../funding/nhlbi-2026/funding.yaml) | NHLBI | Lead | under-revision |
+| [NVIDIA Academic Grant Program 2026](../../funding/nvidia-2026/funding.yaml) | NVIDIA | Lead | submitted |
+| [snuh1](../../funding/snuh1/funding.yaml) | KHIDI | Lead | awarded |
+| [snuh2](../../funding/snuh2/funding.yaml) | KHIDI | Lead | awarded |
 
 ---
 _Generated from lab records._

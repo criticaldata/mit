@@ -14,7 +14,7 @@ _Visiting Scientist · collaborator · Fukushima Medical University_
 
 | Fund | Agency | Role | Status |
 |---|---|---|---|
-| [DOJO](../../funding/DOJO/funding.yaml) |  | Team | drafting |
+| [DOJO](../../funding/dojo/funding.yaml) |  | Team | drafting |
 
 ---
 _Generated from lab records._

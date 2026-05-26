@@ -17,10 +17,10 @@ _Visiting Scientist · collaborator · Seoul National University Hospital_
 
 | Fund | Agency | Role | Status |
 |---|---|---|---|
-| [DOJO](../../funding/DOJO/funding.yaml) |  | Team | drafting |
-| [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](../../funding/NHLBI_2026/funding.yaml) | NHLBI | Team | submitted |
-| [SNUH1](../../funding/SNUH1/funding.yaml) | KHIDI | Team | awarded |
-| [SNUH2](../../funding/SNUH2/funding.yaml) | KHIDI | Team | awarded |
+| [DOJO](../../funding/dojo/funding.yaml) |  | Team | drafting |
+| [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](../../funding/nhlbi-2026/funding.yaml) | NHLBI | Team | under-revision |
+| [snuh1](../../funding/snuh1/funding.yaml) | KHIDI | Team | awarded |
+| [snuh2](../../funding/snuh2/funding.yaml) | KHIDI | Team | awarded |
 
 ---
 _Generated from lab records._
