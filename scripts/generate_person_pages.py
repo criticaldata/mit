@@ -33,12 +33,17 @@ def load_yaml(path):
             return {}
 
 
-def members(record):
-    """Return set of slugs involved in a record (lead + team)."""
-    involved = set()
+def leads(record):
+    """Return lead slug(s); supports `leads` list or single `lead` string."""
+    if record.get("leads"):
+        return [s for s in record["leads"] if s]
     lead = record.get("lead")
-    if lead:
-        involved.add(lead)
+    return [lead] if lead else []
+
+
+def members(record):
+    """Return set of slugs involved in a record (leads + team)."""
+    involved = set(leads(record))
     for m in record.get("team") or []:
         if m:
             involved.add(m)
@@ -46,7 +51,7 @@ def members(record):
 
 
 def role(record, slug):
-    return "Lead" if record.get("lead") == slug else "Team"
+    return "Lead" if slug in leads(record) else "Team"
 
 
 # ── loaders ──────────────────────────────────────────────────────────────────

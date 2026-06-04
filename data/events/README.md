@@ -1,6 +1,6 @@
 # Events
 
-## Upcoming (42)
+## Upcoming (43)
 
 | Date | Event | Location | Type | Status | Lead |
 |---|---|---|---|---|---|
@@ -11,13 +11,13 @@
 | 27 Mar 2026 | [Meeting with Rifat Atun and his lab](2026/meeting-with-rifat-atun-and-his-lab/event.yaml) | Harvard Chan School of Public Health | other | Planned | [Leo Anthony Celi](../people/leo-celi/) |
 | 29–30 Mar 2026 | [Quebec](2026/quebec/event.yaml) | Quebec | other | Prospect | [Leo Anthony Celi](../people/leo-celi/) |
 | 09 Apr 2026 | [Mayo Datathon 2026 MIT](2026/mayo-datathon-2026-mit/event.yaml) |  | hackathon | Planned |  |
-| 10–12 Apr 2026 | [Mayo Clinic Florida](2026/mayo-clinic-florida/event.yaml) | Florida | other | Prospect |  |
 | 10 Apr 2026 | [Mayo Datathon](2026/mayo-datathon/event.yaml) | Jacksonville, FL | hackathon | Prospect |  |
+| 10–12 Apr 2026 | [Mayo Clinic Florida](2026/mayo-clinic-florida/event.yaml) | Florida | other | Prospect |  |
 | 15–19 Apr 2026 | [WCA 2026](2026/wca-2026/event.yaml) | Morocco | other | Prospect |  |
 | 27 Apr 2026 | [HMS](2026/hms/event.yaml) |  | other | Prospect |  |
 | 29–30 Apr 2026 | [CHOC](2026/choc/event.yaml) | Irvine, CA | other | Prospect |  |
-| 01 May 2026 | [China Datathon May 2026](2026/datathon-china-may/event.yaml) | China | hackathon | Planned |  |
 | 1–02 May 2026 | [Stanford](2026/stanford/event.yaml) | Stanford, CA | other | Prospect |  |
+| 01 May 2026 | [China Datathon May 2026](2026/datathon-china-may/event.yaml) | China | hackathon | Planned |  |
 | 04 May 2026 | [MGB](2026/mgb/event.yaml) | Boston, MA | other | Prospect |  |
 | 05 May 2026 | [Hartford](2026/hartford/event.yaml) | Hartford, CT | other | Prospect |  |
 | 07 May 2026 | [Cincinnati](2026/cincinnati/event.yaml) | Cincinnati, OH | other | Prospect |  |
@@ -46,6 +46,7 @@
 | 31 Aug–03 Sep 2027 | [World Congress of Epidemiology](2027/world-congress-of-epidemiology/event.yaml) | Colombia | other | Prospect |  |
 | TBD | [Care Innovation Challenge (Boston)](undated/care-innovation-challenge/event.yaml) | Boston, MA | other | Prospect |  |
 | TBD | [TBD: Australia Health AI Event Series](undated/tbd-australia-health-ai-event-series/event.yaml) | Australia | other | Prospect |  |
+| TBD | [Vietnam Datathon: AI as a Catalyst](undated/vietnam-datathon-ai-as-a-catalyst/event.yaml) | Hanoi, Vietnam | hackathon | Planned | [Quang Bui](../people/quang-bui/) |
 
 <details>
 <summary><strong>Completed (23)</strong></summary>
@@ -89,4 +90,4 @@
 </details>
 
 ---
-_Generated from `data/events/` — 67 records total._
+_Generated from `data/events/` — 68 records total._

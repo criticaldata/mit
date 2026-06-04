@@ -41,6 +41,13 @@ def load_projects():
     return by_status
 
 
+def project_leads(project):
+    if project.get("leads"):
+        return [s for s in project["leads"] if s]
+    lead = project.get("lead")
+    return [lead] if lead else []
+
+
 def resolve_lead(slug):
     if not slug:
         return ""
@@ -51,6 +58,10 @@ def resolve_lead(slug):
         name = p.get("name", slug)
         return f"[{name}](../people/{slug}/)"
     return slug
+
+
+def resolve_leads(project):
+    return ", ".join(resolve_lead(s) for s in project_leads(project))
 
 
 def tags_cell(tags):
@@ -64,7 +75,7 @@ def projects_table(projects):
     for p in projects:
         slug = p["_slug"]
         title = f"[{p['title']}]({slug}/project.yaml)"
-        lead  = resolve_lead(p.get("lead"))
+        lead  = resolve_leads(p)
         tags  = tags_cell(p.get("tags") or [])
         repo  = p.get("github_repo", "")
         if repo:

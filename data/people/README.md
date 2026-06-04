@@ -9,7 +9,7 @@
 | [Leo Anthony Celi](leo-celi/) | PI | lceli@mit.edu | <img src="leo-celi/leo-celi.jpg" alt="Leo" width="120"/> |
 | [Roger Mark](roger-mark/) | PI | rgmark@mit.edu | <img src="roger-mark/roger-mark.jpg" alt="Roger" width="120"/> |
 
-## Current Visitors & Collaborators (18)
+## Current Visitors & Collaborators (19)
 
 | Name | Dates | Role | Institution | Email | Photo |
 |---|---|---|---|---|---|
@@ -24,6 +24,7 @@
 | [Louis Agha-mir-Salim](louis-agha-mir-salim/) | TBD | Affiliate |  |  |  |
 | [Marlene Louisa Moerig](marlene-louisa-moerig/) | TBD | Visiting Scientist | Charité | moerig@mit.edu |  |
 | [Milit Patel](milit-patel/) | TBD | Affiliate |  |  |  |
+| [Quang Bui](quang-bui/) | TBD | Affiliate |  |  |  |
 | [Rodrigo Gameiro](rodrigo-gameiro/) | TBD | Visiting Scientist | Harvard Medical School | rrgmd@mit.edu |  |
 | [Ryohei Kobayashi (Yamamoto)](ryohei-kobayashi-yamamoto/) | Sep 2025–Aug 2027 | Visiting Scientist | Fukushima Medical University | royhei11@mit.edu | <img src="ryohei-kobayashi-yamamoto/ryohei-kobayashi.jpg" alt="Ryohei" width="120"/> |
 | [Saleem Ameen](saleem-ameen/) | TBD | Visiting Scientist | University of Tasmania & Harvard Medical School | saleemam@mit.edu |  |
@@ -48,4 +49,4 @@
 | [Xiao Xiang](xiao-xiang/) | Apr 2025–Aug 2025 | Master's | EPFL | xiao0605@mit.edu | <img src="xiao-xiang/xiao-xiang.jpg" alt="Xiao" width="120"/> |
 
 ---
-_Generated from `data/people/` — 32 records total._
+_Generated from `data/people/` — 33 records total._

@@ -6,16 +6,20 @@ _PI · active · MIT_
 
 | Project | Role | Status |
 |---|---|---|
+| [AGORA: Agentic Game of Research and Academia](../../projects/agora-agentic-game-of-research-and-academia/project.yaml) | Lead | active |
 | [AI as a Catalyst (Jan 15, 2026 Event)](../../projects/ai-as-a-catalyst/project.yaml) | Lead | active |
 | [Bias in Omics Data Beyond Non-Representativeness](../../projects/bias-in-omics-data-beyond-non-representativeness/project.yaml) | Lead | active |
 | [BODHI: Medical AI as Epistemic Agent](../../projects/bodhi-medical-ai-as-epistemic-agent/project.yaml) | Lead | active |
 | [Brown Mental Health LLM-athon (Feb 26-27, 2026)](../../projects/brown-mental-health-llm-athon/project.yaml) | Lead | active |
+| [Combinators are Dead](../../projects/combinators-are-dead/project.yaml) | Lead | active |
 | [Epidemiology of Sentiments in Clinical Notes](../../projects/epidemiology-of-sentiments-in-clinical-notes/project.yaml) | Lead | active |
 | [MIT Critical Data Branding, Events & Comms](../../projects/mit-critical-data-branding-events-comms/project.yaml) | Lead | active |
 | [MIT Critical Data Central America](../../projects/mit-critical-data-central-america/project.yaml) | Lead | active |
 | [Model Drift in MIMIC](../../projects/model-drift-in-mimic/project.yaml) | Lead | active |
 | [Multimodal Data Discordance](../../projects/multimodal-data-discordance/project.yaml) | Lead | active |
+| [ReversiveJEPA](../../projects/reversive-jepa/project.yaml) | Lead | active |
 | [Standard Model of Care](../../projects/standard-model-of-care/project.yaml) | Lead | active |
+| [This is not a Webinar Series](../../projects/this-is-not-a-webinar-series/project.yaml) | Lead | active |
 | [WorldmedQA: Cross-Cultural Pain Concepts](../../projects/worldmedqa-cross-cultural-pain-concepts/project.yaml) | Lead | active |
 | [XAI Claims in ICU ML Models (Scoping Review)](../../projects/xai-claims-in-icu-ml-models/project.yaml) | Team | active |
 

@@ -3,6 +3,7 @@ status: active
 lead: leo-celi
 team:
 - sebastian-cajas
+- quang-bui
 start_date: '2026-02-19'
 end_date: '2027-03-03'
 github_repo: https://github.com/sebasmos/bodhi-llms
