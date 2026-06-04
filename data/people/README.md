@@ -1,15 +1,16 @@
 # Lab Members
 
-## Active (4)
+## Active (5)
 
 | Name | Role | Email | Photo |
 |---|---|---|---|
 | [Jesse Raffa](jesse-raffa/) | Research Scientist | jraffa@mit.edu | <img src="jesse-raffa/jesse-raffa.jpg" alt="Jesse" width="120"/> |
 | [Kenneth Paik](kenneth-paik/) | Research Scientist | kepaik@mit.edu | <img src="kenneth-paik/kenneth-paik.jpg" alt="Kenneth" width="120"/> |
 | [Leo Anthony Celi](leo-celi/) | PI | lceli@mit.edu | <img src="leo-celi/leo-celi.jpg" alt="Leo" width="120"/> |
+| [Quang Bui](quang-bui/) | Research Engineer | quang@synthica.org |  |
 | [Roger Mark](roger-mark/) | PI | rgmark@mit.edu | <img src="roger-mark/roger-mark.jpg" alt="Roger" width="120"/> |
 
-## Current Visitors & Collaborators (19)
+## Current Visitors & Collaborators (18)
 
 | Name | Dates | Role | Institution | Email | Photo |
 |---|---|---|---|---|---|
@@ -24,7 +25,6 @@
 | [Louis Agha-mir-Salim](louis-agha-mir-salim/) | TBD | Affiliate |  |  |  |
 | [Marlene Louisa Moerig](marlene-louisa-moerig/) | TBD | Visiting Scientist | Charité | moerig@mit.edu |  |
 | [Milit Patel](milit-patel/) | TBD | Affiliate |  |  |  |
-| [Quang Bui](quang-bui/) | TBD | Affiliate |  |  |  |
 | [Rodrigo Gameiro](rodrigo-gameiro/) | TBD | Visiting Scientist | Harvard Medical School | rrgmd@mit.edu |  |
 | [Ryohei Kobayashi (Yamamoto)](ryohei-kobayashi-yamamoto/) | Sep 2025–Aug 2027 | Visiting Scientist | Fukushima Medical University | royhei11@mit.edu | <img src="ryohei-kobayashi-yamamoto/ryohei-kobayashi.jpg" alt="Ryohei" width="120"/> |
 | [Saleem Ameen](saleem-ameen/) | TBD | Visiting Scientist | University of Tasmania & Harvard Medical School | saleemam@mit.edu |  |
