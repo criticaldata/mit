@@ -10,7 +10,7 @@ _Research Engineer · active · AIS Vienna, UC Berkeley_
 | [BODHI: Medical AI as Epistemic Agent](../../projects/bodhi-medical-ai-as-epistemic-agent/project.yaml) | Team | active |
 | [Combinators are Dead](../../projects/combinators-are-dead/project.yaml) | Lead | active |
 | [MIT Critical Data Branding, Events & Comms](../../projects/mit-critical-data-branding-events-comms/project.yaml) | Team | active |
-| [ReversiveJEPA](../../projects/reversive-jepa/project.yaml) | Lead | active |
+| [RecursiveJEPA](../../projects/recursive-jepa/project.yaml) | Lead | active |
 | [This is not a Webinar Series](../../projects/this-is-not-a-webinar-series/project.yaml) | Lead | active |
 
 ## Events

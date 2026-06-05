@@ -17,7 +17,7 @@ _PI · active · MIT_
 | [MIT Critical Data Central America](../../projects/mit-critical-data-central-america/project.yaml) | Lead | active |
 | [Model Drift in MIMIC](../../projects/model-drift-in-mimic/project.yaml) | Lead | active |
 | [Multimodal Data Discordance](../../projects/multimodal-data-discordance/project.yaml) | Lead | active |
-| [ReversiveJEPA](../../projects/reversive-jepa/project.yaml) | Lead | active |
+| [RecursiveJEPA](../../projects/recursive-jepa/project.yaml) | Lead | active |
 | [Standard Model of Care](../../projects/standard-model-of-care/project.yaml) | Lead | active |
 | [This is not a Webinar Series](../../projects/this-is-not-a-webinar-series/project.yaml) | Lead | active |
 | [WorldmedQA: Cross-Cultural Pain Concepts](../../projects/worldmedqa-cross-cultural-pain-concepts/project.yaml) | Lead | active |
