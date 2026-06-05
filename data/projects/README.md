@@ -22,7 +22,7 @@
 | [Model Drift in MIMIC](model-drift-in-mimic/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `clinical-prediction`, `causal-inference` | [repo](https://github.com/HamzaNabulsi/Data-Drift) |
 | [Multimodal Data Discordance](multimodal-data-discordance/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `multimodal-ehr`, `vector-embeddings` |  |
 | [Multimodal VE for Cardiovascular Disease](multimodal-ve-for-cardiovascular-disease/project.yaml) | [Takeshi Tohyama](../people/takeshi-tohyama/) | `multimodal-ehr`, `vector-embeddings` |  |
-| [ReversiveJEPA](reversive-jepa/project.yaml) | [Quang Bui](../people/quang-bui/), [Leo Anthony Celi](../people/leo-celi/) | `ai`, `ml-infrastructure` | [repo](https://github.com/criticaldata/RecursiveJEPA) |
+| [RecursiveJEPA](recursive-jepa/project.yaml) | [Quang Bui](../people/quang-bui/), [Leo Anthony Celi](../people/leo-celi/) | `ai`, `ml-infrastructure` | [repo](https://github.com/criticaldata/RecursiveJEPA) |
 | [SLICES: SSL Objectives for ICU Representation](slices-ssl-objectives-for-icu-representation/project.yaml) | [Hannes Ill](../people/hannes-ill/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/hannesill/SLICES) |
 | [Snapshot Embedding for EHR Data](snapshot-embedding-for-ehr-data/project.yaml) | [Takeshi Tohyama](../people/takeshi-tohyama/) | `multimodal-ehr`, `vector-embeddings` | [repo](https://github.com/ttohya/clinemb) |
 | [Standard Model of Care](standard-model-of-care/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `ai-epistemics`, `framework-design` |  |
