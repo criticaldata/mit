@@ -10,3 +10,5 @@ end_date: '2026-03-10'
 description: Pipeline to extract vector embeddings from pre-trained transformers. Final stages of v1.
 tags:
 - vector-embeddings
+
+# Last updated June 10

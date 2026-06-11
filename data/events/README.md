@@ -91,3 +91,6 @@
 
 ---
 _Generated from `data/events/` — 68 records total._
+
+---
+Last updated June 10

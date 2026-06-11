@@ -10,3 +10,6 @@ _Visiting Scientist · collaborator · University of Tasmania & Harvard Medical 
 
 ---
 _Generated from lab records._
+
+---
+Last updated June 10

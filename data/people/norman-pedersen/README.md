@@ -18,3 +18,6 @@ _PhD Student · alumni · University of Copenhagen_
 
 ---
 _Generated from lab records._
+
+---
+Last updated June 10

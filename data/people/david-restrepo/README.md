@@ -11,3 +11,6 @@ _Affiliate · collaborator · CentraleSupélec -  Université Paris-Saclay_
 
 ---
 _Generated from lab records._
+
+---
+Last updated June 10

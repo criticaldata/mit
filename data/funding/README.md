@@ -26,3 +26,6 @@
 
 ---
 _Generated from `data/funding/` — 6 records total._
+
+---
+Last updated June 10

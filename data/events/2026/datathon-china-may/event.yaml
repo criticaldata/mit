@@ -7,3 +7,5 @@ virtual: false
 description: |
   Exact dates not confirmed. Listed as May 2026 in event calendar.
 tags: [datathon, healthcare-ai]
+
+# Last updated June 10

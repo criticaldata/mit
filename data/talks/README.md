@@ -23,3 +23,6 @@
 | Tue 15 Sep 2026 | | | | |
 
 _1/18 slots filled — generated from `data/talks/`_
+
+---
+Last updated June 10

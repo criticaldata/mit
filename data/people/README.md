@@ -50,3 +50,6 @@
 
 ---
 _Generated from `data/people/` — 33 records total._
+
+---
+Last updated June 10

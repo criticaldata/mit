@@ -33,3 +33,6 @@
 
 ---
 _Generated from `data/projects/` — 26 records total._
+
+---
+Last updated June 10

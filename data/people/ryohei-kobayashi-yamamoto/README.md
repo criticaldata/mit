@@ -18,3 +18,6 @@ _Visiting Scientist · collaborator · Fukushima Medical University_
 
 ---
 _Generated from lab records._
+
+---
+Last updated June 10
