@@ -13,6 +13,3 @@ _Master's · alumni · Technical University of Munich_
 
 ---
 _Generated from lab records._
-
----
-Last updated June 10

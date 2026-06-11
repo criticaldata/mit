@@ -11,6 +11,3 @@ _Affiliate · collaborator · MIT Critical data_
 
 ---
 _Generated from lab records._
-
----
-Last updated June 10

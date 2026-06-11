@@ -13,6 +13,3 @@ _Visiting Scientist · collaborator · MIT, UNIGE_
 
 ---
 _Generated from lab records._
-
----
-Last updated June 10

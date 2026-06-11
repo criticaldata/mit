@@ -21,6 +21,3 @@ _Research Engineer · active · AIS Vienna, UC Berkeley_
 
 ---
 _Generated from lab records._
-
----
-Last updated June 10

@@ -11,6 +11,3 @@ _PhD Student · collaborator · MGH/HMS_
 
 ---
 _Generated from lab records._
-
----
-Last updated June 10
