@@ -1,6 +1,6 @@
 # Quang Bui
 
-_Research Scientist · active · AIS Vienna_
+_Research Engineer · active · AIS Vienna, UC Berkeley_
 
 ## Projects
 
