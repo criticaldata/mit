@@ -2,18 +2,13 @@
 
 | Date | Speaker | Affiliation | Title | Type |
 |---|---|---|---|---|
-| Tue 19 May 2026 11:00 ET | [Kenneth Paik](../people/kenneth-paik/) |  | Lab Repository | lab-meeting |
-| Tue 19 May 2026 12:00 ET | Sara Vardanega |  | how vital insights about data are often overlooked and how interdisciplinary thinking can reveal them | invited |
-| Tue 26 May 2026 | | | | |
-| Tue 02 Jun 2026 | | | | |
-| Tue 09 Jun 2026 | | | | |
 | Tue 16 Jun 2026 | | | | |
 | Tue 23 Jun 2026 | | | | |
 | Tue 30 Jun 2026 | | | | |
 | Tue 07 Jul 2026 | | | | |
 | Tue 14 Jul 2026 | | | | |
 | Tue 21 Jul 2026 | | | | |
-| Tue 28 Jul 2026 | | | | |
+| Tue 28 Jul 2026 | [Ahram Han](../people/ahram-han/) | Seoul National University Hospital | None | lab-meeting |
 | Tue 04 Aug 2026 | | | | |
 | Tue 11 Aug 2026 | | | | |
 | Tue 18 Aug 2026 | | | | |
@@ -21,8 +16,9 @@
 | Tue 01 Sep 2026 | | | | |
 | Tue 08 Sep 2026 | | | | |
 | Tue 15 Sep 2026 | | | | |
+| Tue 22 Sep 2026 | | | | |
+| Tue 29 Sep 2026 | | | | |
+| Tue 06 Oct 2026 | | | | |
+| Tue 13 Oct 2026 | | | | |
 
 _1/18 slots filled — generated from `data/talks/`_
-
----
-Last updated June 10
