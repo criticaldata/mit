@@ -61,25 +61,27 @@ def photo_cell(person):
     return f'<img src="{src}" alt="{first}" width="120"/>'
 
 
-def member_table(people):
+def combined_table(people):
     people = sorted(people, key=lambda p: p.get("name", "").lower())
-    rows = ["| Name | Role | Email | Photo |", "|---|---|---|---|"]
+    rows = ["| Name | Role | Institution | Email | Photo |", "|---|---|---|---|---|"]
     for p in people:
         slug = p["_slug"]
         name = f"[{p['name']}]({slug}/)"
-        rows.append(f"| {name} | {p.get('role', '')} | {p.get('email', '')} | {photo_cell(p)} |")
+        rows.append(
+            f"| {name} | {p.get('role', '')} | {p.get('institution', '')} | {p.get('email', '')} | {photo_cell(p)} |"
+        )
     return "\n".join(rows)
 
 
-def visitor_table(people):
+def alumni_table(people):
     people = sorted(people, key=lambda p: p.get("name", "").lower())
-    rows = ["| Name | Dates | Role | Institution | Email | Photo |", "|---|---|---|---|---|---|"]
+    rows = ["| Name | Dates | Role | Institution | Email |", "|---|---|---|---|---|"]
     for p in people:
         slug = p["_slug"]
         name = f"[{p['name']}]({slug}/)"
         dates = fmt_date_range(p.get("start_date"), p.get("end_date"))
         rows.append(
-            f"| {name} | {dates} | {p.get('role', '')} | {p.get('institution', '')} | {p.get('email', '')} | {photo_cell(p)} |"
+            f"| {name} | {dates} | {p.get('role', '')} | {p.get('institution', '')} | {p.get('email', '')} |"
         )
     return "\n".join(rows)
 
@@ -89,15 +91,17 @@ def main():
         sys.exit(f"Directory not found: {PEOPLE_DIR}. Run from the repo root.")
 
     active, collaborators, alumni = load_people()
+    current = active + collaborators
+    total = len(current) + len(alumni)
 
     print("# Lab Members\n")
-    print(f"## Active ({len(active)})\n")
-    print(member_table(active))
-    print(f"\n## Current Visitors & Collaborators ({len(collaborators)})\n")
-    print(visitor_table(collaborators))
-    print(f"\n## Alumni ({len(alumni)})\n")
-    print(visitor_table(alumni))
-    print(f"\n---\n_Generated from `data/people/` — {len(active) + len(collaborators) + len(alumni)} records total._")
+    print(f"## Current ({len(current)})\n")
+    print(combined_table(current))
+    print()
+    print(f"<details>\n<summary><strong>Alumni ({len(alumni)})</strong></summary>\n")
+    print(alumni_table(alumni))
+    print("\n</details>")
+    print(f"\n---\n_Generated from `data/people/` — {total} records total._")
 
 
 if __name__ == "__main__":
