@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 Generate the lab presentation schedule from data/talks/*.yaml.
-Outputs a table of every Tuesday for the next 4 months, with talk
-details filled in where a matching YAML file exists.
+Outputs a table covering the next 4 months:
+  - Every Tuesday gets a row (blank if no talk scheduled)
+  - Non-Tuesday days with a talk are also included
 
 Run from the repo root:
     py scripts/generate_schedule.py
@@ -70,49 +71,59 @@ def resolve_speaker(talk):
     return name
 
 
+def render_talk(d, t):
+    """Return a table row string for a single talk on date d."""
+    d_str = d.strftime("%a %d %b %Y")
+    status = t.get("status", "")
+    if status == "cancelled":
+        return f"| {d_str} | ~~cancelled~~ | | | |"
+    speaker = t.get("speaker") or ""
+    affiliation = t.get("speaker_affiliation") or ""
+    link_slug = t.get("speaker_link")
+    if link_slug:
+        person_file = PEOPLE_DIR / link_slug / "person.yaml"
+        if person_file.exists():
+            speaker = f"[{speaker}](../people/{link_slug}/)"
+    title = t.get("title") or ""
+    if t.get("slides_url"):
+        title = f"[{title}]({t['slides_url']})"
+    elif t.get("recording_url"):
+        title = f"[{title} (recording)]({t['recording_url']})"
+    time_str = t.get("time", "")
+    t_str = f"{d_str} {time_str}" if time_str else d_str
+    talk_type = t.get("type", "")
+    return f"| {t_str} | {speaker} | {affiliation} | {title} | {talk_type} |"
+
+
 def main():
     if not TALKS_DIR.exists():
         sys.exit(f"Directory not found: {TALKS_DIR}. Run from the repo root.")
 
     talks = load_talks()
     today = date.today()
+    tuesday_set = set(tuesdays(today, MONTHS_AHEAD))
+
+    # All dates to render: Tuesdays + any non-Tuesday day with a talk
+    end = max(tuesday_set) if tuesday_set else today
+    extra = {d for d in talks if d not in tuesday_set and today <= d <= end}
+    all_dates = sorted(tuesday_set | extra)
 
     rows = ["| Date | Speaker | Affiliation | Title | Type |",
             "|---|---|---|---|---|"]
 
-    for tuesday in tuesdays(today, MONTHS_AHEAD):
-        d_str = tuesday.strftime("%a %d %b %Y")
-        day_talks = talks.get(tuesday)
+    for d in all_dates:
+        day_talks = talks.get(d)
         if day_talks:
             for t in day_talks:
-                status = t.get("status", "")
-                if status == "cancelled":
-                    rows.append(f"| {d_str} | ~~cancelled~~ | | | |")
-                    continue
-                speaker = t.get("speaker", "")
-                affiliation = t.get("speaker_affiliation", "")
-                link_slug = t.get("speaker_link")
-                if link_slug:
-                    person_file = PEOPLE_DIR / link_slug / "person.yaml"
-                    if person_file.exists():
-                        speaker = f"[{speaker}](../people/{link_slug}/)"
-                title = t.get("title", "")
-                if t.get("slides_url"):
-                    title = f"[{title}]({t['slides_url']})"
-                elif t.get("recording_url"):
-                    title = f"[{title} (recording)]({t['recording_url']})"
-                time_str = t.get("time", "")
-                t_str = f"{d_str} {time_str}" if time_str else d_str
-                talk_type = t.get("type", "")
-                rows.append(f"| {t_str} | {speaker} | {affiliation} | {title} | {talk_type} |")
+                rows.append(render_talk(d, t))
         else:
-            rows.append(f"| {d_str} | | | | |")
+            rows.append(f"| {d.strftime('%a %d %b %Y')} | | | | |")
 
     print("# Lab Presentation Schedule\n")
     print("\n".join(rows))
-    booked = sum(1 for t in tuesdays(today, MONTHS_AHEAD) if t in talks)
-    total = sum(1 for _ in tuesdays(today, MONTHS_AHEAD))
-    print(f"\n_{booked}/{total} slots filled — generated from `data/talks/`_")
+    booked = sum(1 for t in tuesday_set if t in talks)
+    total = len(tuesday_set)
+    print(f"\n_{booked}/{total} Tuesday slots filled — generated from `data/talks/`_")
 
 
 if __name__ == "__main__":
