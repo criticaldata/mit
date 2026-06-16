@@ -37,7 +37,8 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(py -c ' *)",
-      "Bash(py scripts/generate_events_table.py)"
+      "Bash(py scripts/generate_events_table.py)",
+      "Bash(python -c \"from datetime import date; print\\(date\\(2026,6,24\\).strftime\\('%A'\\)\\)\")"
     ]
   }
 }
