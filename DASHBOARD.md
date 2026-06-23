@@ -16,7 +16,7 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (7)
+## 🟢 This week (6)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
 _updated today_
@@ -43,11 +43,6 @@ Tasks:
 _updated today_
 
 Submitting paper to COLM 2026.
-
-### `Project` [Next Generation MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/next-generation-mimic)
-_updated -7d ago_
-
-Discussed with Thomas. On hold until legal guidance towards the end of the summer.
 
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
 _updated today_
@@ -132,8 +127,9 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 ---
 
 <details>
-<summary>🗄️ Inactive (45)</summary>
+<summary>🗄️ Inactive (46)</summary>
 
+- `Project` [Next Generation MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/next-generation-mimic) _on-hold_
 - `Event` [Thailand Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-thailand) _completed · 2025-07-17_
 - `Event` [MITHIC Workshop 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/workshop-mithic) _completed · 2025-08-18_
 - `Event` [AMA August 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/ama-aug) _completed · 2025-08-19_
