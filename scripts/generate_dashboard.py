@@ -2,19 +2,19 @@
 """
 Generate DASHBOARD.md — weekly lab meeting dashboard.
 
-Covers three record types: projects, funding, events.
-Each type has its own section with the same tier system:
+All record types (projects, funding, events) flow into a single unified
+tier list:
 
   🔴 Urgent    — most recent update has priority: urgent
   🟡 Blocked   — current state is type: blocked (cleared by type: resolved)
-  🟢 This week — last update within 7 days
-  ⚪ Stale     — no update in 7+ days; 14+ days flagged more strongly
-  🗄️ Archived  — inactive status, or past events
+  🟢 This week — last update within 7 days (overrides inactive status)
+  ⚪ Stale     — no update in 7+ days and not inactive; 14+ days flagged
+  🗄️ Inactive  — no recent update AND inactive status/past event
 
 Inactive statuses by type:
-  projects  → completed, on-hold, archived
-  funding   → rejected, withdrawn
-  events    → completed, cancelled, OR event date has passed
+  projects → completed, on-hold, archived
+  funding  → rejected, withdrawn
+  events   → completed, cancelled, OR event date has passed
 """
 
 import re
@@ -33,6 +33,8 @@ REPO_URL     = "https://github.com/criticaldata/mit"
 PROJECT_INACTIVE = {"completed", "on-hold", "archived"}
 FUNDING_INACTIVE = {"rejected", "withdrawn"}
 EVENT_INACTIVE   = {"completed", "cancelled"}
+
+TYPE_LABEL = {"project": "Project", "funding": "Grant", "event": "Event"}
 
 
 # ── parsing ───────────────────────────────────────────────────────────────────
@@ -58,7 +60,6 @@ def update_date_from_name(path):
 
 
 def as_date(val):
-    """Coerce a yaml value (already a date, or a string) to date, or None."""
     if val is None:
         return None
     if isinstance(val, date):
@@ -92,14 +93,14 @@ def load_projects():
     for d in sorted(PROJECTS_DIR.iterdir()):
         if not d.is_dir() or d.name.startswith("."):
             continue
-        yaml_path = d / "project.yaml"
-        if not yaml_path.exists():
+        yp = d / "project.yaml"
+        if not yp.exists():
             continue
-        data = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
-        data["_slug"] = d.name
-        data["_url"]  = f"{REPO_URL}/tree/main/data/projects/{d.name}"
-        data["_type"] = "project"
-        data["updates"] = load_updates(d)
+        data = yaml.safe_load(yp.read_text(encoding="utf-8")) or {}
+        data.update(_slug=d.name, _type="project",
+                    _url=f"{REPO_URL}/tree/main/data/projects/{d.name}",
+                    _inactive=PROJECT_INACTIVE,
+                    updates=load_updates(d))
         records.append(data)
     return records
 
@@ -109,14 +110,14 @@ def load_funding():
     for d in sorted(FUNDING_DIR.iterdir()):
         if not d.is_dir() or d.name.startswith("."):
             continue
-        yaml_path = d / "funding.yaml"
-        if not yaml_path.exists():
+        yp = d / "funding.yaml"
+        if not yp.exists():
             continue
-        data = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
-        data["_slug"] = d.name
-        data["_url"]  = f"{REPO_URL}/tree/main/data/funding/{d.name}"
-        data["_type"] = "funding"
-        data["updates"] = load_updates(d)
+        data = yaml.safe_load(yp.read_text(encoding="utf-8")) or {}
+        data.update(_slug=d.name, _type="funding",
+                    _url=f"{REPO_URL}/tree/main/data/funding/{d.name}",
+                    _inactive=FUNDING_INACTIVE,
+                    updates=load_updates(d))
         records.append(data)
     return records
 
@@ -129,15 +130,14 @@ def load_events():
         for d in sorted(year_dir.iterdir()):
             if not d.is_dir() or d.name.startswith("."):
                 continue
-            yaml_path = d / "event.yaml"
-            if not yaml_path.exists():
+            yp = d / "event.yaml"
+            if not yp.exists():
                 continue
-            data = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
-            data["_slug"] = d.name
-            data["_year"] = year_dir.name
-            data["_url"]  = f"{REPO_URL}/tree/main/data/events/{year_dir.name}/{d.name}"
-            data["_type"] = "event"
-            data["updates"] = load_updates(d)
+            data = yaml.safe_load(yp.read_text(encoding="utf-8")) or {}
+            data.update(_slug=d.name, _year=year_dir.name, _type="event",
+                        _url=f"{REPO_URL}/tree/main/data/events/{year_dir.name}/{d.name}",
+                        _inactive=EVENT_INACTIVE,
+                        updates=load_updates(d))
             records.append(data)
     return records
 
@@ -154,43 +154,49 @@ def blocked_update(record):
     return None
 
 
-def event_is_past(record):
-    """True if the event's end date (or start date) has already passed."""
-    end   = as_date(record.get("date_end"))
-    start = as_date(record.get("date_start"))
-    if end:
-        return end < TODAY
-    if start:
-        return start < TODAY
-    return False  # undated — not past
+def is_inactive(record):
+    if record.get("status", "") in record["_inactive"]:
+        return True
+    if record["_type"] == "event":
+        end   = as_date(record.get("date_end"))
+        start = as_date(record.get("date_start"))
+        cutoff = end or start
+        if cutoff and cutoff < TODAY:
+            return True
+    return False
 
 
-def classify(record, inactive_statuses):
-    status = record.get("status", "")
-
-    if status in inactive_statuses:
-        return "inactive"
-    if record["_type"] == "event" and event_is_past(record):
-        return "inactive"
-
+def classify(record):
     updates = record["updates"]
     latest  = updates[0] if updates else None
+    recent  = latest and (TODAY - latest["date"]).days <= 7
 
+    # Urgent and blocked always win, even for inactive records
     if latest and latest["fm"].get("priority") == "urgent":
         return "urgent"
     if blocked_update(record):
         return "blocked"
-    if latest and (TODAY - latest["date"]).days <= 7:
+
+    # Recent update overrides inactive (per dashboard spec)
+    if recent:
         return "this_week"
+
+    if is_inactive(record):
+        return "inactive"
+
     return "stale"
 
 
 # ── rendering ─────────────────────────────────────────────────────────────────
 
-def age_str(record, flag_stale=True):
+def type_badge(record):
+    return f"`{TYPE_LABEL[record['_type']]}`"
+
+
+def age_str(record):
     updates = record["updates"]
     if not updates:
-        return "⚠️ **No updates yet**" if flag_stale else "—"
+        return "no updates"
     days = (TODAY - updates[0]["date"]).days
     if days == 0:
         return "updated today"
@@ -198,35 +204,35 @@ def age_str(record, flag_stale=True):
         return "updated 1d ago"
     if days <= 7:
         return f"updated {days}d ago"
-    if days >= 14 and flag_stale:
+    if days >= 14:
         return f"⚠️ **{days}d since last update**"
     return f"{days}d ago"
 
 
+def event_date_hint(record):
+    start = as_date(record.get("date_start"))
+    if not start:
+        return "📅 date TBD"
+    days_until = (start - TODAY).days
+    if days_until == 0:
+        return "📅 today"
+    if days_until > 0:
+        return f"📅 in {days_until}d ({start})"
+    return f"📅 {start}"
+
+
 def full_card(record):
-    title    = record.get("title") or record["_slug"]
-    url      = record["_url"]
-    age      = age_str(record)
-    updates  = record["updates"]
+    title   = record.get("title") or record["_slug"]
+    url     = record["_url"]
+    badge   = type_badge(record)
+    age     = age_str(record)
+    updates = record["updates"]
 
-    lines = [f"### [{title}]({url})"]
-
-    # Event date hint
+    meta = f"_{age}_"
     if record["_type"] == "event":
-        start = as_date(record.get("date_start"))
-        if start:
-            days_until = (start - TODAY).days
-            if days_until == 0:
-                hint = "today"
-            elif days_until > 0:
-                hint = f"in {days_until}d ({start})"
-            else:
-                hint = str(start)
-            lines.append(f"_📅 {hint} · {age}_")
-        else:
-            lines.append(f"_📅 date TBD · {age}_")
-    else:
-        lines.append(f"_{age}_")
+        meta = f"_{event_date_hint(record)} · {age}_"
+
+    lines = [f"### {badge} [{title}]({url})", meta]
 
     blocking = blocked_update(record)
     if blocking:
@@ -242,59 +248,59 @@ def full_card(record):
 def stale_row(record):
     title = record.get("title") or record["_slug"]
     url   = record["_url"]
+    badge = type_badge(record)
     age   = age_str(record)
-
     if record["_type"] == "event":
         start = as_date(record.get("date_start"))
         date_col = str(start) if start else "TBD"
-        return f"| [{title}]({url}) | {date_col} | {age} |"
-    return f"| [{title}]({url}) | {age} |"
+        return f"| {badge} [{title}]({url}) | {date_col} | {age} |"
+    return f"| {badge} [{title}]({url}) | {age} |"
 
 
 def inactive_item(record):
     title  = record.get("title") or record["_slug"]
     url    = record["_url"]
+    badge  = type_badge(record)
     status = record.get("status", "")
     if record["_type"] == "event":
         start = as_date(record.get("date_start"))
         extra = f" · {start}" if start else ""
-        return f"- [{title}]({url}) _{status}{extra}_"
-    return f"- [{title}]({url}) _{status}_"
+        return f"- {badge} [{title}]({url}) _{status}{extra}_"
+    return f"- {badge} [{title}]({url}) _{status}_"
 
 
-def render_full_cards(records):
-    return "\n\n".join(full_card(r) for r in records)
+def render_tier(emoji, label, records, empty_msg):
+    count = len(records)
+    header = f"## {emoji} {label} ({count})"
+    if not records:
+        return f"{header}\n\n_{empty_msg}_"
 
-
-def render_stale_table(records):
-    has_events = any(r["_type"] == "event" for r in records)
-    if has_events:
-        header = ["| Record | Date | Last update |", "|---|---|---|"]
+    # Full cards for urgent/blocked/this_week; table for stale; list for inactive
+    if emoji in ("🔴", "🟡", "🟢"):
+        body = "\n\n".join(full_card(r) for r in records)
+    elif emoji == "⚪":
+        # Mixed records: use two-col table for non-events, three-col for events
+        has_events = any(r["_type"] == "event" for r in records)
+        if has_events:
+            rows = ["| Record | Date | Last update |", "|---|---|---|"]
+        else:
+            rows = ["| Record | Last update |", "|---|---|"]
+        rows += [stale_row(r) for r in records]
+        body = "\n".join(rows)
     else:
-        header = ["| Record | Last update |", "|---|---|"]
-    rows = [stale_row(r) for r in records]
-    return "\n".join(header + rows)
+        body = "\n".join(inactive_item(r) for r in records)
+
+    return f"{header}\n\n{body}"
 
 
-def render_inactive_list(records):
-    return "\n".join(inactive_item(r) for r in records)
+# ── main ──────────────────────────────────────────────────────────────────────
 
-
-def render_section(emoji, label, records, renderer, empty_msg):
-    if not records:
-        return f"### {emoji} {label} (0)\n\n_{empty_msg}_"
-    lines = [f"### {emoji} {label} ({len(records)})\n"]
-    lines.append(renderer(records))
-    return "\n".join(lines)
-
-
-def render_domain(heading, records, inactive_statuses):
-    if not records:
-        return ""
+def generate():
+    all_records = load_projects() + load_funding() + load_events()
 
     tiers = {k: [] for k in ("urgent", "blocked", "this_week", "stale", "inactive")}
-    for r in records:
-        tiers[classify(r, inactive_statuses)].append(r)
+    for r in all_records:
+        tiers[classify(r)].append(r)
 
     # Sort each tier
     def by_latest_desc(r):
@@ -308,66 +314,51 @@ def render_domain(heading, records, inactive_statuses):
         u = r["updates"]
         return (TODAY - u[0]["date"]).days if u else 9999
 
-    def by_date_start_asc(r):
-        d = as_date(r.get("date_start"))
-        return d if d else date.max
+    def by_type_then_title(r):
+        order = {"project": 0, "funding": 1, "event": 2}
+        return (order[r["_type"]], (r.get("title") or r["_slug"]).lower())
+
+    def by_type_then_date(r):
+        order = {"project": 0, "funding": 1, "event": 2}
+        d = as_date(r.get("date_start")) if r["_type"] == "event" else None
+        return (order[r["_type"]], d or date.max)
 
     tiers["urgent"].sort(key=by_latest_desc, reverse=True)
     tiers["blocked"].sort(key=by_latest_desc, reverse=True)
-    tiers["this_week"].sort(key=by_title)
+    tiers["this_week"].sort(key=by_type_then_title)
     tiers["stale"].sort(key=by_gap_desc, reverse=True)
-    tiers["inactive"].sort(key=by_date_start_asc if inactive_statuses == EVENT_INACTIVE else by_title)
+    tiers["inactive"].sort(key=by_type_then_date)
 
-    # For events, sort this_week and stale by date_start too
-    if inactive_statuses == EVENT_INACTIVE:
-        tiers["this_week"].sort(key=by_date_start_asc)
-        tiers["stale"].sort(key=by_date_start_asc)
-
-    inactive_count = len(tiers["inactive"])
-    inactive_body  = (render_inactive_list(tiers["inactive"])
-                      if tiers["inactive"] else "_None._")
-
-    parts = [f"## {heading}\n"]
-    parts.append(render_section("🔴", "Urgent",    tiers["urgent"],    render_full_cards, "No urgent items."))
-    parts.append(render_section("🟡", "Blocked",   tiers["blocked"],   render_full_cards, "No blocked items."))
-    parts.append(render_section("🟢", "This week", tiers["this_week"], render_full_cards, "No updates this week."))
-    parts.append(render_section("⚪", "Stale",     tiers["stale"],     render_stale_table, "All up to date."))
-    parts.append(
-        f"<details>\n<summary>🗄️ Inactive ({inactive_count})</summary>\n\n"
+    inactive_body = (
+        "\n".join(inactive_item(r) for r in tiers["inactive"])
+        if tiers["inactive"] else "_None._"
+    )
+    inactive_section = (
+        f"<details>\n<summary>🗄️ Inactive ({len(tiers['inactive'])})</summary>\n\n"
         f"{inactive_body}\n\n</details>"
     )
 
-    active = sum(len(tiers[k]) for k in ("urgent", "blocked", "this_week", "stale"))
-    return "\n\n".join(parts), active, inactive_count
+    total  = len(all_records)
+    counts = (f"{len(load_projects())} projects · "
+              f"{len(load_funding())} grants · "
+              f"{len(load_events())} events")
 
-
-# ── main ──────────────────────────────────────────────────────────────────────
-
-def generate():
-    projects = load_projects()
-    funding  = load_funding()
-    events   = load_events()
-
-    proj_md,  proj_active,  proj_inactive  = render_domain("Projects", projects, PROJECT_INACTIVE)
-    fund_md,  fund_active,  fund_inactive  = render_domain("Funding",  funding,  FUNDING_INACTIVE)
-    event_md, event_active, event_inactive = render_domain("Events",   events,   EVENT_INACTIVE)
-
-    total = len(projects) + len(funding) + len(events)
-
-    page = "\n\n---\n\n".join([
+    sections = [
         f"# MIT Critical Data — Lab Dashboard\n\n"
-        f"_Generated {TODAY.isoformat()} · "
-        f"{len(projects)} projects · {len(funding)} grants · {len(events)} events · "
+        f"_Generated {TODAY.isoformat()} · {total} records ({counts}) · "
         f"[contributing guide](docs/contributing.md)_",
-        proj_md,
-        fund_md,
-        event_md,
-    ])
+        render_tier("🔴", "Urgent",    tiers["urgent"],    "No urgent items."),
+        render_tier("🟡", "Blocked",   tiers["blocked"],   "No blocked items."),
+        render_tier("🟢", "This week", tiers["this_week"], "No updates this week."),
+        render_tier("⚪", "Stale",     tiers["stale"],     "All up to date."),
+        inactive_section,
+    ]
 
-    OUTPUT.write_text(page + "\n", encoding="utf-8")
-    print(f"Dashboard written -> {OUTPUT}  "
-          f"({len(projects)} projects, {len(funding)} grants, {len(events)} events, "
-          f"{total} total)")
+    OUTPUT.write_text("\n\n---\n\n".join(sections) + "\n", encoding="utf-8")
+    print(f"Dashboard written -> {OUTPUT}  ({total} records: "
+          f"{len(tiers['urgent'])} urgent, {len(tiers['blocked'])} blocked, "
+          f"{len(tiers['this_week'])} this week, {len(tiers['stale'])} stale, "
+          f"{len(tiers['inactive'])} inactive)")
 
 
 if __name__ == "__main__":
