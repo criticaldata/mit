@@ -16,7 +16,7 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (2)
+## 🟢 This week (3)
 
 ### `Project` [CXR Vector Embedding Release](https://github.com/criticaldata/mit/tree/main/data/projects/cxr-vector-embedding-release)
 _updated today_
@@ -27,6 +27,17 @@ Tasks:
 - Add torchxrayvision CheXpert weights
 - Investigate chexagent-2-3b
 
+### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
+_updated today_
+
+Deliverables:
+- Pipeline code (GitHub + PyPI)
+- Pre-computed CXR embeddings (PhysioNet)
+- Methods paper
+
+Tasks:
+- Discuss target journal (JAMIA, NPJ Digital Medicine, JMIR, or conference)
+
 ### `Grant` [Smith Family Awards Program for Excellence in Biomedical Research](https://github.com/criticaldata/mit/tree/main/data/funding/hria-smith-2026)
 _updated today_
 
@@ -34,7 +45,7 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 
 ---
 
-## ⚪ Stale (54)
+## ⚪ Stale (53)
 
 | Record | Date | Last update |
 |---|---|---|
@@ -61,7 +72,6 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 | `Project` [Snapshot Embedding for EHR Data](https://github.com/criticaldata/mit/tree/main/data/projects/snapshot-embedding-for-ehr-data) | no updates |
 | `Project` [Standard Model of Care](https://github.com/criticaldata/mit/tree/main/data/projects/standard-model-of-care) | no updates |
 | `Project` [This is not a Webinar Series](https://github.com/criticaldata/mit/tree/main/data/projects/this-is-not-a-webinar-series) | no updates |
-| `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline) | no updates |
 | `Project` [WorldmedQA: Cross-Cultural Pain Concepts](https://github.com/criticaldata/mit/tree/main/data/projects/worldmedqa-cross-cultural-pain-concepts) | no updates |
 | `Project` [XAI Claims in ICU ML Models (Scoping Review)](https://github.com/criticaldata/mit/tree/main/data/projects/xai-claims-in-icu-ml-models) | no updates |
 | `Grant` [DOJO](https://github.com/criticaldata/mit/tree/main/data/funding/dojo) | no updates |
