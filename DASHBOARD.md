@@ -1,6 +1,6 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-23 · 102 records (28 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-23 · 103 records (29 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
 
 ---
 
@@ -16,7 +16,7 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (5)
+## 🟢 This week (6)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
 _updated today_
@@ -38,6 +38,11 @@ Received approval to release on PhysioNet for all models.
 Tasks:
 - Add torchxrayvision CheXpert weights
 - Investigate chexagent-2-3b
+
+### `Project` [LLM Interrogation](https://github.com/criticaldata/mit/tree/main/data/projects/llm-interrogation)
+_updated today_
+
+Submitting paper to COLM 2026.
 
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
 _updated today_
