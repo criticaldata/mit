@@ -6,7 +6,8 @@
 |---|---|
 | 🚀 [Onboarding](docs/onboarding/) | 👥 [People](data/people/README.md) |
 | 📅 [Presentation schedule](data/talks/) | 📁 [Active projects](data/projects/README.md) |
-| | 🗓️ [Upcoming events](data/events/README.md) |
+| 📊 [Lab Dashboard](DASHBOARD.md) | 🗓️ [Upcoming events](data/events/README.md) |
+| 🏢 [IMES Room Reservations](https://imes.skedda.com/booking) | |
 
 ---
 
