@@ -71,35 +71,36 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 
 | Record | Date | Last update |
 |---|---|---|
-| `Project` [6 Tools Framework + Jan 15 Event Take-aways](https://github.com/criticaldata/mit/tree/main/data/projects/6-tools-framework-jan-15-event-take-aways) | no updates |
-| `Project` [AGORA: Agentic Game of Research and Academia](https://github.com/criticaldata/mit/tree/main/data/projects/agora-agentic-game-of-research-and-academia) | no updates |
-| `Project` [AI as a Catalyst (Jan 15, 2026 Event)](https://github.com/criticaldata/mit/tree/main/data/projects/ai-as-a-catalyst) | no updates |
-| `Project` [Bias in Omics Data Beyond Non-Representativeness](https://github.com/criticaldata/mit/tree/main/data/projects/bias-in-omics-data-beyond-non-representativeness) | no updates |
-| `Project` [BODHI: Medical AI as Epistemic Agent](https://github.com/criticaldata/mit/tree/main/data/projects/bodhi-medical-ai-as-epistemic-agent) | no updates |
-| `Project` [Brown Mental Health LLM-athon (Feb 26-27, 2026)](https://github.com/criticaldata/mit/tree/main/data/projects/brown-mental-health-llm-athon) | no updates |
-| `Project` [Combinators are Dead](https://github.com/criticaldata/mit/tree/main/data/projects/combinators-are-dead) | no updates |
-| `Project` [Epidemiology of Sentiments in Clinical Notes](https://github.com/criticaldata/mit/tree/main/data/projects/epidemiology-of-sentiments-in-clinical-notes) | no updates |
-| `Project` [Impact Analysis of Prediction Models (Causal Inference)](https://github.com/criticaldata/mit/tree/main/data/projects/impact-analysis-of-prediction-models) | no updates |
-| `Project` [Lab-MAE: Foundation Model for Lab Data](https://github.com/criticaldata/mit/tree/main/data/projects/lab-mae-foundation-model-for-lab-data) | no updates |
-| `Project` [LabTube: 3D Temporal Modeling of ICU Labs](https://github.com/criticaldata/mit/tree/main/data/projects/labtube-3d-temporal-modeling-of-icu-labs) | no updates |
-| `Project` [M4: Clinical Research Agent (MCP)](https://github.com/criticaldata/mit/tree/main/data/projects/m4-clinical-research-agent) | no updates |
-| `Project` [MedScope: Pain Documentation Bias](https://github.com/criticaldata/mit/tree/main/data/projects/medscope-pain-documentation-bias) | no updates |
-| `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms) | no updates |
-| `Project` [MIT Critical Data Central America](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-central-america) | no updates |
-| `Project` [Model Drift in MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/model-drift-in-mimic) | no updates |
-| `Project` [Multimodal Data Discordance](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-data-discordance) | no updates |
-| `Project` [Multimodal VE for Cardiovascular Disease](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-ve-for-cardiovascular-disease) | no updates |
-| `Project` [RecursiveJEPA](https://github.com/criticaldata/mit/tree/main/data/projects/recursive-jepa) | no updates |
-| `Project` [SLICES: SSL Objectives for ICU Representation](https://github.com/criticaldata/mit/tree/main/data/projects/slices-ssl-objectives-for-icu-representation) | no updates |
-| `Project` [Snapshot Embedding for EHR Data](https://github.com/criticaldata/mit/tree/main/data/projects/snapshot-embedding-for-ehr-data) | no updates |
-| `Project` [Standard Model of Care](https://github.com/criticaldata/mit/tree/main/data/projects/standard-model-of-care) | no updates |
-| `Project` [This is not a Webinar Series](https://github.com/criticaldata/mit/tree/main/data/projects/this-is-not-a-webinar-series) | no updates |
-| `Project` [WorldmedQA: Cross-Cultural Pain Concepts](https://github.com/criticaldata/mit/tree/main/data/projects/worldmedqa-cross-cultural-pain-concepts) | no updates |
-| `Project` [XAI Claims in ICU ML Models (Scoping Review)](https://github.com/criticaldata/mit/tree/main/data/projects/xai-claims-in-icu-ml-models) | no updates |
-| `Grant` [DOJO](https://github.com/criticaldata/mit/tree/main/data/funding/dojo) | no updates |
-| `Grant` [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](https://github.com/criticaldata/mit/tree/main/data/funding/nhlbi-2026) | no updates |
-| `Grant` [snuh1](https://github.com/criticaldata/mit/tree/main/data/funding/snuh1) | no updates |
-| `Grant` [snuh2](https://github.com/criticaldata/mit/tree/main/data/funding/snuh2) | no updates |
+| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) |  | ⚠️ **20d since last update** |
+| `Project` [6 Tools Framework + Jan 15 Event Take-aways](https://github.com/criticaldata/mit/tree/main/data/projects/6-tools-framework-jan-15-event-take-aways) |  | no updates |
+| `Project` [AGORA: Agentic Game of Research and Academia](https://github.com/criticaldata/mit/tree/main/data/projects/agora-agentic-game-of-research-and-academia) |  | no updates |
+| `Project` [AI as a Catalyst (Jan 15, 2026 Event)](https://github.com/criticaldata/mit/tree/main/data/projects/ai-as-a-catalyst) |  | no updates |
+| `Project` [Bias in Omics Data Beyond Non-Representativeness](https://github.com/criticaldata/mit/tree/main/data/projects/bias-in-omics-data-beyond-non-representativeness) |  | no updates |
+| `Project` [BODHI: Medical AI as Epistemic Agent](https://github.com/criticaldata/mit/tree/main/data/projects/bodhi-medical-ai-as-epistemic-agent) |  | no updates |
+| `Project` [Brown Mental Health LLM-athon (Feb 26-27, 2026)](https://github.com/criticaldata/mit/tree/main/data/projects/brown-mental-health-llm-athon) |  | no updates |
+| `Project` [Combinators are Dead](https://github.com/criticaldata/mit/tree/main/data/projects/combinators-are-dead) |  | no updates |
+| `Project` [Epidemiology of Sentiments in Clinical Notes](https://github.com/criticaldata/mit/tree/main/data/projects/epidemiology-of-sentiments-in-clinical-notes) |  | no updates |
+| `Project` [Impact Analysis of Prediction Models (Causal Inference)](https://github.com/criticaldata/mit/tree/main/data/projects/impact-analysis-of-prediction-models) |  | no updates |
+| `Project` [Lab-MAE: Foundation Model for Lab Data](https://github.com/criticaldata/mit/tree/main/data/projects/lab-mae-foundation-model-for-lab-data) |  | no updates |
+| `Project` [LabTube: 3D Temporal Modeling of ICU Labs](https://github.com/criticaldata/mit/tree/main/data/projects/labtube-3d-temporal-modeling-of-icu-labs) |  | no updates |
+| `Project` [M4: Clinical Research Agent (MCP)](https://github.com/criticaldata/mit/tree/main/data/projects/m4-clinical-research-agent) |  | no updates |
+| `Project` [MedScope: Pain Documentation Bias](https://github.com/criticaldata/mit/tree/main/data/projects/medscope-pain-documentation-bias) |  | no updates |
+| `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms) |  | no updates |
+| `Project` [MIT Critical Data Central America](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-central-america) |  | no updates |
+| `Project` [Model Drift in MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/model-drift-in-mimic) |  | no updates |
+| `Project` [Multimodal Data Discordance](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-data-discordance) |  | no updates |
+| `Project` [Multimodal VE for Cardiovascular Disease](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-ve-for-cardiovascular-disease) |  | no updates |
+| `Project` [RecursiveJEPA](https://github.com/criticaldata/mit/tree/main/data/projects/recursive-jepa) |  | no updates |
+| `Project` [SLICES: SSL Objectives for ICU Representation](https://github.com/criticaldata/mit/tree/main/data/projects/slices-ssl-objectives-for-icu-representation) |  | no updates |
+| `Project` [Snapshot Embedding for EHR Data](https://github.com/criticaldata/mit/tree/main/data/projects/snapshot-embedding-for-ehr-data) |  | no updates |
+| `Project` [Standard Model of Care](https://github.com/criticaldata/mit/tree/main/data/projects/standard-model-of-care) |  | no updates |
+| `Project` [This is not a Webinar Series](https://github.com/criticaldata/mit/tree/main/data/projects/this-is-not-a-webinar-series) |  | no updates |
+| `Project` [WorldmedQA: Cross-Cultural Pain Concepts](https://github.com/criticaldata/mit/tree/main/data/projects/worldmedqa-cross-cultural-pain-concepts) |  | no updates |
+| `Project` [XAI Claims in ICU ML Models (Scoping Review)](https://github.com/criticaldata/mit/tree/main/data/projects/xai-claims-in-icu-ml-models) |  | no updates |
+| `Grant` [DOJO](https://github.com/criticaldata/mit/tree/main/data/funding/dojo) |  | no updates |
+| `Grant` [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](https://github.com/criticaldata/mit/tree/main/data/funding/nhlbi-2026) |  | no updates |
+| `Grant` [snuh1](https://github.com/criticaldata/mit/tree/main/data/funding/snuh1) |  | no updates |
+| `Grant` [snuh2](https://github.com/criticaldata/mit/tree/main/data/funding/snuh2) |  | no updates |
 | `Event` [ACOG](https://github.com/criticaldata/mit/tree/main/data/events/2026/acog) | 2026-07-23 | no updates |
 | `Event` [AIMed](https://github.com/criticaldata/mit/tree/main/data/events/2026/aimed) | 2026-11-10 | no updates |
 | `Event` [Annual Intensive Review of Internal Medicine](https://github.com/criticaldata/mit/tree/main/data/events/2026/annual-intensive-review-of-internal-medicine) | 2026-07-22 | no updates |
@@ -123,7 +124,6 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 | `Event` [Care Innovation Challenge (Boston)](https://github.com/criticaldata/mit/tree/main/data/events/undated/care-innovation-challenge) | TBD | no updates |
 | `Event` [TBD: Australia Health AI Event Series](https://github.com/criticaldata/mit/tree/main/data/events/undated/tbd-australia-health-ai-event-series) | TBD | no updates |
 | `Event` [Vietnam Datathon: AI as a Catalyst](https://github.com/criticaldata/mit/tree/main/data/events/undated/vietnam-datathon-ai-as-a-catalyst) | TBD | no updates |
-| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **20d since last update** |
 
 ---
 

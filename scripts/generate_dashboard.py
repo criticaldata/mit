@@ -268,14 +268,17 @@ def full_card(record):
     return "\n".join(lines)
 
 
-def stale_row(record):
+def stale_row(record, include_date_col=False):
     title = record.get("title") or record["_slug"]
     url   = record["_url"]
     badge = type_badge(record)
     age   = age_str(record)
-    if record["_type"] == "event":
-        start = as_date(record.get("date_start"))
-        date_col = str(start) if start else "TBD"
+    if include_date_col:
+        if record["_type"] == "event":
+            start = as_date(record.get("date_start"))
+            date_col = str(start) if start else "TBD"
+        else:
+            date_col = ""
         return f"| {badge} [{title}]({url}) | {date_col} | {age} |"
     return f"| {badge} [{title}]({url}) | {age} |"
 
@@ -308,7 +311,7 @@ def render_tier(emoji, label, records, empty_msg):
             rows = ["| Record | Date | Last update |", "|---|---|---|"]
         else:
             rows = ["| Record | Last update |", "|---|---|"]
-        rows += [stale_row(r) for r in records]
+        rows += [stale_row(r, include_date_col=has_events) for r in records]
         body = "\n".join(rows)
     else:
         body = "\n".join(inactive_item(r) for r in records)
@@ -335,8 +338,8 @@ def generate():
 
     def by_gap_desc(r):
         u = r["updates"]
-        # Records with updates sort by gap descending (oldest first).
-        # Records with no updates sort after all updated records.
+        # (0, -days) sorts updated records first, largest gap first.
+        # (1, 0) sorts no-update records last.
         return (1, 0) if not u else (0, -(TODAY - u[0]["date"]).days)
 
     def by_type_then_title(r):
@@ -351,7 +354,7 @@ def generate():
     tiers["urgent"].sort(key=by_latest_desc, reverse=True)
     tiers["blocked"].sort(key=by_latest_desc, reverse=True)
     tiers["this_week"].sort(key=by_type_then_title)
-    tiers["stale"].sort(key=by_gap_desc, reverse=True)
+    tiers["stale"].sort(key=by_gap_desc)  # ascending: (0,-days) puts oldest first, (1,0) last
     tiers["inactive"].sort(key=by_type_then_date)
 
     inactive_body = (

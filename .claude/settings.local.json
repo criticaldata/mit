@@ -49,7 +49,9 @@
       "Bash(git push *)",
       "Bash(git pull *)",
       "Bash(git stash *)",
-      "Bash(git mv *)"
+      "PowerShell(gh api repos/criticaldata/mit/pages)",
+      "PowerShell(Select-String -Path DASHBOARD.md -Pattern \"^##\" | Select-Object -First 20 | ForEach-Object { $_.Line })",
+      "PowerShell(Select-String -Path DASHBOARD.md -Pattern \"^## \" | ForEach-Object { $_.Line })"
     ]
   }
 }
