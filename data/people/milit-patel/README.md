@@ -12,7 +12,7 @@ _Affiliate · collaborator_
 
 | Fund | Agency | Role | Status |
 |---|---|---|---|
-| [Smith Family Awards Program for Excellence in Biomedical Research](../../funding/hria-smith-2026/funding.yaml) | Health Resources in Action (HRiA) | Team | drafting |
+| [Smith Family Awards Program for Excellence in Biomedical Research](../../funding/hria-smith-2026/funding.yaml) | Health Resources in Action (HRiA) | Team | withdrawn |
 
 ---
 _Generated from lab records._
