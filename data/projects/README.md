@@ -1,6 +1,6 @@
 # Projects
 
-## Active (29)
+## Active (30)
 
 | Project | Lead | Tags | GitHub |
 |---|---|---|---|
@@ -20,6 +20,7 @@
 | [LLM Interrogation](llm-interrogation/project.yaml) | [Kenneth Paik](../people/kenneth-paik/) |  | None |
 | [M4: Clinical Research Agent (MCP)](m4-clinical-research-agent/project.yaml) | [Hannes Ill](../people/hannes-ill/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/hannesill/m4) |
 | [MedScope: Pain Documentation Bias](medscope-pain-documentation-bias/project.yaml) | [Boya Zhang](../people/boya-zhang/) | `bias`, `fairness`, `representation` | [repo](https://github.com/tinaboya/MedScope) |
+| [MIMIC DEID Next](mimic-deid-next/project.yaml) | [Jesse Raffa](../people/jesse-raffa/) | `mimic`, `deid`, `nlp`, `physionet` | None |
 | [MIT Critical Data Branding, Events & Comms](mit-critical-data-branding-events-comms/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `lab-operations` |  |
 | [MIT Critical Data Central America](mit-critical-data-central-america/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `global-health`, `regional-data` |  |
 | [Model Drift in MIMIC](model-drift-in-mimic/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `clinical-prediction`, `causal-inference` | [repo](https://github.com/HamzaNabulsi/Data-Drift) |
@@ -34,5 +35,14 @@
 | [WorldmedQA: Cross-Cultural Pain Concepts](worldmedqa-cross-cultural-pain-concepts/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `bias`, `fairness`, `representation` |  |
 | [XAI Claims in ICU ML Models (Scoping Review)](xai-claims-in-icu-ml-models/project.yaml) | [Marlene Louisa Moerig](../people/marlene-louisa-moerig/) | `systematic-review` |  |
 
+<details>
+<summary><strong>On Hold (1)</strong></summary>
+
+| Project | Lead | Tags | GitHub |
+|---|---|---|---|
+| [Next Generation MIMIC](mimic-next-generation/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `mimic` | None |
+
+</details>
+
 ---
-_Generated from `data/projects/` — 29 records total._
+_Generated from `data/projects/` — 31 records total._
