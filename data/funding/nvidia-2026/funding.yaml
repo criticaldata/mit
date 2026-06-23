@@ -3,15 +3,15 @@ agency: NVIDIA
 program: Academic Grant Program
 type: grant
 grant_number:
-status: submitted
+status: awarded
 lead: leo-celi
 team: []
 amount_requested:
-amount_awarded:
+amount_awarded: 8xA100 node
 currency: USD
 date_submission: 2026-01-31
-date_start:
-date_end:
+date_start: '2026-07-01'
+date_end: '2026-12-31'
 projects: []
 events: []
 url: https://www.nvidia.com/en-us/industries/higher-education-research/academic-grant-program/

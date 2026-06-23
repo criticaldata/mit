@@ -16,7 +16,7 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (3)
+## 🟢 This week (4)
 
 ### `Project` [CXR Vector Embedding Release](https://github.com/criticaldata/mit/tree/main/data/projects/cxr-vector-embedding-release)
 _updated today_
@@ -38,6 +38,11 @@ Deliverables:
 Tasks:
 - Discuss target journal (JAMIA, NPJ Digital Medicine, JMIR, or conference)
 
+### `Grant` [NVIDIA Academic Grant Program 2026](https://github.com/criticaldata/mit/tree/main/data/funding/nvidia-2026)
+_updated today_
+
+Awarded: 8xA100 node, July 1 – December 31, 2026.
+
 ### `Grant` [Smith Family Awards Program for Excellence in Biomedical Research](https://github.com/criticaldata/mit/tree/main/data/funding/hria-smith-2026)
 _updated today_
 
@@ -45,7 +50,7 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 
 ---
 
-## ⚪ Stale (53)
+## ⚪ Stale (52)
 
 | Record | Date | Last update |
 |---|---|---|
@@ -76,7 +81,6 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 | `Project` [XAI Claims in ICU ML Models (Scoping Review)](https://github.com/criticaldata/mit/tree/main/data/projects/xai-claims-in-icu-ml-models) | no updates |
 | `Grant` [DOJO](https://github.com/criticaldata/mit/tree/main/data/funding/dojo) | no updates |
 | `Grant` [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](https://github.com/criticaldata/mit/tree/main/data/funding/nhlbi-2026) | no updates |
-| `Grant` [NVIDIA Academic Grant Program 2026](https://github.com/criticaldata/mit/tree/main/data/funding/nvidia-2026) | no updates |
 | `Grant` [snuh1](https://github.com/criticaldata/mit/tree/main/data/funding/snuh1) | no updates |
 | `Grant` [snuh2](https://github.com/criticaldata/mit/tree/main/data/funding/snuh2) | no updates |
 | `Event` [ACOG](https://github.com/criticaldata/mit/tree/main/data/events/2026/acog) | 2026-07-23 | no updates |
