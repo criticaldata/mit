@@ -1,6 +1,6 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-23 · 103 records (29 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-23 · 104 records (30 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
 
 ---
 
@@ -16,7 +16,7 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (6)
+## 🟢 This week (7)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
 _updated today_
@@ -43,6 +43,11 @@ Tasks:
 _updated today_
 
 Submitting paper to COLM 2026.
+
+### `Project` [Next Generation MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/next-generation-mimic)
+_updated -7d ago_
+
+Discussed with Thomas. On hold until legal guidance towards the end of the summer.
 
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
 _updated today_
