@@ -12,9 +12,9 @@ description: 'We are writing to invite your support for a groundbreaking series 
 
 
   The workshops address a critical gap as private AI companies increasingly shape Australia''s health systems with minimal
-  attention to ethics, equity, or community values. The event will bring together diverse stakeholders—from Aboriginal and
+  attention to ethics, equity, or community values. The event will bring together diverse stakeholdersâ€”from Aboriginal and
   Torres Strait Islander elders and youth to clinicians, computer scientists, medical students, bioethicists, and digital
-  health researchers—to examine concrete questions: How do we safeguard against bias in clinical algorithms? What does data
+  health researchersâ€”to examine concrete questions: How do we safeguard against bias in clinical algorithms? What does data
   sovereignty mean for First Nations communities? How can AI support rather than displace rural healthcare access? What guardrails
   prevent unintended harms? By starting with reflection and reimagination before technical implementation, and by training
   youth as "double agents" who can navigate existing power structures while plotting transformative alternatives, we aim to
@@ -25,3 +25,4 @@ tags:
 - healthcare-ai
 
 # Last updated June 10
+lead: leo-celi
