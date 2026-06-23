@@ -1,6 +1,6 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-23 · 104 records (30 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-23 · 105 records (31 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
 
 ---
 
@@ -67,7 +67,7 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 
 ---
 
-## ⚪ Stale (52)
+## ⚪ Stale (53)
 
 | Record | Date | Last update |
 |---|---|---|
@@ -84,6 +84,7 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 | `Project` [LabTube: 3D Temporal Modeling of ICU Labs](https://github.com/criticaldata/mit/tree/main/data/projects/labtube-3d-temporal-modeling-of-icu-labs) | no updates |
 | `Project` [M4: Clinical Research Agent (MCP)](https://github.com/criticaldata/mit/tree/main/data/projects/m4-clinical-research-agent) | no updates |
 | `Project` [MedScope: Pain Documentation Bias](https://github.com/criticaldata/mit/tree/main/data/projects/medscope-pain-documentation-bias) | no updates |
+| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | no updates |
 | `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms) | no updates |
 | `Project` [MIT Critical Data Central America](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-central-america) | no updates |
 | `Project` [Model Drift in MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/model-drift-in-mimic) | no updates |

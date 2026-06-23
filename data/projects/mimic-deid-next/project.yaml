@@ -1,0 +1,21 @@
+title: MIMIC DEID Next
+status: active
+lead: jesse-raffa
+team:
+- kenneth-paik
+- leo-celi
+start_date: '2026-02-01'
+end_date:
+github_repo:
+description: |
+  MIMIC-DEID Next is a modernized de-identification pipeline for clinical notes,
+  built on top of the MIMIC-IV dataset and designed to replace legacy rule-based
+  approaches with current NLP and language model tooling. It provides researchers
+  with a reproducible, extensible framework for removing protected health information
+  from clinical text at scale. Distributed through PhysioNet, it aims to become the
+  community standard for clinical note de-identification in open research settings.
+tags:
+- mimic
+- deid
+- nlp
+- physionet
