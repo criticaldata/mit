@@ -84,7 +84,6 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 | `Project` [LabTube: 3D Temporal Modeling of ICU Labs](https://github.com/criticaldata/mit/tree/main/data/projects/labtube-3d-temporal-modeling-of-icu-labs) | no updates |
 | `Project` [M4: Clinical Research Agent (MCP)](https://github.com/criticaldata/mit/tree/main/data/projects/m4-clinical-research-agent) | no updates |
 | `Project` [MedScope: Pain Documentation Bias](https://github.com/criticaldata/mit/tree/main/data/projects/medscope-pain-documentation-bias) | no updates |
-| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | no updates |
 | `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms) | no updates |
 | `Project` [MIT Critical Data Central America](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-central-america) | no updates |
 | `Project` [Model Drift in MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/model-drift-in-mimic) | no updates |
@@ -124,6 +123,7 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 | `Event` [Care Innovation Challenge (Boston)](https://github.com/criticaldata/mit/tree/main/data/events/undated/care-innovation-challenge) | TBD | no updates |
 | `Event` [TBD: Australia Health AI Event Series](https://github.com/criticaldata/mit/tree/main/data/events/undated/tbd-australia-health-ai-event-series) | TBD | no updates |
 | `Event` [Vietnam Datathon: AI as a Catalyst](https://github.com/criticaldata/mit/tree/main/data/events/undated/vietnam-datathon-ai-as-a-catalyst) | TBD | no updates |
+| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **20d since last update** |
 
 ---
 
