@@ -235,19 +235,17 @@ def age_str(record):
 def event_date_hint(record):
     start = as_date(record.get("date_start"))
     if not start:
-        return "📅 date TBD"
+        return "📅 [TBD]"
     days_until = (start - TODAY).days
     if days_until == 0:
-        return "📅 today"
-    if days_until > 0:
-        return f"📅 {start}"
-    return f"📅 {start}"
+        return "📅 [today]"
+    return f"📅 [{start}]"
 
 
 def display_title(record):
     title = record.get("title") or record["_slug"]
     if record["_type"] == "event":
-        return f"{event_date_hint(record)}: {title}"
+        return f"{event_date_hint(record)} {title}"
     return title
 
 

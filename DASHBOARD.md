@@ -65,47 +65,47 @@ _updated today_
 
 Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-track faculty position; we do not qualify.
 
-### `Event` [📅 2027-01-29: Bunker Hill Community College](https://github.com/criticaldata/mit/tree/main/data/events/2027/bunker-hill-community-college)
+### `Event` [📅 [2027-01-29] Bunker Hill Community College](https://github.com/criticaldata/mit/tree/main/data/events/2027/bunker-hill-community-college)
 _updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
-### `Event` [📅 2027-10-01: China](https://github.com/criticaldata/mit/tree/main/data/events/2027/china)
+### `Event` [📅 [2027-10-01] China](https://github.com/criticaldata/mit/tree/main/data/events/2027/china)
 _updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
-### `Event` [📅 2026-09-26: Dublin Hackathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/dublin-hackathon)
+### `Event` [📅 [2026-09-26] Dublin Hackathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/dublin-hackathon)
 _updated today_
 
 Please confirm this event was cancelled.
 
-### `Event` [📅 2027-10-22: Greece](https://github.com/criticaldata/mit/tree/main/data/events/2027/greece)
+### `Event` [📅 [2027-10-22] Greece](https://github.com/criticaldata/mit/tree/main/data/events/2027/greece)
 _updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
-### `Event` [📅 2027-06-01: Norway](https://github.com/criticaldata/mit/tree/main/data/events/2027/norway)
+### `Event` [📅 [2027-06-01] Norway](https://github.com/criticaldata/mit/tree/main/data/events/2027/norway)
 _updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
-### `Event` [📅 2026-12-09: NYC](https://github.com/criticaldata/mit/tree/main/data/events/2026/nyc)
+### `Event` [📅 [2026-12-09] NYC](https://github.com/criticaldata/mit/tree/main/data/events/2026/nyc)
 _updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
-### `Event` [📅 2027-04-09: Ohio State University](https://github.com/criticaldata/mit/tree/main/data/events/2027/ohio-state-university)
+### `Event` [📅 [2027-04-09] Ohio State University](https://github.com/criticaldata/mit/tree/main/data/events/2027/ohio-state-university)
 _updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
-### `Event` [📅 2027-04-20: Panama](https://github.com/criticaldata/mit/tree/main/data/events/2027/panama)
+### `Event` [📅 [2027-04-20] Panama](https://github.com/criticaldata/mit/tree/main/data/events/2027/panama)
 _updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
-### `Event` [📅 2026-09-01: Toronto](https://github.com/criticaldata/mit/tree/main/data/events/2026/toronto)
+### `Event` [📅 [2026-09-01] Toronto](https://github.com/criticaldata/mit/tree/main/data/events/2026/toronto)
 _updated today_
 
 Please confirm this event was cancelled.
@@ -146,29 +146,29 @@ Please confirm this event was cancelled.
 | `Grant` [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](https://github.com/criticaldata/mit/tree/main/data/funding/nhlbi-2026) | no updates |
 | `Grant` [snuh1](https://github.com/criticaldata/mit/tree/main/data/funding/snuh1) | no updates |
 | `Grant` [snuh2](https://github.com/criticaldata/mit/tree/main/data/funding/snuh2) | no updates |
-| `Event` [📅 2026-07-23: ACOG](https://github.com/criticaldata/mit/tree/main/data/events/2026/acog) | no updates |
-| `Event` [📅 2026-11-10: AIMed](https://github.com/criticaldata/mit/tree/main/data/events/2026/aimed) | no updates |
-| `Event` [📅 2026-07-22: Annual Intensive Review of Internal Medicine](https://github.com/criticaldata/mit/tree/main/data/events/2026/annual-intensive-review-of-internal-medicine) | no updates |
-| `Event` [📅 2026-07-27: Brazil](https://github.com/criticaldata/mit/tree/main/data/events/2026/brazil) | no updates |
-| `Event` [📅 2026-09-28: Chile](https://github.com/criticaldata/mit/tree/main/data/events/2026/chile) | no updates |
-| `Event` [📅 2026-09-24: Conv2x Symposium](https://github.com/criticaldata/mit/tree/main/data/events/2026/conv2x-symposium) | no updates |
-| `Event` [📅 2026-08-14: Denmark](https://github.com/criticaldata/mit/tree/main/data/events/2026/denmark) | no updates |
-| `Event` [📅 2026-06-26: Dominican Republic](https://github.com/criticaldata/mit/tree/main/data/events/2026/dominican-republic) | no updates |
-| `Event` [📅 2026-12-03: France](https://github.com/criticaldata/mit/tree/main/data/events/2026/france) | no updates |
-| `Event` [📅 2026-09-18: Ireland](https://github.com/criticaldata/mit/tree/main/data/events/2026/ireland) | no updates |
-| `Event` [📅 2026-09-04: Italy](https://github.com/criticaldata/mit/tree/main/data/events/2026/italy) | no updates |
-| `Event` [📅 2026-10-15: Korea](https://github.com/criticaldata/mit/tree/main/data/events/2026/korea) | no updates |
-| `Event` [📅 2026-09-10: National Library of Medicine](https://github.com/criticaldata/mit/tree/main/data/events/2026/national-library-of-medicine) | no updates |
-| `Event` [📅 2026-10-20: Taiwan](https://github.com/criticaldata/mit/tree/main/data/events/2026/taiwan) | no updates |
-| `Event` [📅 2026-10-18: Thailand](https://github.com/criticaldata/mit/tree/main/data/events/2026/thailand) | no updates |
-| `Event` [📅 2026-10-30: Turkey](https://github.com/criticaldata/mit/tree/main/data/events/2026/turkey) | no updates |
-| `Event` [📅 2026-11-21: Vancouver](https://github.com/criticaldata/mit/tree/main/data/events/2026/vancouver) | no updates |
-| `Event` [📅 2027-02-01: India](https://github.com/criticaldata/mit/tree/main/data/events/2027/india) | no updates |
-| `Event` [📅 2027-04-02: Mayo Clinic Florida](https://github.com/criticaldata/mit/tree/main/data/events/2027/mayo-clinic-florida) | no updates |
-| `Event` [📅 2027-08-31: World Congress of Epidemiology](https://github.com/criticaldata/mit/tree/main/data/events/2027/world-congress-of-epidemiology) | no updates |
-| `Event` [📅 date TBD: Care Innovation Challenge (Boston)](https://github.com/criticaldata/mit/tree/main/data/events/undated/care-innovation-challenge) | no updates |
-| `Event` [📅 date TBD: TBD: Australia Health AI Event Series](https://github.com/criticaldata/mit/tree/main/data/events/undated/tbd-australia-health-ai-event-series) | no updates |
-| `Event` [📅 date TBD: Vietnam Datathon: AI as a Catalyst](https://github.com/criticaldata/mit/tree/main/data/events/undated/vietnam-datathon-ai-as-a-catalyst) | no updates |
+| `Event` [📅 [2026-07-23] ACOG](https://github.com/criticaldata/mit/tree/main/data/events/2026/acog) | no updates |
+| `Event` [📅 [2026-11-10] AIMed](https://github.com/criticaldata/mit/tree/main/data/events/2026/aimed) | no updates |
+| `Event` [📅 [2026-07-22] Annual Intensive Review of Internal Medicine](https://github.com/criticaldata/mit/tree/main/data/events/2026/annual-intensive-review-of-internal-medicine) | no updates |
+| `Event` [📅 [2026-07-27] Brazil](https://github.com/criticaldata/mit/tree/main/data/events/2026/brazil) | no updates |
+| `Event` [📅 [2026-09-28] Chile](https://github.com/criticaldata/mit/tree/main/data/events/2026/chile) | no updates |
+| `Event` [📅 [2026-09-24] Conv2x Symposium](https://github.com/criticaldata/mit/tree/main/data/events/2026/conv2x-symposium) | no updates |
+| `Event` [📅 [2026-08-14] Denmark](https://github.com/criticaldata/mit/tree/main/data/events/2026/denmark) | no updates |
+| `Event` [📅 [2026-06-26] Dominican Republic](https://github.com/criticaldata/mit/tree/main/data/events/2026/dominican-republic) | no updates |
+| `Event` [📅 [2026-12-03] France](https://github.com/criticaldata/mit/tree/main/data/events/2026/france) | no updates |
+| `Event` [📅 [2026-09-18] Ireland](https://github.com/criticaldata/mit/tree/main/data/events/2026/ireland) | no updates |
+| `Event` [📅 [2026-09-04] Italy](https://github.com/criticaldata/mit/tree/main/data/events/2026/italy) | no updates |
+| `Event` [📅 [2026-10-15] Korea](https://github.com/criticaldata/mit/tree/main/data/events/2026/korea) | no updates |
+| `Event` [📅 [2026-09-10] National Library of Medicine](https://github.com/criticaldata/mit/tree/main/data/events/2026/national-library-of-medicine) | no updates |
+| `Event` [📅 [2026-10-20] Taiwan](https://github.com/criticaldata/mit/tree/main/data/events/2026/taiwan) | no updates |
+| `Event` [📅 [2026-10-18] Thailand](https://github.com/criticaldata/mit/tree/main/data/events/2026/thailand) | no updates |
+| `Event` [📅 [2026-10-30] Turkey](https://github.com/criticaldata/mit/tree/main/data/events/2026/turkey) | no updates |
+| `Event` [📅 [2026-11-21] Vancouver](https://github.com/criticaldata/mit/tree/main/data/events/2026/vancouver) | no updates |
+| `Event` [📅 [2027-02-01] India](https://github.com/criticaldata/mit/tree/main/data/events/2027/india) | no updates |
+| `Event` [📅 [2027-04-02] Mayo Clinic Florida](https://github.com/criticaldata/mit/tree/main/data/events/2027/mayo-clinic-florida) | no updates |
+| `Event` [📅 [2027-08-31] World Congress of Epidemiology](https://github.com/criticaldata/mit/tree/main/data/events/2027/world-congress-of-epidemiology) | no updates |
+| `Event` [📅 [TBD] Care Innovation Challenge (Boston)](https://github.com/criticaldata/mit/tree/main/data/events/undated/care-innovation-challenge) | no updates |
+| `Event` [📅 [TBD] TBD: Australia Health AI Event Series](https://github.com/criticaldata/mit/tree/main/data/events/undated/tbd-australia-health-ai-event-series) | no updates |
+| `Event` [📅 [TBD] Vietnam Datathon: AI as a Catalyst](https://github.com/criticaldata/mit/tree/main/data/events/undated/vietnam-datathon-ai-as-a-catalyst) | no updates |
 
 ---
 
@@ -176,48 +176,48 @@ Please confirm this event was cancelled.
 <summary>🗄️ Inactive (44)</summary>
 
 - `Project` [Next Generation MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-next-generation) _on-hold_
-- `Event` [📅 2025-07-17: Thailand Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-thailand) _completed_
-- `Event` [📅 2025-08-18: MITHIC Workshop 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/workshop-mithic) _completed_
-- `Event` [📅 2025-08-19: AMA August 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/ama-aug) _completed_
-- `Event` [📅 2025-08-21: Emory University Symposium and Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/event-emory) _completed_
-- `Event` [📅 2025-08-25: Singapore Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-singapore) _completed_
-- `Event` [📅 2025-09-03: Milan Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-milan) _completed_
-- `Event` [📅 2025-09-16: UPMC Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-upmc) _completed_
-- `Event` [📅 2025-09-27: Poland Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-poland) _completed_
-- `Event` [📅 2025-10-10: China Datathon October 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-china-oct) _completed_
-- `Event` [📅 2025-10-16: Korea Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-korea) _completed_
-- `Event` [📅 2025-10-27: Mexico Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-mexico) _completed_
-- `Event` [📅 2025-11-15: Vancouver Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-vancouver) _completed_
-- `Event` [📅 2025-11-19: Philips excursion November 19, 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/philips-excursion-november-19-2025) _completed_
-- `Event` [📅 2025-12-04: AMA December 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/ama-dec) _completed_
-- `Event` [📅 2025-12-10: France Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-france) _completed_
-- `Event` [📅 2026-01-15: AI as a Catalyst](https://github.com/criticaldata/mit/tree/main/data/events/2026/ai-as-a-catalyst) _completed_
-- `Event` [📅 2026-01-23: Vietnam Datathon 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-vietnam) _completed_
-- `Event` [📅 2026-02-12: Montreal Datathon February 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-montreal-feb) _completed_
-- `Event` [📅 2026-02-24: Hopkins Seminar 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/seminar-hopkins) _completed_
-- `Event` [📅 2026-02-26: Brown 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/brown-2026) _planned_
-- `Event` [📅 2026-02-26: Brown datathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/brown-datathon) _planned_
-- `Event` [📅 2026-03-16: ISICEM 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/event-isicem) _completed_
-- `Event` [📅 2026-03-19: Brown University DSAIY AI-a-Thon](https://github.com/criticaldata/mit/tree/main/data/events/2026/brown-university-dsaiy-ai-a-thon) _planned_
-- `Event` [📅 2026-03-23: AMA 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/ama-2026) _confirmed_
-- `Event` [📅 2026-03-27: Meeting with Rifat Atun and his lab](https://github.com/criticaldata/mit/tree/main/data/events/2026/meeting-with-rifat-atun-and-his-lab) _planned_
-- `Event` [📅 2026-03-27: Montreal Seminar March 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/seminar-montreal-mar) _completed_
-- `Event` [📅 2026-03-29: Quebec](https://github.com/criticaldata/mit/tree/main/data/events/2026/quebec) _prospect_
-- `Event` [📅 2026-04-09: Mayo Datathon 2026 MIT](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-datathon-2026-mit) _planned_
-- `Event` [📅 2026-04-10: Mayo Clinic Florida](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-clinic-florida) _prospect_
-- `Event` [📅 2026-04-10: Mayo Datathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-datathon) _prospect_
-- `Event` [📅 2026-04-15: WCA 2026 — World Congress of Anaesthesiologists](https://github.com/criticaldata/mit/tree/main/data/events/2026/conference-wca-morocco) _completed_
-- `Event` [📅 2026-04-15: WCA 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/wca-2026) _prospect_
-- `Event` [📅 2026-04-23: Panama Datathon 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-panama) _completed_
-- `Event` [📅 2026-04-27: HMS](https://github.com/criticaldata/mit/tree/main/data/events/2026/hms) _prospect_
-- `Event` [📅 2026-04-29: CHOC](https://github.com/criticaldata/mit/tree/main/data/events/2026/choc) _prospect_
-- `Event` [📅 2026-05-01: China Datathon May 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-china-may) _planned_
-- `Event` [📅 2026-05-01: Stanford](https://github.com/criticaldata/mit/tree/main/data/events/2026/stanford) _prospect_
-- `Event` [📅 2026-05-04: MGB](https://github.com/criticaldata/mit/tree/main/data/events/2026/mgb) _prospect_
-- `Event` [📅 2026-05-05: Hartford](https://github.com/criticaldata/mit/tree/main/data/events/2026/hartford) _prospect_
-- `Event` [📅 2026-05-07: Cincinnati](https://github.com/criticaldata/mit/tree/main/data/events/2026/cincinnati) _prospect_
-- `Event` [📅 2026-05-11: Hong Kong](https://github.com/criticaldata/mit/tree/main/data/events/2026/hong-kong) _prospect_
-- `Event` [📅 2026-05-29: MeHI's AI Workshop for Primary Care Innovation Challenge](https://github.com/criticaldata/mit/tree/main/data/events/2026/mehis-ai-workshop-for-primary) _prospect_
-- `Event` [📅 2026-06-12: China/Tibet](https://github.com/criticaldata/mit/tree/main/data/events/2026/chinatibet) _prospect_
+- `Event` [📅 [2025-07-17] Thailand Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-thailand) _completed_
+- `Event` [📅 [2025-08-18] MITHIC Workshop 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/workshop-mithic) _completed_
+- `Event` [📅 [2025-08-19] AMA August 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/ama-aug) _completed_
+- `Event` [📅 [2025-08-21] Emory University Symposium and Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/event-emory) _completed_
+- `Event` [📅 [2025-08-25] Singapore Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-singapore) _completed_
+- `Event` [📅 [2025-09-03] Milan Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-milan) _completed_
+- `Event` [📅 [2025-09-16] UPMC Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-upmc) _completed_
+- `Event` [📅 [2025-09-27] Poland Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-poland) _completed_
+- `Event` [📅 [2025-10-10] China Datathon October 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-china-oct) _completed_
+- `Event` [📅 [2025-10-16] Korea Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-korea) _completed_
+- `Event` [📅 [2025-10-27] Mexico Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-mexico) _completed_
+- `Event` [📅 [2025-11-15] Vancouver Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-vancouver) _completed_
+- `Event` [📅 [2025-11-19] Philips excursion November 19, 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/philips-excursion-november-19-2025) _completed_
+- `Event` [📅 [2025-12-04] AMA December 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/ama-dec) _completed_
+- `Event` [📅 [2025-12-10] France Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-france) _completed_
+- `Event` [📅 [2026-01-15] AI as a Catalyst](https://github.com/criticaldata/mit/tree/main/data/events/2026/ai-as-a-catalyst) _completed_
+- `Event` [📅 [2026-01-23] Vietnam Datathon 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-vietnam) _completed_
+- `Event` [📅 [2026-02-12] Montreal Datathon February 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-montreal-feb) _completed_
+- `Event` [📅 [2026-02-24] Hopkins Seminar 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/seminar-hopkins) _completed_
+- `Event` [📅 [2026-02-26] Brown 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/brown-2026) _planned_
+- `Event` [📅 [2026-02-26] Brown datathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/brown-datathon) _planned_
+- `Event` [📅 [2026-03-16] ISICEM 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/event-isicem) _completed_
+- `Event` [📅 [2026-03-19] Brown University DSAIY AI-a-Thon](https://github.com/criticaldata/mit/tree/main/data/events/2026/brown-university-dsaiy-ai-a-thon) _planned_
+- `Event` [📅 [2026-03-23] AMA 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/ama-2026) _confirmed_
+- `Event` [📅 [2026-03-27] Meeting with Rifat Atun and his lab](https://github.com/criticaldata/mit/tree/main/data/events/2026/meeting-with-rifat-atun-and-his-lab) _planned_
+- `Event` [📅 [2026-03-27] Montreal Seminar March 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/seminar-montreal-mar) _completed_
+- `Event` [📅 [2026-03-29] Quebec](https://github.com/criticaldata/mit/tree/main/data/events/2026/quebec) _prospect_
+- `Event` [📅 [2026-04-09] Mayo Datathon 2026 MIT](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-datathon-2026-mit) _planned_
+- `Event` [📅 [2026-04-10] Mayo Clinic Florida](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-clinic-florida) _prospect_
+- `Event` [📅 [2026-04-10] Mayo Datathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-datathon) _prospect_
+- `Event` [📅 [2026-04-15] WCA 2026 — World Congress of Anaesthesiologists](https://github.com/criticaldata/mit/tree/main/data/events/2026/conference-wca-morocco) _completed_
+- `Event` [📅 [2026-04-15] WCA 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/wca-2026) _prospect_
+- `Event` [📅 [2026-04-23] Panama Datathon 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-panama) _completed_
+- `Event` [📅 [2026-04-27] HMS](https://github.com/criticaldata/mit/tree/main/data/events/2026/hms) _prospect_
+- `Event` [📅 [2026-04-29] CHOC](https://github.com/criticaldata/mit/tree/main/data/events/2026/choc) _prospect_
+- `Event` [📅 [2026-05-01] China Datathon May 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-china-may) _planned_
+- `Event` [📅 [2026-05-01] Stanford](https://github.com/criticaldata/mit/tree/main/data/events/2026/stanford) _prospect_
+- `Event` [📅 [2026-05-04] MGB](https://github.com/criticaldata/mit/tree/main/data/events/2026/mgb) _prospect_
+- `Event` [📅 [2026-05-05] Hartford](https://github.com/criticaldata/mit/tree/main/data/events/2026/hartford) _prospect_
+- `Event` [📅 [2026-05-07] Cincinnati](https://github.com/criticaldata/mit/tree/main/data/events/2026/cincinnati) _prospect_
+- `Event` [📅 [2026-05-11] Hong Kong](https://github.com/criticaldata/mit/tree/main/data/events/2026/hong-kong) _prospect_
+- `Event` [📅 [2026-05-29] MeHI's AI Workshop for Primary Care Innovation Challenge](https://github.com/criticaldata/mit/tree/main/data/events/2026/mehis-ai-workshop-for-primary) _prospect_
+- `Event` [📅 [2026-06-12] China/Tibet](https://github.com/criticaldata/mit/tree/main/data/events/2026/chinatibet) _prospect_
 
 </details>
