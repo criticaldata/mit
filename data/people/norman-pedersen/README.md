@@ -6,6 +6,7 @@ _PhD Student · alumni · University of Copenhagen_
 
 | Project | Role | Status |
 |---|---|---|
+| [CXR Vector Embedding Release](../../projects/cxr-vector-embedding-release/project.yaml) | Team | active |
 | [Impact Analysis of Prediction Models (Causal Inference)](../../projects/impact-analysis-of-prediction-models/project.yaml) | Team | active |
 | [Vector Embedding Pipeline (v1)](../../projects/vector-embedding-pipeline/project.yaml) | Team | active |
 

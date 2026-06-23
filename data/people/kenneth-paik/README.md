@@ -6,6 +6,7 @@ _Research Scientist · active · MIT_
 
 | Project | Role | Status |
 |---|---|---|
+| [CXR Vector Embedding Release](../../projects/cxr-vector-embedding-release/project.yaml) | Team | active |
 | [MIT Critical Data Branding, Events & Comms](../../projects/mit-critical-data-branding-events-comms/project.yaml) | Team | active |
 | [Vector Embedding Pipeline (v1)](../../projects/vector-embedding-pipeline/project.yaml) | Lead | active |
 
