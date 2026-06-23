@@ -1,6 +1,6 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-23 · 101 records (27 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-23 · 102 records (28 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
 
 ---
 
@@ -16,7 +16,19 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (4)
+## 🟢 This week (5)
+
+### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
+_updated today_
+
+# Update June 23
+
+- Received comments & feedbacks from Dae Hyun Kim. Fixing on those comments
+
+## Task
+
+- Finalizing the manuscript
+- Submit to Nature (perspective article)
 
 ### `Project` [CXR Vector Embedding Release](https://github.com/criticaldata/mit/tree/main/data/projects/cxr-vector-embedding-release)
 _updated today_
