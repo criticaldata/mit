@@ -38,7 +38,17 @@
       "Bash(git commit -m ' *)",
       "Bash(py -c ' *)",
       "Bash(py scripts/generate_events_table.py)",
-      "Bash(python -c \"from datetime import date; print\\(date\\(2026,6,24\\).strftime\\('%A'\\)\\)\")"
+      "Bash(python -c \"from datetime import date; print\\(date\\(2026,6,24\\).strftime\\('%A'\\)\\)\")",
+      "Bash(gh label *)",
+      "PowerShell(gh label list --repo criticaldata/mit --limit 100)",
+      "PowerShell(\\(Get-Command gh\\).Source)",
+      "PowerShell($runId = gh api repos/criticaldata/mit/actions/runs --jq '.workflow_runs[] | select\\(.name == \"Generate Lab Dashboard\"\\) | .id' | Select-Object -First 1; gh api repos/criticaldata/mit/actions/runs/$runId/jobs --jq '.jobs[].steps[] | {name: .name, conclusion: .conclusion}')",
+      "PowerShell(gh run list --repo criticaldata/mit --workflow dashboard.yml --limit 3)",
+      "PowerShell(gh run view 28005193121 --repo criticaldata/mit --log-failed)",
+      "Bash(git commit -m 'fix: pull --rebase before push to avoid race with concurrent workflows *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)"
     ]
   }
 }
