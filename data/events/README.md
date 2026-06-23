@@ -1,18 +1,18 @@
 # Events
 
-## Upcoming (43)
+## Upcoming (50)
 
 | Date | Event | Location | Type | Status | Lead |
 |---|---|---|---|---|---|
-| 26 Feb 2026 | [Brown 2026](2026/brown-2026/event.yaml) |  | other | Planned |  |
 | 26 Feb 2026 | [Brown datathon](2026/brown-datathon/event.yaml) | Brown university | hackathon | Planned |  |
+| 26 Feb 2026 | [Brown 2026](2026/brown-2026/event.yaml) |  | other | Planned |  |
 | 19 Mar 2026 | [Brown University DSAIY AI-a-Thon](2026/brown-university-dsaiy-ai-a-thon/event.yaml) | Brown University: 225 Dyer St. Providence, RI | hackathon | Planned | [Leo Anthony Celi](../people/leo-celi/) |
 | 23–25 Mar 2026 | [AMA 2026](2026/ama-2026/event.yaml) | Chicago, IL | other | Confirmed | [Leo Anthony Celi](../people/leo-celi/) |
 | 27 Mar 2026 | [Meeting with Rifat Atun and his lab](2026/meeting-with-rifat-atun-and-his-lab/event.yaml) | Harvard Chan School of Public Health | other | Planned | [Leo Anthony Celi](../people/leo-celi/) |
 | 29–30 Mar 2026 | [Quebec](2026/quebec/event.yaml) | Quebec | other | Prospect | [Leo Anthony Celi](../people/leo-celi/) |
 | 09 Apr 2026 | [Mayo Datathon 2026 MIT](2026/mayo-datathon-2026-mit/event.yaml) |  | hackathon | Planned |  |
-| 10 Apr 2026 | [Mayo Datathon](2026/mayo-datathon/event.yaml) | Jacksonville, FL | hackathon | Prospect |  |
 | 10–12 Apr 2026 | [Mayo Clinic Florida](2026/mayo-clinic-florida/event.yaml) | Florida | other | Prospect |  |
+| 10 Apr 2026 | [Mayo Datathon](2026/mayo-datathon/event.yaml) | Jacksonville, FL | hackathon | Prospect |  |
 | 15–19 Apr 2026 | [WCA 2026](2026/wca-2026/event.yaml) | Morocco | other | Prospect |  |
 | 27 Apr 2026 | [HMS](2026/hms/event.yaml) |  | other | Prospect |  |
 | 29–30 Apr 2026 | [CHOC](2026/choc/event.yaml) | Irvine, CA | other | Prospect |  |
@@ -41,9 +41,16 @@
 | 10–13 Nov 2026 | [AIMed](2026/aimed/event.yaml) | Orlando, FL | other | Prospect |  |
 | 21–22 Nov 2026 | [Vancouver](2026/vancouver/event.yaml) | Vancouver | other | Prospect |  |
 | 3–05 Dec 2026 | [France](2026/france/event.yaml) | France | other | Prospect |  |
+| 09 Dec 2026 | [NYC](2026/nyc/event.yaml) | New York, USA | other | Planned |  |
+| 29 Jan 2027 | [Bunker Hill Community College](2027/bunker-hill-community-college/event.yaml) | Boston, USA | other | Planned |  |
 | 1–09 Feb 2027 | [India](2027/india/event.yaml) | India | other | Prospect |  |
 | 2–04 Apr 2027 | [Mayo Clinic Florida](2027/mayo-clinic-florida/event.yaml) | Florida | other | Prospect |  |
+| 9–10 Apr 2027 | [Ohio State University](2027/ohio-state-university/event.yaml) | USA | other | Planned |  |
+| 20–24 Apr 2027 | [Panama](2027/panama/event.yaml) | Panama | other | Planned |  |
+| 01 Jun 2027 | [Norway](2027/norway/event.yaml) | Norway | other | Planned |  |
 | 31 Aug–03 Sep 2027 | [World Congress of Epidemiology](2027/world-congress-of-epidemiology/event.yaml) | Colombia | other | Prospect |  |
+| 01 Oct 2027 | [China](2027/china/event.yaml) | China | other | Planned |  |
+| 22 Oct 2027 | [Greece](2027/greece/event.yaml) | Greece | other | Planned |  |
 | TBD | [Care Innovation Challenge (Boston)](undated/care-innovation-challenge/event.yaml) | Boston, MA | other | Prospect |  |
 | TBD | [TBD: Australia Health AI Event Series](undated/tbd-australia-health-ai-event-series/event.yaml) | Australia | other | Prospect |  |
 | TBD | [Vietnam Datathon: AI as a Catalyst](undated/vietnam-datathon-ai-as-a-catalyst/event.yaml) | Hanoi, Vietnam | hackathon | Planned | [Quang Bui](../people/quang-bui/) |
@@ -90,7 +97,4 @@
 </details>
 
 ---
-_Generated from `data/events/` — 68 records total._
-
----
-Last updated June 10
+_Generated from `data/events/` — 75 records total._
