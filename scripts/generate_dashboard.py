@@ -2,16 +2,19 @@
 """
 Generate DASHBOARD.md — weekly lab meeting dashboard.
 
-Tiers (display order):
+Covers three record types: projects, funding, events.
+Each type has its own section with the same tier system:
+
   🔴 Urgent    — most recent update has priority: urgent
   🟡 Blocked   — current state is type: blocked (cleared by type: resolved)
-  🟢 This week — last update within 7 days (not urgent or blocked)
-  ⚪ Stale     — no update in the past 7 days; 14+ days gets a visual flag
-  🗄️ Archived  — project status in {completed, on-hold, archived}
+  🟢 This week — last update within 7 days
+  ⚪ Stale     — no update in 7+ days; 14+ days flagged more strongly
+  🗄️ Archived  — inactive status, or past events
 
-Update frontmatter fields recognised:
-  priority: urgent          # promotes to 🔴 tier
-  type: weekly|adhoc|blocked|resolved
+Inactive statuses by type:
+  projects  → completed, on-hold, archived
+  funding   → rejected, withdrawn
+  events    → completed, cancelled, OR event date has passed
 """
 
 import re
@@ -21,17 +24,20 @@ from pathlib import Path
 import yaml
 
 PROJECTS_DIR = Path("data/projects")
-OUTPUT = Path("DASHBOARD.md")
-TODAY = date.today()
+FUNDING_DIR  = Path("data/funding")
+EVENTS_DIR   = Path("data/events")
+OUTPUT       = Path("DASHBOARD.md")
+TODAY        = date.today()
+REPO_URL     = "https://github.com/criticaldata/mit"
 
-INACTIVE_STATUSES = {"completed", "on-hold", "archived"}
-REPO_URL = "https://github.com/criticaldata/mit"
+PROJECT_INACTIVE = {"completed", "on-hold", "archived"}
+FUNDING_INACTIVE = {"rejected", "withdrawn"}
+EVENT_INACTIVE   = {"completed", "cancelled"}
 
 
 # ── parsing ───────────────────────────────────────────────────────────────────
 
 def parse_update(path):
-    """Return (frontmatter_dict, body_str) from a Markdown update file."""
     text = path.read_text(encoding="utf-8")
     if text.startswith("---"):
         parts = text.split("---", 2)
@@ -51,15 +57,20 @@ def update_date_from_name(path):
     return None
 
 
-def load_project(slug):
-    yaml_path = PROJECTS_DIR / slug / "project.yaml"
-    if not yaml_path.exists():
+def as_date(val):
+    """Coerce a yaml value (already a date, or a string) to date, or None."""
+    if val is None:
+        return None
+    if isinstance(val, date):
+        return val
+    try:
+        return date.fromisoformat(str(val))
+    except ValueError:
         return None
 
-    data = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
-    data["slug"] = slug
 
-    updates_dir = PROJECTS_DIR / slug / "updates"
+def load_updates(record_dir):
+    updates_dir = record_dir / "updates"
     updates = []
     if updates_dir.exists():
         for p in sorted(updates_dir.iterdir()):
@@ -70,16 +81,71 @@ def load_project(slug):
                 continue
             fm, body = parse_update(p)
             updates.append({"date": d, "fm": fm, "body": body})
-
     updates.sort(key=lambda u: u["date"], reverse=True)
-    data["updates"] = updates
-    return data
+    return updates
+
+
+# ── loaders ───────────────────────────────────────────────────────────────────
+
+def load_projects():
+    records = []
+    for d in sorted(PROJECTS_DIR.iterdir()):
+        if not d.is_dir() or d.name.startswith("."):
+            continue
+        yaml_path = d / "project.yaml"
+        if not yaml_path.exists():
+            continue
+        data = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
+        data["_slug"] = d.name
+        data["_url"]  = f"{REPO_URL}/tree/main/data/projects/{d.name}"
+        data["_type"] = "project"
+        data["updates"] = load_updates(d)
+        records.append(data)
+    return records
+
+
+def load_funding():
+    records = []
+    for d in sorted(FUNDING_DIR.iterdir()):
+        if not d.is_dir() or d.name.startswith("."):
+            continue
+        yaml_path = d / "funding.yaml"
+        if not yaml_path.exists():
+            continue
+        data = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
+        data["_slug"] = d.name
+        data["_url"]  = f"{REPO_URL}/tree/main/data/funding/{d.name}"
+        data["_type"] = "funding"
+        data["updates"] = load_updates(d)
+        records.append(data)
+    return records
+
+
+def load_events():
+    records = []
+    for year_dir in sorted(EVENTS_DIR.iterdir()):
+        if not year_dir.is_dir() or year_dir.name.startswith("."):
+            continue
+        for d in sorted(year_dir.iterdir()):
+            if not d.is_dir() or d.name.startswith("."):
+                continue
+            yaml_path = d / "event.yaml"
+            if not yaml_path.exists():
+                continue
+            data = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
+            data["_slug"] = d.name
+            data["_year"] = year_dir.name
+            data["_url"]  = f"{REPO_URL}/tree/main/data/events/{year_dir.name}/{d.name}"
+            data["_type"] = "event"
+            data["updates"] = load_updates(d)
+            records.append(data)
+    return records
 
 
 # ── classification ────────────────────────────────────────────────────────────
 
-def blocked_update(project):
-    for u in project["updates"]:
+def blocked_update(record):
+    for u in record["updates"]:
         t = u["fm"].get("type", "")
         if t == "blocked":
             return u
@@ -88,35 +154,43 @@ def blocked_update(project):
     return None
 
 
-def classify(project):
-    if project.get("status", "active") in INACTIVE_STATUSES:
+def event_is_past(record):
+    """True if the event's end date (or start date) has already passed."""
+    end   = as_date(record.get("date_end"))
+    start = as_date(record.get("date_start"))
+    if end:
+        return end < TODAY
+    if start:
+        return start < TODAY
+    return False  # undated — not past
+
+
+def classify(record, inactive_statuses):
+    status = record.get("status", "")
+
+    if status in inactive_statuses:
+        return "inactive"
+    if record["_type"] == "event" and event_is_past(record):
         return "inactive"
 
-    updates = project["updates"]
-    latest = updates[0] if updates else None
+    updates = record["updates"]
+    latest  = updates[0] if updates else None
 
     if latest and latest["fm"].get("priority") == "urgent":
         return "urgent"
-
-    if blocked_update(project):
+    if blocked_update(record):
         return "blocked"
-
     if latest and (TODAY - latest["date"]).days <= 7:
         return "this_week"
-
     return "stale"
 
 
 # ── rendering ─────────────────────────────────────────────────────────────────
 
-def project_url(slug):
-    return f"{REPO_URL}/tree/main/data/projects/{slug}"
-
-
-def age_str(project, flag_stale=True):
-    updates = project["updates"]
+def age_str(record, flag_stale=True):
+    updates = record["updates"]
     if not updates:
-        return "⚠️ **No updates yet**" if flag_stale else "no updates"
+        return "⚠️ **No updates yet**" if flag_stale else "—"
     days = (TODAY - updates[0]["date"]).days
     if days == 0:
         return "updated today"
@@ -129,21 +203,35 @@ def age_str(project, flag_stale=True):
     return f"{days}d ago"
 
 
-def full_card(project):
-    """Render a project as a full card with update body (for urgent/blocked/this-week)."""
-    slug = project["slug"]
-    title = project.get("title") or slug
-    url = project_url(slug)
-    age = age_str(project)
+def full_card(record):
+    title    = record.get("title") or record["_slug"]
+    url      = record["_url"]
+    age      = age_str(record)
+    updates  = record["updates"]
 
     lines = [f"### [{title}]({url})"]
-    lines.append(f"_{age}_")
 
-    blocking = blocked_update(project)
+    # Event date hint
+    if record["_type"] == "event":
+        start = as_date(record.get("date_start"))
+        if start:
+            days_until = (start - TODAY).days
+            if days_until == 0:
+                hint = "today"
+            elif days_until > 0:
+                hint = f"in {days_until}d ({start})"
+            else:
+                hint = str(start)
+            lines.append(f"_📅 {hint} · {age}_")
+        else:
+            lines.append(f"_📅 date TBD · {age}_")
+    else:
+        lines.append(f"_{age}_")
+
+    blocking = blocked_update(record)
     if blocking:
         lines.append(f"\n> **Blocked since {blocking['date']}**")
 
-    updates = project["updates"]
     if updates and updates[0]["body"]:
         lines.append("")
         lines.append(updates[0]["body"])
@@ -151,107 +239,135 @@ def full_card(project):
     return "\n".join(lines)
 
 
-def stale_row(project):
-    slug = project["slug"]
-    title = project.get("title") or slug
-    url = project_url(slug)
-    age = age_str(project)
+def stale_row(record):
+    title = record.get("title") or record["_slug"]
+    url   = record["_url"]
+    age   = age_str(record)
+
+    if record["_type"] == "event":
+        start = as_date(record.get("date_start"))
+        date_col = str(start) if start else "TBD"
+        return f"| [{title}]({url}) | {date_col} | {age} |"
     return f"| [{title}]({url}) | {age} |"
 
 
-def inactive_item(project):
-    slug = project["slug"]
-    title = project.get("title") or slug
-    url = project_url(slug)
-    status = project.get("status", "")
+def inactive_item(record):
+    title  = record.get("title") or record["_slug"]
+    url    = record["_url"]
+    status = record.get("status", "")
+    if record["_type"] == "event":
+        start = as_date(record.get("date_start"))
+        extra = f" · {start}" if start else ""
+        return f"- [{title}]({url}) _{status}{extra}_"
     return f"- [{title}]({url}) _{status}_"
 
 
-def render_tier(emoji, label, projects, renderer):
-    if not projects:
-        return ""
-    lines = [f"## {emoji} {label} ({len(projects)})\n"]
-    lines.append(renderer(projects))
-    lines.append("\n---")
+def render_full_cards(records):
+    return "\n\n".join(full_card(r) for r in records)
+
+
+def render_stale_table(records):
+    has_events = any(r["_type"] == "event" for r in records)
+    if has_events:
+        header = ["| Record | Date | Last update |", "|---|---|---|"]
+    else:
+        header = ["| Record | Last update |", "|---|---|"]
+    rows = [stale_row(r) for r in records]
+    return "\n".join(header + rows)
+
+
+def render_inactive_list(records):
+    return "\n".join(inactive_item(r) for r in records)
+
+
+def render_section(emoji, label, records, renderer, empty_msg):
+    if not records:
+        return f"### {emoji} {label} (0)\n\n_{empty_msg}_"
+    lines = [f"### {emoji} {label} ({len(records)})\n"]
+    lines.append(renderer(records))
     return "\n".join(lines)
 
 
-def render_full_cards(projects):
-    return "\n\n".join(full_card(p) for p in projects)
-
-
-def render_stale_table(projects):
-    rows = ["| Project | Last update |", "|---|---|"]
-    rows += [stale_row(p) for p in projects]
-    return "\n".join(rows)
-
-
-def render_inactive_list(projects):
-    return "\n".join(inactive_item(p) for p in projects)
-
-
-# ── main ──────────────────────────────────────────────────────────────────────
-
-def generate():
-    slugs = sorted(
-        d.name for d in PROJECTS_DIR.iterdir()
-        if d.is_dir() and not d.name.startswith(".")
-    )
-    projects = [p for s in slugs if (p := load_project(s)) is not None]
+def render_domain(heading, records, inactive_statuses):
+    if not records:
+        return ""
 
     tiers = {k: [] for k in ("urgent", "blocked", "this_week", "stale", "inactive")}
-    for p in projects:
-        tiers[classify(p)].append(p)
+    for r in records:
+        tiers[classify(r, inactive_statuses)].append(r)
 
-    def by_latest_desc(p):
-        u = p["updates"]
+    # Sort each tier
+    def by_latest_desc(r):
+        u = r["updates"]
         return u[0]["date"] if u else date.min
 
-    def by_title(p):
-        return (p.get("title") or p["slug"]).lower()
+    def by_title(r):
+        return (r.get("title") or r["_slug"]).lower()
 
-    def by_gap_desc(p):
-        u = p["updates"]
+    def by_gap_desc(r):
+        u = r["updates"]
         return (TODAY - u[0]["date"]).days if u else 9999
+
+    def by_date_start_asc(r):
+        d = as_date(r.get("date_start"))
+        return d if d else date.max
 
     tiers["urgent"].sort(key=by_latest_desc, reverse=True)
     tiers["blocked"].sort(key=by_latest_desc, reverse=True)
     tiers["this_week"].sort(key=by_title)
     tiers["stale"].sort(key=by_gap_desc, reverse=True)
-    tiers["inactive"].sort(key=by_title)
+    tiers["inactive"].sort(key=by_date_start_asc if inactive_statuses == EVENT_INACTIVE else by_title)
 
-    sections = [
-        f"# MIT Critical Data — Lab Dashboard\n",
-        f"_Generated {TODAY.isoformat()} · {len(projects)} projects · "
-        f"[contributing guide](docs/contributing.md)_\n",
-        "---",
-    ]
-
-    sections.append(render_tier("🔴", "Urgent", tiers["urgent"], render_full_cards)
-                    or "## 🔴 Urgent (0)\n\n_No urgent items._\n\n---")
-
-    sections.append(render_tier("🟡", "Blocked", tiers["blocked"], render_full_cards)
-                    or "## 🟡 Blocked (0)\n\n_No blocked projects._\n\n---")
-
-    sections.append(render_tier("🟢", "This week", tiers["this_week"], render_full_cards)
-                    or "## 🟢 This week (0)\n\n_No updates this week._\n\n---")
-
-    sections.append(render_tier("⚪", "Stale", tiers["stale"], render_stale_table)
-                    or "## ⚪ Stale (0)\n\n_All projects up to date._\n\n---")
+    # For events, sort this_week and stale by date_start too
+    if inactive_statuses == EVENT_INACTIVE:
+        tiers["this_week"].sort(key=by_date_start_asc)
+        tiers["stale"].sort(key=by_date_start_asc)
 
     inactive_count = len(tiers["inactive"])
-    inactive_body = (render_inactive_list(tiers["inactive"])
-                     if tiers["inactive"] else "_No archived projects._")
-    sections.append(
-        f"<details>\n<summary>🗄️ Archived / Inactive ({inactive_count})</summary>\n\n"
+    inactive_body  = (render_inactive_list(tiers["inactive"])
+                      if tiers["inactive"] else "_None._")
+
+    parts = [f"## {heading}\n"]
+    parts.append(render_section("🔴", "Urgent",    tiers["urgent"],    render_full_cards, "No urgent items."))
+    parts.append(render_section("🟡", "Blocked",   tiers["blocked"],   render_full_cards, "No blocked items."))
+    parts.append(render_section("🟢", "This week", tiers["this_week"], render_full_cards, "No updates this week."))
+    parts.append(render_section("⚪", "Stale",     tiers["stale"],     render_stale_table, "All up to date."))
+    parts.append(
+        f"<details>\n<summary>🗄️ Inactive ({inactive_count})</summary>\n\n"
         f"{inactive_body}\n\n</details>"
     )
 
-    OUTPUT.write_text("\n\n".join(sections) + "\n", encoding="utf-8")
-    print(f"Dashboard written -> {OUTPUT}  ({len(projects)} projects, "
-          f"{len(tiers['urgent'])} urgent, {len(tiers['blocked'])} blocked, "
-          f"{len(tiers['this_week'])} this week, {len(tiers['stale'])} stale, "
-          f"{len(tiers['inactive'])} inactive)")
+    active = sum(len(tiers[k]) for k in ("urgent", "blocked", "this_week", "stale"))
+    return "\n\n".join(parts), active, inactive_count
+
+
+# ── main ──────────────────────────────────────────────────────────────────────
+
+def generate():
+    projects = load_projects()
+    funding  = load_funding()
+    events   = load_events()
+
+    proj_md,  proj_active,  proj_inactive  = render_domain("Projects", projects, PROJECT_INACTIVE)
+    fund_md,  fund_active,  fund_inactive  = render_domain("Funding",  funding,  FUNDING_INACTIVE)
+    event_md, event_active, event_inactive = render_domain("Events",   events,   EVENT_INACTIVE)
+
+    total = len(projects) + len(funding) + len(events)
+
+    page = "\n\n---\n\n".join([
+        f"# MIT Critical Data — Lab Dashboard\n\n"
+        f"_Generated {TODAY.isoformat()} · "
+        f"{len(projects)} projects · {len(funding)} grants · {len(events)} events · "
+        f"[contributing guide](docs/contributing.md)_",
+        proj_md,
+        fund_md,
+        event_md,
+    ])
+
+    OUTPUT.write_text(page + "\n", encoding="utf-8")
+    print(f"Dashboard written -> {OUTPUT}  "
+          f"({len(projects)} projects, {len(funding)} grants, {len(events)} events, "
+          f"{total} total)")
 
 
 if __name__ == "__main__":
