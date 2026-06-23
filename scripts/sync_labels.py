@@ -96,9 +96,17 @@ def sync(token, repo):
     expected = {}
     for slug in record_slugs(PROJECTS_DIR):
         name = f"proj-{slug}"
+        if len(name) > 50:
+            truncated = name[:50]
+            print(f"  ! truncate  {name} -> {truncated}  (GitHub 50-char limit)")
+            name = truncated
         expected[name] = {"prefix": "proj-", "slug": slug}
     for slug in record_slugs(FUNDING_DIR):
         name = f"fund-{slug}"
+        if len(name) > 50:
+            truncated = name[:50]
+            print(f"  ! truncate  {name} -> {truncated}  (GitHub 50-char limit)")
+            name = truncated
         expected[name] = {"prefix": "fund-", "slug": slug}
 
     print(f"Expected: {len(expected)} labels "
@@ -133,7 +141,11 @@ def sync(token, repo):
             else:
                 print(f"  = ok      {name}")
 
-    # Delete stale managed labels (proj-/fund- with no matching folder)
+    # Delete stale managed labels (proj-/fund- with no matching folder).
+    # Known limitation: if a project folder is renamed, the old label is deleted
+    # and any issues carrying it silently lose that label. Migration logic (check
+    # for issues on the stale label before deleting, re-label them) is not yet
+    # implemented. See docs/working-notes.md for the backlog item.
     for name in sorted(existing):
         if not any(name.startswith(p) for p in COLORS):
             continue   # not a managed label — leave it alone
