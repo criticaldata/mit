@@ -2,7 +2,11 @@
 
 _Visiting Scientist · collaborator · Faculty of Medicine Switzerland_
 
-_No linked records found._
+## Projects
+
+| Project | Role | Status |
+|---|---|---|
+| [AI and Frailty](../../projects/ai-frailty/project.yaml) | Team | active |
 
 ---
 _Generated from lab records._

@@ -2,7 +2,12 @@
 
 _Research Scientist · active · MIT_
 
-_No linked records found._
+## Projects
+
+| Project | Role | Status |
+|---|---|---|
+| [MIMIC DEID Next](../../projects/mimic-deid-next/project.yaml) | Lead | active |
+| [Next Generation MIMIC](../../projects/mimic-next-generation/project.yaml) | Team | on-hold |
 
 ---
 _Generated from lab records._
