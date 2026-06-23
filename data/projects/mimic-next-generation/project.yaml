@@ -8,5 +8,7 @@ start_date:
 end_date:
 github_repo:
 description: |
+related:
+- mimic-deid-next
 tags:
 - mimic
