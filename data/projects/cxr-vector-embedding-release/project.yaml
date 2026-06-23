@@ -1,0 +1,18 @@
+title: CXR Vector Embedding Release
+status: active
+lead: ahram-han
+team:
+- norman-pedersen
+- kenneth-paik
+related:
+- vector-embedding-pipeline
+start_date: '2026-06-23'
+end_date:
+github_repo:
+description: |
+  Release of CXR vector embedding models on PhysioNet. Covers all pre-trained
+  transformer models from the vector embedding pipeline.
+tags:
+- vector-embeddings
+- cxr
+- physionet

@@ -1,6 +1,6 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-23 · 100 records (26 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-23 · 101 records (27 projects · 6 grants · 68 events) · [contributing guide](docs/contributing.md)_
 
 ---
 
@@ -16,7 +16,16 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (1)
+## 🟢 This week (2)
+
+### `Project` [CXR Vector Embedding Release](https://github.com/criticaldata/mit/tree/main/data/projects/cxr-vector-embedding-release)
+_updated today_
+
+Received approval to release on PhysioNet for all models.
+
+Tasks:
+- Add torchxrayvision CheXpert weights
+- Investigate chexagent-2-3b
 
 ### `Grant` [Smith Family Awards Program for Excellence in Biomedical Research](https://github.com/criticaldata/mit/tree/main/data/funding/hria-smith-2026)
 _updated today_
