@@ -40,7 +40,7 @@ TYPE_LABEL = {"project": "Project", "funding": "Grant", "event": "Event"}
 # ── parsing ───────────────────────────────────────────────────────────────────
 
 def parse_update(path):
-    text = path.read_text(encoding="utf-8")
+    text = path.read_text(encoding="utf-8-sig").lstrip()
     if text.startswith("---"):
         parts = text.split("---", 2)
         if len(parts) >= 3:
@@ -240,7 +240,7 @@ def event_date_hint(record):
     if days_until == 0:
         return "📅 today"
     if days_until > 0:
-        return f"📅 in {days_until}d ({start})"
+        return f"📅 {start}"
     return f"📅 {start}"
 
 

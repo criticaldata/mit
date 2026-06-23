@@ -66,75 +66,47 @@ _updated today_
 Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-track faculty position; we do not qualify.
 
 ### `Event` [Bunker Hill Community College](https://github.com/criticaldata/mit/tree/main/data/events/2027/bunker-hill-community-college)
-_📅 in 220d (2027-01-29) · updated today_
-
-﻿---
-type: adhoc
----
+_📅 2027-01-29 · updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [China](https://github.com/criticaldata/mit/tree/main/data/events/2027/china)
-_📅 in 465d (2027-10-01) · updated today_
-
-﻿---
-type: adhoc
----
+_📅 2027-10-01 · updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [Dublin Hackathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/dublin-hackathon)
-_📅 in 95d (2026-09-26) · updated today_
+_📅 2026-09-26 · updated today_
 
 Please confirm this event was cancelled.
 
 ### `Event` [Greece](https://github.com/criticaldata/mit/tree/main/data/events/2027/greece)
-_📅 in 486d (2027-10-22) · updated today_
-
-﻿---
-type: adhoc
----
+_📅 2027-10-22 · updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [Norway](https://github.com/criticaldata/mit/tree/main/data/events/2027/norway)
-_📅 in 343d (2027-06-01) · updated today_
-
-﻿---
-type: adhoc
----
+_📅 2027-06-01 · updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [NYC](https://github.com/criticaldata/mit/tree/main/data/events/2026/nyc)
-_📅 in 169d (2026-12-09) · updated today_
-
-﻿---
-type: adhoc
----
+_📅 2026-12-09 · updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [Ohio State University](https://github.com/criticaldata/mit/tree/main/data/events/2027/ohio-state-university)
-_📅 in 290d (2027-04-09) · updated today_
-
-﻿---
-type: adhoc
----
+_📅 2027-04-09 · updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [Panama](https://github.com/criticaldata/mit/tree/main/data/events/2027/panama)
-_📅 in 301d (2027-04-20) · updated today_
-
-﻿---
-type: adhoc
----
+_📅 2027-04-20 · updated today_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [Toronto](https://github.com/criticaldata/mit/tree/main/data/events/2026/toronto)
-_📅 in 70d (2026-09-01) · updated today_
+_📅 2026-09-01 · updated today_
 
 Please confirm this event was cancelled.
 
