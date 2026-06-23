@@ -335,7 +335,9 @@ def generate():
 
     def by_gap_desc(r):
         u = r["updates"]
-        return (TODAY - u[0]["date"]).days if u else 9999
+        # Records with updates sort by gap descending (oldest first).
+        # Records with no updates sort after all updated records.
+        return (1, 0) if not u else (0, -(TODAY - u[0]["date"]).days)
 
     def by_type_then_title(r):
         order = {"project": 0, "funding": 1, "event": 2}
