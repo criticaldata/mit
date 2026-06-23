@@ -1,12 +1,13 @@
 # Projects
 
-## Active (27)
+## Active (28)
 
 | Project | Lead | Tags | GitHub |
 |---|---|---|---|
 | [6 Tools Framework + Jan 15 Event Take-aways](6-tools-framework-jan-15-event-take-aways/project.yaml) | [Laurine Sprehe](../people/laurine-sprehe/) | `education`, `events`, `workshops` |  |
 | [AGORA: Agentic Game of Research and Academia](agora-agentic-game-of-research-and-academia/project.yaml) | [Quang Bui](../people/quang-bui/), [Leo Anthony Celi](../people/leo-celi/) | `ai`, `education` |  |
 | [AI as a Catalyst (Jan 15, 2026 Event)](ai-as-a-catalyst/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `education`, `events`, `workshops` |  |
+| [AI and Frailty](ai-frailty/project.yaml) | [Tiger Krittaphas](../people/tiger-krittaphas/) | `education`, `workshops` |  |
 | [Bias in Omics Data Beyond Non-Representativeness](bias-in-omics-data-beyond-non-representativeness/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `systematic-review` | [repo](https://github.com/criticaldata/omics-bias) |
 | [BODHI: Medical AI as Epistemic Agent](bodhi-medical-ai-as-epistemic-agent/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `ai-epistemics`, `framework-design` | [repo](https://github.com/sebasmos/bodhi-llms) |
 | [Brown Mental Health LLM-athon (Feb 26-27, 2026)](brown-mental-health-llm-athon/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `education`, `events`, `workshops` |  |
@@ -33,4 +34,4 @@
 | [XAI Claims in ICU ML Models (Scoping Review)](xai-claims-in-icu-ml-models/project.yaml) | [Marlene Louisa Moerig](../people/marlene-louisa-moerig/) | `systematic-review` |  |
 
 ---
-_Generated from `data/projects/` — 27 records total._
+_Generated from `data/projects/` — 28 records total._
