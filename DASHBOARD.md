@@ -129,7 +129,7 @@ Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-
 <details>
 <summary>🗄️ Inactive (46)</summary>
 
-- `Project` [Next Generation MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/next-generation-mimic) _on-hold_
+- `Project` [Next Generation MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-next-generation) _on-hold_
 - `Event` [Thailand Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-thailand) _completed · 2025-07-17_
 - `Event` [MITHIC Workshop 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/workshop-mithic) _completed · 2025-08-18_
 - `Event` [AMA August 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/ama-aug) _completed · 2025-08-19_
