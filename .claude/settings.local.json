@@ -48,7 +48,8 @@
       "Bash(git commit -m 'fix: pull --rebase before push to avoid race with concurrent workflows *)",
       "Bash(git push *)",
       "Bash(git pull *)",
-      "Bash(git stash *)"
+      "Bash(git stash *)",
+      "Bash(git mv *)"
     ]
   }
 }
