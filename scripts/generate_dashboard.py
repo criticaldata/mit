@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate docs/index.html — weekly lab meeting dashboard.
+Generate DASHBOARD.md — weekly lab meeting dashboard.
 
 Tiers (display order):
   🔴 Urgent    — most recent update has priority: urgent
@@ -14,18 +14,18 @@ Update frontmatter fields recognised:
   type: weekly|adhoc|blocked|resolved
 """
 
-import html
 import re
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 
 import yaml
 
 PROJECTS_DIR = Path("data/projects")
-OUTPUT = Path("docs/index.html")
+OUTPUT = Path("DASHBOARD.md")
 TODAY = date.today()
 
 INACTIVE_STATUSES = {"completed", "on-hold", "archived"}
+REPO_URL = "https://github.com/criticaldata/mit"
 
 
 # ── parsing ───────────────────────────────────────────────────────────────────
@@ -42,7 +42,6 @@ def parse_update(path):
 
 
 def update_date_from_name(path):
-    """Extract date from filenames like YYYY-MM-DD[...].md"""
     m = re.match(r"(\d{4}-\d{2}-\d{2})", path.stem)
     if m:
         try:
@@ -53,7 +52,6 @@ def update_date_from_name(path):
 
 
 def load_project(slug):
-    """Load project YAML + updates. Returns dict or None."""
     yaml_path = PROJECTS_DIR / slug / "project.yaml"
     if not yaml_path.exists():
         return None
@@ -81,7 +79,6 @@ def load_project(slug):
 # ── classification ────────────────────────────────────────────────────────────
 
 def blocked_update(project):
-    """Return the blocking update dict if project is currently blocked, else None."""
     for u in project["updates"]:
         t = u["fm"].get("type", "")
         if t == "blocked":
@@ -92,8 +89,7 @@ def blocked_update(project):
 
 
 def classify(project):
-    status = project.get("status", "active")
-    if status in INACTIVE_STATUSES:
+    if project.get("status", "active") in INACTIVE_STATUSES:
         return "inactive"
 
     updates = project["updates"]
@@ -105,80 +101,93 @@ def classify(project):
     if blocked_update(project):
         return "blocked"
 
-    if latest:
-        if (TODAY - latest["date"]).days <= 7:
-            return "this_week"
+    if latest and (TODAY - latest["date"]).days <= 7:
+        return "this_week"
 
     return "stale"
 
 
 # ── rendering ─────────────────────────────────────────────────────────────────
 
-def safe_body(text):
-    """Convert freeform update body to safe HTML."""
-    escaped = html.escape(text)
-    paragraphs = re.split(r"\n\s*\n", escaped.strip())
-    out = []
-    for p in paragraphs:
-        p = p.strip()
-        if not p:
-            continue
-        p = p.replace("\n", "<br>")
-        p = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", p)
-        p = re.sub(r"\*(.+?)\*", r"<em>\1</em>", p)
-        out.append(f"<p>{p}</p>")
-    return "\n".join(out)
+def project_url(slug):
+    return f"{REPO_URL}/tree/main/data/projects/{slug}"
 
 
-def project_card(project, show_update=True):
-    slug = project["slug"]
-    title = html.escape(project.get("title") or slug)
+def age_str(project, flag_stale=True):
     updates = project["updates"]
-    latest = updates[0] if updates else None
-
-    if latest:
-        days = (TODAY - latest["date"]).days
-        if days == 0:
-            age = "Updated today"
-        elif days <= 7:
-            age = f"Updated {days}d ago"
-        elif days >= 14:
-            age = f'<span class="stale-flag">{days}d since last update</span>'
-        else:
-            age = f"{days}d ago"
-    else:
-        age = '<span class="stale-flag">No updates yet</span>'
-
-    repo_url = f"https://github.com/criticaldata/mit/tree/main/data/projects/{slug}"
-
-    blocked = blocked_update(project)
-    blocked_html = ""
-    if blocked:
-        blocked_html = (
-            f'<div class="blocked-badge">Blocked since {blocked["date"]}</div>'
-        )
-
-    body_html = ""
-    if show_update and latest and latest["body"]:
-        body_html = f'<div class="update-body">{safe_body(latest["body"])}</div>'
-
-    return f"""<div class="card" id="{slug}">
-  <div class="card-header">
-    <span class="card-title"><a href="{repo_url}" target="_blank" rel="noopener">{title}</a></span>
-    <span class="card-meta">{age}</span>
-  </div>
-  {blocked_html}{body_html}
-</div>"""
+    if not updates:
+        return "⚠️ **No updates yet**" if flag_stale else "no updates"
+    days = (TODAY - updates[0]["date"]).days
+    if days == 0:
+        return "updated today"
+    if days == 1:
+        return "updated 1d ago"
+    if days <= 7:
+        return f"updated {days}d ago"
+    if days >= 14 and flag_stale:
+        return f"⚠️ **{days}d since last update**"
+    return f"{days}d ago"
 
 
-def render_section(emoji, label, projects, show_update=True):
+def full_card(project):
+    """Render a project as a full card with update body (for urgent/blocked/this-week)."""
+    slug = project["slug"]
+    title = project.get("title") or slug
+    url = project_url(slug)
+    age = age_str(project)
+
+    lines = [f"### [{title}]({url})"]
+    lines.append(f"_{age}_")
+
+    blocking = blocked_update(project)
+    if blocking:
+        lines.append(f"\n> **Blocked since {blocking['date']}**")
+
+    updates = project["updates"]
+    if updates and updates[0]["body"]:
+        lines.append("")
+        lines.append(updates[0]["body"])
+
+    return "\n".join(lines)
+
+
+def stale_row(project):
+    slug = project["slug"]
+    title = project.get("title") or slug
+    url = project_url(slug)
+    age = age_str(project)
+    return f"| [{title}]({url}) | {age} |"
+
+
+def inactive_item(project):
+    slug = project["slug"]
+    title = project.get("title") or slug
+    url = project_url(slug)
+    status = project.get("status", "")
+    return f"- [{title}]({url}) _{status}_"
+
+
+def render_tier(emoji, label, projects, renderer):
     if not projects:
         return ""
-    cards = "\n".join(project_card(p, show_update=show_update) for p in projects)
-    return f"""<section class="tier">
-  <h2>{emoji} {html.escape(label)} <span class="count">({len(projects)})</span></h2>
-  <div class="cards">{cards}</div>
-</section>"""
+    lines = [f"## {emoji} {label} ({len(projects)})\n"]
+    lines.append(renderer(projects))
+    lines.append("\n---")
+    return "\n".join(lines)
+
+
+def render_full_cards(projects):
+    return "\n\n".join(full_card(p) for p in projects)
+
+
+def render_stale_table(projects):
+    rows = ["| Project | Last update |", "|---|---|"]
+    rows += [stale_row(p) for p in projects]
+    return "\n".join(rows)
+
+
+def render_inactive_list(projects):
+    return "\n".join(inactive_item(p) for p in projects)
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
@@ -211,108 +220,34 @@ def generate():
     tiers["stale"].sort(key=by_gap_desc, reverse=True)
     tiers["inactive"].sort(key=by_title)
 
-    inactive_cards = (
-        "\n".join(project_card(p, show_update=False) for p in tiers["inactive"])
-        if tiers["inactive"]
-        else "<p class='empty'>No archived projects.</p>"
-    )
+    sections = [
+        f"# MIT Critical Data — Lab Dashboard\n",
+        f"_Generated {TODAY.isoformat()} · {len(projects)} projects · "
+        f"[contributing guide](docs/contributing.md)_\n",
+        "---",
+    ]
+
+    sections.append(render_tier("🔴", "Urgent", tiers["urgent"], render_full_cards)
+                    or "## 🔴 Urgent (0)\n\n_No urgent items._\n\n---")
+
+    sections.append(render_tier("🟡", "Blocked", tiers["blocked"], render_full_cards)
+                    or "## 🟡 Blocked (0)\n\n_No blocked projects._\n\n---")
+
+    sections.append(render_tier("🟢", "This week", tiers["this_week"], render_full_cards)
+                    or "## 🟢 This week (0)\n\n_No updates this week._\n\n---")
+
+    sections.append(render_tier("⚪", "Stale", tiers["stale"], render_stale_table)
+                    or "## ⚪ Stale (0)\n\n_All projects up to date._\n\n---")
+
     inactive_count = len(tiers["inactive"])
+    inactive_body = (render_inactive_list(tiers["inactive"])
+                     if tiers["inactive"] else "_No archived projects._")
+    sections.append(
+        f"<details>\n<summary>🗄️ Archived / Inactive ({inactive_count})</summary>\n\n"
+        f"{inactive_body}\n\n</details>"
+    )
 
-    body_sections = "\n".join(filter(None, [
-        render_section("🔴", "Urgent", tiers["urgent"]),
-        render_section("🟡", "Blocked", tiers["blocked"]),
-        render_section("🟢", "This week", tiers["this_week"]),
-        render_section("⚪", "Stale", tiers["stale"]),
-    ]))
-
-    page = f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIT Critical Data — Lab Dashboard</title>
-  <style>
-    *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
-    body {{
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f6f8fa; color: #24292f; line-height: 1.6;
-      padding: 2rem 1.5rem;
-      max-width: 860px; margin: 0 auto;
-    }}
-    header {{ margin-bottom: 2rem; }}
-    header h1 {{ font-size: 1.4rem; font-weight: 700; }}
-    .meta {{ color: #57606a; font-size: 0.82rem; margin-top: 0.25rem; }}
-    .tier {{ margin-bottom: 2.5rem; }}
-    h2 {{ font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }}
-    .count {{ font-weight: 400; color: #57606a; }}
-    .cards {{ display: flex; flex-direction: column; gap: 0.6rem; }}
-    .card {{
-      background: #fff; border: 1px solid #d0d7de; border-radius: 8px;
-      padding: 0.9rem 1rem;
-    }}
-    .card-header {{
-      display: flex; justify-content: space-between;
-      align-items: baseline; gap: 1rem; flex-wrap: wrap;
-    }}
-    .card-title {{ font-weight: 600; font-size: 0.92rem; }}
-    .card-title a {{ color: #0969da; text-decoration: none; }}
-    .card-title a:hover {{ text-decoration: underline; }}
-    .card-meta {{ font-size: 0.78rem; color: #57606a; flex-shrink: 0; }}
-    .stale-flag {{ color: #cf222e; font-weight: 600; }}
-    .blocked-badge {{
-      display: inline-block; margin-top: 0.4rem;
-      font-size: 0.75rem; font-weight: 500;
-      background: #fff8c5; color: #9a6700;
-      border: 1px solid #d4a72c; border-radius: 4px;
-      padding: 0.15rem 0.5rem;
-    }}
-    .update-body {{
-      margin-top: 0.65rem; padding-top: 0.65rem;
-      border-top: 1px solid #f0f0f0;
-      font-size: 0.88rem; color: #444d56;
-    }}
-    .update-body p {{ margin-bottom: 0.4rem; }}
-    .update-body p:last-child {{ margin-bottom: 0; }}
-    details {{ margin-top: 1rem; }}
-    details summary {{
-      cursor: pointer; user-select: none;
-      font-size: 0.92rem; font-weight: 600;
-      color: #57606a; list-style: none;
-      display: flex; align-items: center; gap: 0.4rem;
-    }}
-    details summary::-webkit-details-marker {{ display: none; }}
-    .chevron {{ font-style: normal; display: inline-block; transition: transform 0.15s; }}
-    details[open] .chevron {{ transform: rotate(90deg); }}
-    .archived-cards {{ margin-top: 1rem; display: flex; flex-direction: column; gap: 0.6rem; }}
-    .empty {{ color: #57606a; font-size: 0.88rem; margin-top: 0.75rem; }}
-    @media (prefers-color-scheme: dark) {{
-      body {{ background: #0d1117; color: #e6edf3; }}
-      .card {{ background: #161b22; border-color: #30363d; }}
-      .card-title a {{ color: #58a6ff; }}
-      .card-meta, .count, .meta {{ color: #8b949e; }}
-      .update-body {{ color: #c9d1d9; border-top-color: #21262d; }}
-      .blocked-badge {{ background: #2d2101; color: #d29922; border-color: #6e4c05; }}
-      details summary {{ color: #8b949e; }}
-    }}
-  </style>
-</head>
-<body>
-  <header>
-    <h1>MIT Critical Data — Lab Dashboard</h1>
-    <p class="meta">Generated {TODAY.isoformat()} &middot; {len(projects)} active projects</p>
-  </header>
-
-  {body_sections}
-
-  <details>
-    <summary><span class="chevron">›</span>&nbsp;🗄️ Archived / Inactive <span class="count" style="margin-left:0.25rem">({inactive_count})</span></summary>
-    <div class="archived-cards">{inactive_cards}</div>
-  </details>
-</body>
-</html>"""
-
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(page, encoding="utf-8")
+    OUTPUT.write_text("\n\n".join(sections) + "\n", encoding="utf-8")
     print(f"Dashboard written -> {OUTPUT}  ({len(projects)} projects, "
           f"{len(tiers['urgent'])} urgent, {len(tiers['blocked'])} blocked, "
           f"{len(tiers['this_week'])} this week, {len(tiers['stale'])} stale, "
