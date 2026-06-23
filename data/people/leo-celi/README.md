@@ -41,7 +41,7 @@ _PI · active · MIT_
 | [DOJO](../../funding/dojo/funding.yaml) |  | Lead | drafting |
 | [Smith Family Awards Program for Excellence in Biomedical Research](../../funding/hria-smith-2026/funding.yaml) | Health Resources in Action (HRiA) | Team | withdrawn |
 | [Accessible Mulimodal Vector Embeddings for Global Cardiovascular AI](../../funding/nhlbi-2026/funding.yaml) | NHLBI | Lead | under-revision |
-| [NVIDIA Academic Grant Program 2026](../../funding/nvidia-2026/funding.yaml) | NVIDIA | Lead | submitted |
+| [NVIDIA Academic Grant Program 2026](../../funding/nvidia-2026/funding.yaml) | NVIDIA | Lead | awarded |
 | [snuh1](../../funding/snuh1/funding.yaml) | KHIDI | Lead | awarded |
 | [snuh2](../../funding/snuh2/funding.yaml) | KHIDI | Lead | awarded |
 
