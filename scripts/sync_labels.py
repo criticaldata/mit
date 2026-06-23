@@ -79,10 +79,14 @@ def list_labels(token, repo):
 # ── folder discovery ──────────────────────────────────────────────────────────
 
 def record_slugs(directory):
-    """Return sorted list of record folder names, skipping non-record dirs."""
+    """Return sorted list of record folder names, skipping non-record dirs.
+
+    For data/projects/, the archive/ subfolder is skipped — archived projects
+    no longer need active GitHub labels.
+    """
     if not directory.exists():
         return []
-    skip = {"updates"}
+    skip = {"updates", "archive"}
     return sorted(
         d.name for d in directory.iterdir()
         if d.is_dir() and d.name not in skip and not d.name.startswith(".")

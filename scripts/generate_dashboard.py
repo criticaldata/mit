@@ -90,8 +90,10 @@ def load_updates(record_dir):
 
 def load_projects():
     records = []
+
+    # Active projects — flat under data/projects/<slug>/
     for d in sorted(PROJECTS_DIR.iterdir()):
-        if not d.is_dir() or d.name.startswith("."):
+        if not d.is_dir() or d.name.startswith(".") or d.name == "archive":
             continue
         yp = d / "project.yaml"
         if not yp.exists():
@@ -102,6 +104,27 @@ def load_projects():
                     _inactive=PROJECT_INACTIVE,
                     updates=load_updates(d))
         records.append(data)
+
+    # Archived projects — data/projects/archive/<year>/<slug>/
+    archive_dir = PROJECTS_DIR / "archive"
+    if archive_dir.exists():
+        for year_dir in sorted(archive_dir.iterdir()):
+            if not year_dir.is_dir() or year_dir.name.startswith("."):
+                continue
+            for d in sorted(year_dir.iterdir()):
+                if not d.is_dir() or d.name.startswith("."):
+                    continue
+                yp = d / "project.yaml"
+                if not yp.exists():
+                    continue
+                data = yaml.safe_load(yp.read_text(encoding="utf-8")) or {}
+                rel_path = f"data/projects/archive/{year_dir.name}/{d.name}"
+                data.update(_slug=d.name, _type="project",
+                            _url=f"{REPO_URL}/tree/main/{rel_path}",
+                            _inactive=PROJECT_INACTIVE,
+                            updates=load_updates(d))
+                records.append(data)
+
     return records
 
 

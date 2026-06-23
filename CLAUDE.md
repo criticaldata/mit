@@ -24,6 +24,11 @@ This repository is the lab's operational database — plain-text YAML files trac
           project.yaml
           updates/
             2026-01-15.md
+        archive/        # Completed/archived projects, organised by year
+          2025/
+            old-project/
+              project.yaml
+              updates/
       events/           # Conferences, talks, workshops
         2026/
           symposium/
@@ -104,11 +109,16 @@ Standard update frontmatter:
     lead:                  # REQUIRED — links to data/people/
     team: []               # links to data/people/
     funding: []            # links to data/funding/
+    related: []            # links to data/projects/ — sibling or related projects
     start_date:
     end_date:              # leave blank if active
     github_repo:
     description: |
     tags: []               # lowercase kebab-case, topic/theme
+
+Archive convention: move completed/archived projects to
+data/projects/archive/<year>/<slug>/ to keep the active list clean.
+Relation references (related, outputs, etc.) still use the slug alone.
 
 ### events
 
