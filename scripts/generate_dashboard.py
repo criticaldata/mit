@@ -244,16 +244,21 @@ def event_date_hint(record):
     return f"📅 {start}"
 
 
+def display_title(record):
+    title = record.get("title") or record["_slug"]
+    if record["_type"] == "event":
+        return f"{event_date_hint(record)}: {title}"
+    return title
+
+
 def full_card(record):
-    title   = record.get("title") or record["_slug"]
+    title   = display_title(record)
     url     = record["_url"]
     badge   = type_badge(record)
     age     = age_str(record)
     updates = record["updates"]
 
     meta = f"_{age}_"
-    if record["_type"] == "event":
-        meta = f"_{event_date_hint(record)} · {age}_"
 
     lines = [f"### {badge} [{title}]({url})", meta]
 
@@ -268,30 +273,19 @@ def full_card(record):
     return "\n".join(lines)
 
 
-def stale_row(record, include_date_col=False):
-    title = record.get("title") or record["_slug"]
+def stale_row(record):
+    title = display_title(record)
     url   = record["_url"]
     badge = type_badge(record)
     age   = age_str(record)
-    if include_date_col:
-        if record["_type"] == "event":
-            start = as_date(record.get("date_start"))
-            date_col = str(start) if start else "TBD"
-        else:
-            date_col = ""
-        return f"| {badge} [{title}]({url}) | {date_col} | {age} |"
     return f"| {badge} [{title}]({url}) | {age} |"
 
 
 def inactive_item(record):
-    title  = record.get("title") or record["_slug"]
+    title  = display_title(record)
     url    = record["_url"]
     badge  = type_badge(record)
     status = record.get("status", "")
-    if record["_type"] == "event":
-        start = as_date(record.get("date_start"))
-        extra = f" · {start}" if start else ""
-        return f"- {badge} [{title}]({url}) _{status}{extra}_"
     return f"- {badge} [{title}]({url}) _{status}_"
 
 
@@ -305,13 +299,8 @@ def render_tier(emoji, label, records, empty_msg):
     if emoji in ("🔴", "🟡", "🟢"):
         body = "\n\n".join(full_card(r) for r in records)
     elif emoji == "⚪":
-        # Mixed records: use two-col table for non-events, three-col for events
-        has_events = any(r["_type"] == "event" for r in records)
-        if has_events:
-            rows = ["| Record | Date | Last update |", "|---|---|---|"]
-        else:
-            rows = ["| Record | Last update |", "|---|---|"]
-        rows += [stale_row(r, include_date_col=has_events) for r in records]
+        rows = ["| Record | Last update |", "|---|---|"]
+        rows += [stale_row(r) for r in records]
         body = "\n".join(rows)
     else:
         body = "\n".join(inactive_item(r) for r in records)
