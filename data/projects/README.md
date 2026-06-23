@@ -1,6 +1,6 @@
 # Projects
 
-## Active (28)
+## Active (29)
 
 | Project | Lead | Tags | GitHub |
 |---|---|---|---|
@@ -17,6 +17,7 @@
 | [Impact Analysis of Prediction Models (Causal Inference)](impact-analysis-of-prediction-models/project.yaml) | [Ryohei Kobayashi (Yamamoto)](../people/ryohei-kobayashi-yamamoto/) | `clinical-prediction`, `causal-inference` | [repo](https://github.com/ryohei-hey/mimiciv-rox-strategy-impact-analysis) |
 | [Lab-MAE: Foundation Model for Lab Data](lab-mae-foundation-model-for-lab-data/project.yaml) | [Yugang Jia](../people/yugang-jia/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/dsrestrepo/Lab-MAE-Foundation-Tabular) |
 | [LabTube: 3D Temporal Modeling of ICU Labs](labtube-3d-temporal-modeling-of-icu-labs/project.yaml) | [Boya Zhang](../people/boya-zhang/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/tinaboya/LabTube) |
+| [LLM Interrogation](llm-interrogation/project.yaml) | [Kenneth Paik](../people/kenneth-paik/) |  | None |
 | [M4: Clinical Research Agent (MCP)](m4-clinical-research-agent/project.yaml) | [Hannes Ill](../people/hannes-ill/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/hannesill/m4) |
 | [MedScope: Pain Documentation Bias](medscope-pain-documentation-bias/project.yaml) | [Boya Zhang](../people/boya-zhang/) | `bias`, `fairness`, `representation` | [repo](https://github.com/tinaboya/MedScope) |
 | [MIT Critical Data Branding, Events & Comms](mit-critical-data-branding-events-comms/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `lab-operations` |  |
@@ -34,4 +35,4 @@
 | [XAI Claims in ICU ML Models (Scoping Review)](xai-claims-in-icu-ml-models/project.yaml) | [Marlene Louisa Moerig](../people/marlene-louisa-moerig/) | `systematic-review` |  |
 
 ---
-_Generated from `data/projects/` — 28 records total._
+_Generated from `data/projects/` — 29 records total._
