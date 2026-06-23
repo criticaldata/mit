@@ -1,6 +1,6 @@
 # Projects
 
-## Active (26)
+## Active (27)
 
 | Project | Lead | Tags | GitHub |
 |---|---|---|---|
@@ -11,6 +11,7 @@
 | [BODHI: Medical AI as Epistemic Agent](bodhi-medical-ai-as-epistemic-agent/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `ai-epistemics`, `framework-design` | [repo](https://github.com/sebasmos/bodhi-llms) |
 | [Brown Mental Health LLM-athon (Feb 26-27, 2026)](brown-mental-health-llm-athon/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `education`, `events`, `workshops` |  |
 | [Combinators are Dead](combinators-are-dead/project.yaml) | [Quang Bui](../people/quang-bui/), [Leo Anthony Celi](../people/leo-celi/) | `ai` | [repo](https://github.com/criticaldata/are-combinators-dead) |
+| [CXR Vector Embedding Release](cxr-vector-embedding-release/project.yaml) | [Ahram Han](../people/ahram-han/) | `vector-embeddings`, `cxr`, `physionet` | None |
 | [Epidemiology of Sentiments in Clinical Notes](epidemiology-of-sentiments-in-clinical-notes/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `systematic-review` |  |
 | [Impact Analysis of Prediction Models (Causal Inference)](impact-analysis-of-prediction-models/project.yaml) | [Ryohei Kobayashi (Yamamoto)](../people/ryohei-kobayashi-yamamoto/) | `clinical-prediction`, `causal-inference` | [repo](https://github.com/ryohei-hey/mimiciv-rox-strategy-impact-analysis) |
 | [Lab-MAE: Foundation Model for Lab Data](lab-mae-foundation-model-for-lab-data/project.yaml) | [Yugang Jia](../people/yugang-jia/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/dsrestrepo/Lab-MAE-Foundation-Tabular) |
@@ -32,7 +33,4 @@
 | [XAI Claims in ICU ML Models (Scoping Review)](xai-claims-in-icu-ml-models/project.yaml) | [Marlene Louisa Moerig](../people/marlene-louisa-moerig/) | `systematic-review` |  |
 
 ---
-_Generated from `data/projects/` — 26 records total._
-
----
-Last updated June 10
+_Generated from `data/projects/` — 27 records total._
