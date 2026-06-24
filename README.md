@@ -5,7 +5,7 @@
 | 📋 Resources | 📊 Directory |
 |---|---|
 | 🚀 [Onboarding](docs/onboarding/) | 👥 [People](data/people/README.md) |
-| 📅 [Presentation schedule](data/talks/) | 📁 [Active projects](data/projects/README.md) |
+| 📅 [Presentation schedule](data/talks/) | 📁 [Active projects](data/projects/README.md) / [Submit new project](https://forms.gle/fsPGeudtrjyA6sw59) |
 | 📊 [Lab Dashboard](DASHBOARD.md) | 🗓️ [Upcoming events](data/events/README.md) |
 | 🏢 [IMES Room Reservations](https://imes.skedda.com/booking) | |
 
@@ -99,6 +99,8 @@ Each data type lives in its own subdirectory as a YAML file. To add or update a 
 1. Create a folder named in lowercase kebab-case (e.g. `data/people/alice-smith/`)
 2. Add a `person.yaml` (or `project.yaml`, etc.) using the schema in `CLAUDE.md`
 3. Commit and open a pull request for review
+
+If your project doesn't exist in this repository yet, [submit it here](https://forms.gle/fsPGeudtrjyA6sw59) and it will be added.
 
 ## Tasks and issues
 

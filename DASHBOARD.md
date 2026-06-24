@@ -1,6 +1,8 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-23 · 112 records (31 projects · 6 grants · 75 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-24 · 112 records (31 projects · 6 grants · 75 events) · [contributing guide](docs/contributing.md)_
+
+[Active projects](data/projects/README.md) · [Submit new project](https://forms.gle/fsPGeudtrjyA6sw59) · [Upcoming events](data/events/README.md)
 
 ---
 
@@ -19,7 +21,7 @@ _No blocked items._
 ## 🟢 This week (15)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
-_updated today_
+_updated 1d ago_
 
 # Update June 23
 
@@ -31,7 +33,7 @@ _updated today_
 - Submit to Nature (perspective article)
 
 ### `Project` [CXR Vector Embedding Release](https://github.com/criticaldata/mit/tree/main/data/projects/cxr-vector-embedding-release)
-_updated today_
+_updated 1d ago_
 
 Received approval to release on PhysioNet for all models.
 
@@ -40,12 +42,12 @@ Tasks:
 - Investigate chexagent-2-3b
 
 ### `Project` [LLM Interrogation](https://github.com/criticaldata/mit/tree/main/data/projects/llm-interrogation)
-_updated today_
+_updated 1d ago_
 
 Submitting paper to COLM 2026.
 
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
-_updated today_
+_updated 1d ago_
 
 Deliverables:
 - Pipeline code (GitHub + PyPI)
@@ -56,57 +58,57 @@ Tasks:
 - Discuss target journal (JAMIA, NPJ Digital Medicine, JMIR, or conference)
 
 ### `Grant` [NVIDIA Academic Grant Program 2026](https://github.com/criticaldata/mit/tree/main/data/funding/nvidia-2026)
-_updated today_
+_updated 1d ago_
 
 Awarded: 8xA100 node, July 1 – December 31, 2026.
 
 ### `Grant` [Smith Family Awards Program for Excellence in Biomedical Research](https://github.com/criticaldata/mit/tree/main/data/funding/hria-smith-2026)
-_updated today_
+_updated 1d ago_
 
 Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-track faculty position; we do not qualify.
 
 ### `Event` [📅 [2027-01-29] Bunker Hill Community College](https://github.com/criticaldata/mit/tree/main/data/events/2027/bunker-hill-community-college)
-_updated today_
+_updated 1d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-10-01] China](https://github.com/criticaldata/mit/tree/main/data/events/2027/china)
-_updated today_
+_updated 1d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2026-09-26] Dublin Hackathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/dublin-hackathon)
-_updated today_
+_updated 1d ago_
 
 Please confirm this event was cancelled.
 
 ### `Event` [📅 [2027-10-22] Greece](https://github.com/criticaldata/mit/tree/main/data/events/2027/greece)
-_updated today_
+_updated 1d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-06-01] Norway](https://github.com/criticaldata/mit/tree/main/data/events/2027/norway)
-_updated today_
+_updated 1d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2026-12-09] NYC](https://github.com/criticaldata/mit/tree/main/data/events/2026/nyc)
-_updated today_
+_updated 1d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-04-09] Ohio State University](https://github.com/criticaldata/mit/tree/main/data/events/2027/ohio-state-university)
-_updated today_
+_updated 1d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-04-20] Panama](https://github.com/criticaldata/mit/tree/main/data/events/2027/panama)
-_updated today_
+_updated 1d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2026-09-01] Toronto](https://github.com/criticaldata/mit/tree/main/data/events/2026/toronto)
-_updated today_
+_updated 1d ago_
 
 Please confirm this event was cancelled.
 
@@ -116,7 +118,7 @@ Please confirm this event was cancelled.
 
 | Record | Last update |
 |---|---|
-| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **20d since last update** |
+| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **21d since last update** |
 | `Project` [6 Tools Framework + Jan 15 Event Take-aways](https://github.com/criticaldata/mit/tree/main/data/projects/6-tools-framework-jan-15-event-take-aways) | no updates |
 | `Project` [AGORA: Agentic Game of Research and Academia](https://github.com/criticaldata/mit/tree/main/data/projects/agora-agentic-game-of-research-and-academia) | no updates |
 | `Project` [AI as a Catalyst (Jan 15, 2026 Event)](https://github.com/criticaldata/mit/tree/main/data/projects/ai-as-a-catalyst) | no updates |
@@ -206,7 +208,7 @@ Please confirm this event was cancelled.
 - `Event` [📅 [2026-04-09] Mayo Datathon 2026 MIT](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-datathon-2026-mit) _planned_
 - `Event` [📅 [2026-04-10] Mayo Clinic Florida](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-clinic-florida) _prospect_
 - `Event` [📅 [2026-04-10] Mayo Datathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/mayo-datathon) _prospect_
-- `Event` [📅 [2026-04-15] WCA 2026 — World Congress of Anaesthesiologists](https://github.com/criticaldata/mit/tree/main/data/events/2026/conference-wca-morocco) _completed_
+- `Event` [📅 [2026-04-15] WCA 2026 â€” World Congress of Anaesthesiologists](https://github.com/criticaldata/mit/tree/main/data/events/2026/conference-wca-morocco) _completed_
 - `Event` [📅 [2026-04-15] WCA 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/wca-2026) _prospect_
 - `Event` [📅 [2026-04-23] Panama Datathon 2026](https://github.com/criticaldata/mit/tree/main/data/events/2026/datathon-panama) _completed_
 - `Event` [📅 [2026-04-27] HMS](https://github.com/criticaldata/mit/tree/main/data/events/2026/hms) _prospect_

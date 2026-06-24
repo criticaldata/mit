@@ -361,7 +361,10 @@ def generate():
     sections = [
         f"# MIT Critical Data — Lab Dashboard\n\n"
         f"_Generated {TODAY.isoformat()} · {total} records ({counts}) · "
-        f"[contributing guide](docs/contributing.md)_",
+        f"[contributing guide](docs/contributing.md)_\n\n"
+        f"[Active projects](data/projects/README.md) · "
+        f"[Submit new project](https://forms.gle/fsPGeudtrjyA6sw59) · "
+        f"[Upcoming events](data/events/README.md)",
         render_tier("🔴", "Urgent",    tiers["urgent"],    "No urgent items."),
         render_tier("🟡", "Blocked",   tiers["blocked"],   "No blocked items."),
         render_tier("🟢", "This week", tiers["this_week"], "No updates this week."),
