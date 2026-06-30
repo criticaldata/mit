@@ -23,7 +23,7 @@ Specify postdoc or research engineer? Visa implications.
 
 ---
 
-## 🟢 This week (16)
+## 🟢 This week (18)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
 _updated 7d ago_
@@ -103,6 +103,177 @@ _updated 7d ago_
 
 Submitting paper to COLM 2026.
 
+### `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next)
+_updated today_
+
+# Initial Progress Update
+
+## 1. System Overview
+
+### Data Flow
+
+```
+                         ┌─────────────────────────────────────────────┐
+                         │            Configuration Layer              │
+                         │  (YAML configs, site overrides, versions)   │
+                         └──────────────────┬──────────────────────────┘
+                                            │
+  ┌──────────┐    ┌──────────────┐    ┌─────▼──────┐    ┌───────────────┐
+  │  Input   │───▶│ Normalizer  │───▶│  Document  │───▶│   Detector   │
+  │ Adapters │    │ (unicode,    │    │  (tokens,  │    │   Registry    │
+  │ (file,DB,│    │  whitespace, │    │   spans,   │    │  (pattern,    │
+  │  stream*)│    │  sections)   │    │  context)  │    │  denylist,    │
+  └──────────┘    └──────────────┘    └────────────┘    │  NER, dict)   │
+                                                        └───────┬───────┘
+                                                                │
+                                                          List[Span] per detector
+                                                                │
+                                                        ┌───────▼───────┐
+                                                        │  Orchestrator │
+                                                        │  (merge,      │
+                                                        │   conflicts,  │
+                                                        │   policy,     │
+                                                        │   allowlist)  │
+                                                        └───────┬───────┘
+                                                                │
+                                                         resolved spans
+                                                                │
+                                           ┌────────────────────┼────────────────────┐
+                                           │                    │                    │
+                                   ┌───────▼───────┐    ┌───────▼───────┐    ┌───────▼───────┐
+                                   │  Transform    │    │  Audit Logger │    │ Human Review  │
+                                   │  Engine       │    │  (PostgreSQL, │    │ Queue         │
+                                   │  (redact,     │    │   detection   │    │ (uncertain    │
+                                   │   mask,       │    │   log, xform  │    │  spans)       │
+                                   │   surrogate,  │    │   log, rever- │    │               │
+                                   │   tag)        │    │   sibility)   │    └───────────────┘
+                                   └───────┬───────┘    │               │
+                                           │            └───────────────┘
+                                   ┌───────▼───────┐
+                                   │  LLM Verifier │
+                                   │  (OpenAI API, │
+                                   │   residual    │
+                                   │   PHI check)  │
+                                   └───────┬───────┘
+                                           │
+                                   ┌───────▼───────┐
+                                   │    Output     │
+                                   │  (text, CSV,  │
+                                   │   BioC, Brat, │
+                                   │   JSON)       │
+                                   └───────────────┘
+```
+
+### Component Responsibilities
+
+| Component | Responsibility |
+|-----------|---------------|
+| **Input Adapters** | Ingest from files, DB extracts, and message bus*; yield raw text + metadata. (*streaming in Phase 5; interface is streaming-ready from MVP) |
+| **Normalizer** | Unicode normalization, whitespace cleanup, OCR artifact repair (section detection deferred to Phase 5; `Section` dataclass and `doc.sections` field exist as stubs in Phase 1) |
+| **Document** | Text (immutable after construction) + complete token partition + token ledger (audit-only) + character-offset spans + scoped context. Tokens/ledger/sections populated during initialization, read-only thereafter. |
+| **Detector Registry** | Register/discover detectors; fan-out document to all active detectors |
+| **Detectors** | Each returns char-offset `List[Span]` AND writes per-token annotations to the token ledger (hybrid contract) |
+| **Orchestrator** | Merge char-offset spans from DetectorResults, resolve overlaps/conflicts via atomic-segment splitting and evidence-preserving policy; token ledger is not consumed (audit-only) |
+| **Transform Engine** | Apply replacement strategy per span; produce deidentified text + annotation file |
+| **Audit Logger** | Write structured detection + transformation logs to PostgreSQL |
+| **LLM Verifier** | Post-transformation review for residual PHI via OpenAI-compatible API |
+| **Human Review Queue** | Route uncertain spans to reviewers; collect adjudications |
+| **Output Adapters** | Serialize results to various formats |
+
+
+## 2. Progress To Date
+
+### Status: 
+
+- [x] **Phase 1A**: End-to-End Pipeline + Minimal Audit (Critical Path)
+- [x] **Phase 1B**: PostgreSQL Audit + Evaluation Framework
+- [x] **Phase 1C**: Reversibility, Review Queue (Scaffolding Only), Date Shifting, Mask Gating
+- [x] **Phase** 2: Language Packs + Script Routing + Audit Hardening
+- [ ] **Phase 3**: ML/NER + Token Classifier Integration
+   - Coding Done.  Testing Underway
+- [ ] **Phase 4**: Local LLM Verifier + Surrogate Generation
+- [ ] **Phase 5**: Streaming + Human Review UI + Production Hardening
+
+### Timelines:
+
+- **Jul-Aug 2026**: Evaluation/Testing on previously de-identified notes
+- **Jul-Sept 2026**: Phase 4 (Local LLM Verifier)
+   - Needs local infrastructure.
+- **Sept-Dec 2026**: New MIMIC Data
+- **Ongoing**: **Korean** Language Support (onboarding/documentations already drafted).
+   - Possibly **Thai** Language Support
+
+### `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms)
+_updated 2d ago_
+
+To address cultural misalignment and redefine the group's ethos for new members.
+
+Key Takeaways
+
+  - Problem: New members, especially from NSRI, prioritize CV-building and publications over communal learning, causing cultural friction and wasted onboarding time.
+  - Solution: Implement a "vibe-selective" screening process using live, unscripted group interviews (5 applicants/group) with personal questions to assess character and commitment.
+  - Strategy: Launch a "Aura Farm the Good Life" social media campaign to attract aligned members by reframing communal learning as a desirable, niche alternative to self-promotion.
+  - Pilot: Sonya will pilot a new communication structure using a WhatsApp Community for 5 projects, featuring admin-only announcements and topic-based subgroups to improve engagement.
+
+Topics
+
+Cultural Misalignment & Onboarding Inefficiency
+
+  - Problem: New members from NSRI focus on CV-building and publications, not communal learning.
+      - They demand project lead roles without sufficient experience.
+      - They promote their own groups using the MIT Critical Data name without authorization.
+  - Impact: This behavior wastes onboarding time and conflicts with the group's ethos.
+  - Root Cause: A system that rewards "praise" (external validation) over "praiseworthiness" (intrinsic value).
+  - Proposed Solution: A "vibe-selective" screening process to filter for character, not just credentials.
+
+New Screening & Onboarding Process
+
+  - Goal: Assess character, curiosity, and epistemology (ways of knowing) to ensure cultural fit.
+  - Method: Live, unscripted group interviews (5 applicants/group).
+      - Rationale: Prevents applicants from using AI or rehearsing answers.
+      - Questions: Personal, reflective prompts (e.g., "What is the most fun you've had recently?").
+  - Social Media Vetting: Review applicant profiles (LinkedIn, Instagram) to identify self-promotion vs. genuine curiosity.
+  - IRB Application: Leo will apply for an IRB to study this new process, requiring applicant consent.
+
+"Aura Farm the Good Life" Social Media Strategy
+
+  - Goal: Attract aligned members by reframing communal learning as a desirable, niche alternative to self-promotion.
+  - Concept: "Aura Farm the good life" → ascend by lifting others up, not by pushing them down.
+  - Content Strategy:
+      - Focus: Relationships and collaboration, not individual achievement.
+      - Format: Solicit content (audio, video, art) featuring applicants interacting with others (friends, family) in their native languages.
+      - Platforms:
+          - TikTok/Instagram: Broad reach for younger audiences.
+          - Substack: Deeper content for a niche audience.
+          - Synergy: Use short-form video to promote Substack articles.
+  - Inspiration: The Hippocratic Collective's creative, culture-focused approach to social media.
+
+New Communication & Collaboration Structure
+
+  - Pilot: Sonya will pilot a new structure for 5 projects using a WhatsApp Community.
+      - Features: Admin-only announcements and topic-based subgroups.
+      - Rationale: Centralizes communication and prevents direct messages to admins.
+  - Subgroups: Formed around key discussion points from main meetings.
+      - Size: 3 people per group.
+      - Rationale: A "triad is the most psychologically stable small group," preventing stalemates.
+  - Buddy System: Leo will introduce this concept in pilot meetings to encourage deeper, between-meeting discussions.
+
+Next Steps
+
+  - Sonya:
+      - Pilot the WhatsApp Community structure for 5 projects.
+      - Create topic-based subgroups for these projects.
+  - Leo:
+      - Introduce the buddy system concept in pilot project meetings.
+      - Draft a Google Doc for the "Aura Farm the Good Life" paper.
+      - Apply for an IRB to study the new screening process.
+  - All:
+      - Collaborate with Mindy to shape the MIT Critical Data social media strategy.
+  - Next Meeting:
+      - Date: Saturday, July 18th
+      - Time: This meeting's time
+      - Purpose: Follow up on pilot progress and refine the screening process.
+
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
 _updated today_
 
@@ -165,11 +336,10 @@ Please confirm this event was cancelled.
 
 ---
 
-## ⚪ Stale (53)
+## ⚪ Stale (51)
 
 | Record | Last update |
 |---|---|
-| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **27d since last update** |
 | `Project` [Synthetic Shortcuts](https://github.com/criticaldata/mit/tree/main/data/projects/synthetic-shortcuts) | ⚠️ **24d since last update** |
 | `Project` [6 Tools Framework + Jan 15 Event Take-aways](https://github.com/criticaldata/mit/tree/main/data/projects/6-tools-framework-jan-15-event-take-aways) | no updates |
 | `Project` [AGORA: Agentic Game of Research and Academia](https://github.com/criticaldata/mit/tree/main/data/projects/agora-agentic-game-of-research-and-academia) | no updates |
@@ -184,7 +354,6 @@ Please confirm this event was cancelled.
 | `Project` [LabTube: 3D Temporal Modeling of ICU Labs](https://github.com/criticaldata/mit/tree/main/data/projects/labtube-3d-temporal-modeling-of-icu-labs) | no updates |
 | `Project` [M4: Clinical Research Agent (MCP)](https://github.com/criticaldata/mit/tree/main/data/projects/m4-clinical-research-agent) | no updates |
 | `Project` [MedScope: Pain Documentation Bias](https://github.com/criticaldata/mit/tree/main/data/projects/medscope-pain-documentation-bias) | no updates |
-| `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms) | no updates |
 | `Project` [MIT Critical Data Central America](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-central-america) | no updates |
 | `Project` [Model Drift in MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/model-drift-in-mimic) | no updates |
 | `Project` [Multimodal Data Discordance](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-data-discordance) | no updates |

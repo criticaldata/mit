@@ -6,7 +6,7 @@ team:
 - leo-celi
 start_date: '2026-02-01'
 end_date:
-github_repo:
+github_repo: https://github.com/jraffa/pydeid2/
 description: |
   MIMIC-DEID Next is a modernized de-identification pipeline for clinical notes,
   built on top of the MIMIC-IV dataset and designed to replace legacy rule-based
