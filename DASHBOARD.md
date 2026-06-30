@@ -6,9 +6,12 @@ _Generated 2026-06-30 · 116 records (35 projects · 6 grants · 75 events) · [
 
 ---
 
-## 🔴 Urgent (0)
+## 🔴 Urgent (1)
 
-_No urgent items._
+### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
+_updated today_
+
+Annual reporting update due July 11. Submit updates to Ken.
 
 ---
 
@@ -23,7 +26,7 @@ Specify postdoc or research engineer? Visa implications.
 
 ---
 
-## 🟢 This week (18)
+## 🟢 This week (17)
 
 ### `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next)
 _updated today_
@@ -124,11 +127,6 @@ _updated today_
 - **Sept-Dec 2026**: New MIMIC Data
 - **Ongoing**: **Korean** Language Support (onboarding/documentations already drafted).
    - Possibly **Thai** Language Support
-
-### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
-_updated today_
-
-Annual reporting update due July 11. Submit updates to Ken.
 
 ### `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms)
 _updated 2d ago_
