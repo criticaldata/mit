@@ -14,6 +14,7 @@ _PI · active · MIT_
 | [Brown Mental Health LLM-athon (Feb 26-27, 2026)](../../projects/brown-mental-health-llm-athon/project.yaml) | Lead | active |
 | [Combinators are Dead](../../projects/combinators-are-dead/project.yaml) | Lead | active |
 | [Epidemiology of Sentiments in Clinical Notes](../../projects/epidemiology-of-sentiments-in-clinical-notes/project.yaml) | Lead | active |
+| [Leo OpenClaw](../../projects/leo-openclaw/project.yaml) | Lead | active |
 | [LLM Interrogation](../../projects/llm-interrogation/project.yaml) | Team | active |
 | [MIMIC DEID Next](../../projects/mimic-deid-next/project.yaml) | Team | active |
 | [Next Generation MIMIC](../../projects/mimic-next-generation/project.yaml) | Lead | on-hold |
@@ -22,7 +23,9 @@ _PI · active · MIT_
 | [Model Drift in MIMIC](../../projects/model-drift-in-mimic/project.yaml) | Lead | active |
 | [Multimodal Data Discordance](../../projects/multimodal-data-discordance/project.yaml) | Lead | active |
 | [RecursiveJEPA](../../projects/recursive-jepa/project.yaml) | Lead | active |
+| [ShortKit-ML](../../projects/shortkit-ml/project.yaml) | Lead | active |
 | [Standard Model of Care](../../projects/standard-model-of-care/project.yaml) | Lead | active |
+| [Synthetic Shortcuts](../../projects/synthetic-shortcuts/project.yaml) | Lead | active |
 | [This is not a Webinar Series](../../projects/this-is-not-a-webinar-series/project.yaml) | Lead | active |
 | [WorldmedQA: Cross-Cultural Pain Concepts](../../projects/worldmedqa-cross-cultural-pain-concepts/project.yaml) | Lead | active |
 | [XAI Claims in ICU ML Models (Scoping Review)](../../projects/xai-claims-in-icu-ml-models/project.yaml) | Team | active |

@@ -7,10 +7,12 @@ _Research Scientist · active · MIT_
 | Project | Role | Status |
 |---|---|---|
 | [CXR Vector Embedding Release](../../projects/cxr-vector-embedding-release/project.yaml) | Team | active |
+| [Internal HR — Hire Engineer](../../projects/internal-hr-hire-engineer/project.yaml) | Lead | active |
 | [LLM Interrogation](../../projects/llm-interrogation/project.yaml) | Lead | active |
 | [MIMIC DEID Next](../../projects/mimic-deid-next/project.yaml) | Team | active |
 | [Next Generation MIMIC](../../projects/mimic-next-generation/project.yaml) | Team | on-hold |
 | [MIT Critical Data Branding, Events & Comms](../../projects/mit-critical-data-branding-events-comms/project.yaml) | Team | active |
+| [Synthetic Shortcuts](../../projects/synthetic-shortcuts/project.yaml) | Team | active |
 | [Vector Embedding Pipeline (v1)](../../projects/vector-embedding-pipeline/project.yaml) | Lead | active |
 
 ## Funding

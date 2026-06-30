@@ -6,7 +6,9 @@ _Affiliate · collaborator_
 
 | Project | Role | Status |
 |---|---|---|
+| [Leo OpenClaw](../../projects/leo-openclaw/project.yaml) | Team | active |
 | [MIT Critical Data Branding, Events & Comms](../../projects/mit-critical-data-branding-events-comms/project.yaml) | Team | active |
+| [Synthetic Shortcuts](../../projects/synthetic-shortcuts/project.yaml) | Team | active |
 
 ## Funding
 
