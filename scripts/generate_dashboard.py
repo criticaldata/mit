@@ -329,10 +329,6 @@ def generate():
         # (1, 0) sorts no-update records last.
         return (1, 0) if not u else (0, -(TODAY - u[0]["date"]).days)
 
-    def by_type_then_title(r):
-        order = {"project": 0, "funding": 1, "event": 2}
-        return (order[r["_type"]], (r.get("title") or r["_slug"]).lower())
-
     def by_type_then_date(r):
         order = {"project": 0, "funding": 1, "event": 2}
         d = as_date(r.get("date_start")) if r["_type"] == "event" else None
@@ -340,7 +336,7 @@ def generate():
 
     tiers["urgent"].sort(key=by_latest_desc, reverse=True)
     tiers["blocked"].sort(key=by_latest_desc, reverse=True)
-    tiers["this_week"].sort(key=by_type_then_title)
+    tiers["this_week"].sort(key=by_latest_desc, reverse=True)
     tiers["stale"].sort(key=by_gap_desc)  # ascending: (0,-days) puts oldest first, (1,0) last
     tiers["inactive"].sort(key=by_type_then_date)
 

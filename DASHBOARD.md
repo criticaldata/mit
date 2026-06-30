@@ -25,84 +25,6 @@ Specify postdoc or research engineer? Visa implications.
 
 ## 🟢 This week (18)
 
-### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
-_updated 7d ago_
-
-# Update June 23
-
-- Received comments & feedbacks from Dae Hyun Kim. Fixing on those comments
-
-## Task
-
-- Finalizing the manuscript
-- Submit to Nature (perspective article)
-
-### `Project` [CXR Vector Embedding Release](https://github.com/criticaldata/mit/tree/main/data/projects/cxr-vector-embedding-release)
-_updated 7d ago_
-
-Received approval to release on PhysioNet for all models.
-
-Tasks:
-- Add torchxrayvision CheXpert weights
-- Investigate chexagent-2-3b
-
-### `Project` [Leo OpenClaw](https://github.com/criticaldata/mit/tree/main/data/projects/leo-openclaw)
-_updated 3d ago_
-
-**Key Takeaways**
-
-- Release Strategy Shift: The Mimic login feature is deprioritized. LLeoMe will launch as a private beta for trusted users to ensure controlled debugging and prevent misuse.
-- A/B Testing Mandated: A formal A/B test against Claude is the top priority. It will use two methods: an automated Open Claude for asynchronous regression testing and a live, synchronous session for new tasks.
-- New Research Spun Off: A new project was conceived to train agents to detect when other agents are "cheating" on benchmarks, a concept inspired by the need for more robust evaluation.
-
-**Topics**
-
-*Project Status & Release Strategy*
-
-- Status: The critical bug causing incorrect JSON output is fixed. The CI3D pipeline is operational on AWS.
-- Scope: WhatsApp integration is dropped. The MIMIC login feature is paused.
-- Rationale: A public release is premature and risky. A private beta enables controlled debugging and prevents users from publishing papers without understanding the content.
-- Blocker: Access to Milit's S3 bucket is needed to update the paper dataset.
-
-*A/B Testing & Evaluation Plan*
-
-- Goal: Systematically compare Leo.me's performance against Claude.
-- Method 1: Asynchronous Regression Testing
-  - Tool: An automated OpenClaw.
-  - Process: Replay past Claude conversations (e.g., March–June 2026) to check for consistent outputs.
-  - Rationale: Provides continuous, objective performance monitoring to detect decay over time.
-- Method 2: Synchronous Live Testing
-  - Process: The team will work together on new tasks (e.g., revising manuscripts, responding to peer reviews).
-  - Rationale: Enables real-time, collaborative debugging and rapid iteration.
-- System Prompt Refinement: Yasin noted the system prompt may need refinement based on A/B test feedback.
-
-*New Research: Agent Self-Correction*
-
-- Problem: LLMs often fail to identify methodological flaws in papers (e.g., a recent Nature paper noted LLMs praised retracted papers).
-- Idea: Develop a "critique benchmark" to test LLeoMe's ability to find flaws, potentially by injecting errors into papers.
-- Evolution: This led to a more ambitious concept: training agents to recognize when they are "cheating" or gaming a benchmark.
-  - Challenge: A single agent cannot be trusted to self-report.
-  - Potential Solution: A community of agents could monitor each other for shortcuts.
-  - Inspiration: Yasin shared the "Strawberry" tool, which mathematically calculates hallucination probability.
-- Outcome: The team will explore this concept with the Dojo community and consider a proposal to Anthropic.
-
-**Next Steps**
-
-- Shrey:
-  - Deprioritize the MIMIC login feature.
-  - Secure access to Milit's S3 bucket.
-  - Share the Leo.me concept paper with the team.
-- Team:
-  - Build an automated OpenClaw for asynchronous A/B testing.
-  - Prepare for the synchronous A/B testing session.
-- All:
-  - Attend the synchronous A/B testing session on Sunday, July 12, at the same time.
-
-### `Project` [LLM Interrogation](https://github.com/criticaldata/mit/tree/main/data/projects/llm-interrogation)
-_updated 7d ago_
-
-Submitting paper to COLM 2026.
-
 ### `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next)
 _updated today_
 
@@ -203,6 +125,11 @@ _updated today_
 - **Ongoing**: **Korean** Language Support (onboarding/documentations already drafted).
    - Possibly **Thai** Language Support
 
+### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
+_updated today_
+
+Annual reporting update due July 11. Submit updates to Ken.
+
 ### `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms)
 _updated 2d ago_
 
@@ -274,20 +201,108 @@ Next Steps
       - Time: This meeting's time
       - Purpose: Follow up on pilot progress and refine the screening process.
 
-### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
-_updated today_
+### `Project` [Leo OpenClaw](https://github.com/criticaldata/mit/tree/main/data/projects/leo-openclaw)
+_updated 3d ago_
 
-Annual reporting update due July 11. Submit updates to Ken.
+**Key Takeaways**
+
+- Release Strategy Shift: The Mimic login feature is deprioritized. LLeoMe will launch as a private beta for trusted users to ensure controlled debugging and prevent misuse.
+- A/B Testing Mandated: A formal A/B test against Claude is the top priority. It will use two methods: an automated Open Claude for asynchronous regression testing and a live, synchronous session for new tasks.
+- New Research Spun Off: A new project was conceived to train agents to detect when other agents are "cheating" on benchmarks, a concept inspired by the need for more robust evaluation.
+
+**Topics**
+
+*Project Status & Release Strategy*
+
+- Status: The critical bug causing incorrect JSON output is fixed. The CI3D pipeline is operational on AWS.
+- Scope: WhatsApp integration is dropped. The MIMIC login feature is paused.
+- Rationale: A public release is premature and risky. A private beta enables controlled debugging and prevents users from publishing papers without understanding the content.
+- Blocker: Access to Milit's S3 bucket is needed to update the paper dataset.
+
+*A/B Testing & Evaluation Plan*
+
+- Goal: Systematically compare Leo.me's performance against Claude.
+- Method 1: Asynchronous Regression Testing
+  - Tool: An automated OpenClaw.
+  - Process: Replay past Claude conversations (e.g., March–June 2026) to check for consistent outputs.
+  - Rationale: Provides continuous, objective performance monitoring to detect decay over time.
+- Method 2: Synchronous Live Testing
+  - Process: The team will work together on new tasks (e.g., revising manuscripts, responding to peer reviews).
+  - Rationale: Enables real-time, collaborative debugging and rapid iteration.
+- System Prompt Refinement: Yasin noted the system prompt may need refinement based on A/B test feedback.
+
+*New Research: Agent Self-Correction*
+
+- Problem: LLMs often fail to identify methodological flaws in papers (e.g., a recent Nature paper noted LLMs praised retracted papers).
+- Idea: Develop a "critique benchmark" to test LLeoMe's ability to find flaws, potentially by injecting errors into papers.
+- Evolution: This led to a more ambitious concept: training agents to recognize when they are "cheating" or gaming a benchmark.
+  - Challenge: A single agent cannot be trusted to self-report.
+  - Potential Solution: A community of agents could monitor each other for shortcuts.
+  - Inspiration: Yasin shared the "Strawberry" tool, which mathematically calculates hallucination probability.
+- Outcome: The team will explore this concept with the Dojo community and consider a proposal to Anthropic.
+
+**Next Steps**
+
+- Shrey:
+  - Deprioritize the MIMIC login feature.
+  - Secure access to Milit's S3 bucket.
+  - Share the Leo.me concept paper with the team.
+- Team:
+  - Build an automated OpenClaw for asynchronous A/B testing.
+  - Prepare for the synchronous A/B testing session.
+- All:
+  - Attend the synchronous A/B testing session on Sunday, July 12, at the same time.
+
+### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
+_updated 7d ago_
+
+# Update June 23
+
+- Received comments & feedbacks from Dae Hyun Kim. Fixing on those comments
+
+## Task
+
+- Finalizing the manuscript
+- Submit to Nature (perspective article)
+
+### `Project` [CXR Vector Embedding Release](https://github.com/criticaldata/mit/tree/main/data/projects/cxr-vector-embedding-release)
+_updated 7d ago_
+
+Received approval to release on PhysioNet for all models.
+
+Tasks:
+- Add torchxrayvision CheXpert weights
+- Investigate chexagent-2-3b
+
+### `Project` [LLM Interrogation](https://github.com/criticaldata/mit/tree/main/data/projects/llm-interrogation)
+_updated 7d ago_
+
+Submitting paper to COLM 2026.
+
+### `Grant` [Smith Family Awards Program for Excellence in Biomedical Research](https://github.com/criticaldata/mit/tree/main/data/funding/hria-smith-2026)
+_updated 7d ago_
+
+Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-track faculty position; we do not qualify.
 
 ### `Grant` [NVIDIA Academic Grant Program 2026](https://github.com/criticaldata/mit/tree/main/data/funding/nvidia-2026)
 _updated 7d ago_
 
 Awarded: 8xA100 node, July 1 – December 31, 2026.
 
-### `Grant` [Smith Family Awards Program for Excellence in Biomedical Research](https://github.com/criticaldata/mit/tree/main/data/funding/hria-smith-2026)
+### `Event` [📅 [2026-09-26] Dublin Hackathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/dublin-hackathon)
 _updated 7d ago_
 
-Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-track faculty position; we do not qualify.
+Please confirm this event was cancelled.
+
+### `Event` [📅 [2026-12-09] NYC](https://github.com/criticaldata/mit/tree/main/data/events/2026/nyc)
+_updated 7d ago_
+
+Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
+
+### `Event` [📅 [2026-09-01] Toronto](https://github.com/criticaldata/mit/tree/main/data/events/2026/toronto)
+_updated 7d ago_
+
+Please confirm this event was cancelled.
 
 ### `Event` [📅 [2027-01-29] Bunker Hill Community College](https://github.com/criticaldata/mit/tree/main/data/events/2027/bunker-hill-community-college)
 _updated 7d ago_
@@ -299,22 +314,12 @@ _updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
-### `Event` [📅 [2026-09-26] Dublin Hackathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/dublin-hackathon)
-_updated 7d ago_
-
-Please confirm this event was cancelled.
-
 ### `Event` [📅 [2027-10-22] Greece](https://github.com/criticaldata/mit/tree/main/data/events/2027/greece)
 _updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-06-01] Norway](https://github.com/criticaldata/mit/tree/main/data/events/2027/norway)
-_updated 7d ago_
-
-Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
-
-### `Event` [📅 [2026-12-09] NYC](https://github.com/criticaldata/mit/tree/main/data/events/2026/nyc)
 _updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
@@ -328,11 +333,6 @@ Automatically added during event reconciliation on 2026-06-23. @leo-celi please 
 _updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
-
-### `Event` [📅 [2026-09-01] Toronto](https://github.com/criticaldata/mit/tree/main/data/events/2026/toronto)
-_updated 7d ago_
-
-Please confirm this event was cancelled.
 
 ---
 
