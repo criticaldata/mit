@@ -99,15 +99,9 @@ _updated 7d ago_
 Submitting paper to COLM 2026.
 
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
-_updated 7d ago_
+_updated today_
 
-Deliverables:
-- Pipeline code (GitHub + PyPI)
-- Pre-computed CXR embeddings (PhysioNet)
-- Methods paper
-
-Tasks:
-- Discuss target journal (JAMIA, NPJ Digital Medicine, JMIR, or conference)
+Annual reporting update due July 11. Submit updates to Ken.
 
 ### `Grant` [NVIDIA Academic Grant Program 2026](https://github.com/criticaldata/mit/tree/main/data/funding/nvidia-2026)
 _updated 7d ago_
