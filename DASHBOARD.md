@@ -1,6 +1,6 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-30 · 115 records (34 projects · 6 grants · 75 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-30 · 116 records (35 projects · 6 grants · 75 events) · [contributing guide](docs/contributing.md)_
 
 [Active projects](data/projects/README.md) · [Submit new project](https://forms.gle/fsPGeudtrjyA6sw59) · [Upcoming events](data/events/README.md)
 
@@ -336,7 +336,7 @@ Automatically added during event reconciliation on 2026-06-23. @leo-celi please 
 
 ---
 
-## ⚪ Stale (51)
+## ⚪ Stale (52)
 
 | Record | Last update |
 |---|---|
@@ -359,6 +359,7 @@ Automatically added during event reconciliation on 2026-06-23. @leo-celi please 
 | `Project` [Multimodal Data Discordance](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-data-discordance) | no updates |
 | `Project` [Multimodal VE for Cardiovascular Disease](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-ve-for-cardiovascular-disease) | no updates |
 | `Project` [RecursiveJEPA](https://github.com/criticaldata/mit/tree/main/data/projects/recursive-jepa) | no updates |
+| `Project` [ShortKit-ML](https://github.com/criticaldata/mit/tree/main/data/projects/shortkit-ml) | no updates |
 | `Project` [SLICES: SSL Objectives for ICU Representation](https://github.com/criticaldata/mit/tree/main/data/projects/slices-ssl-objectives-for-icu-representation) | no updates |
 | `Project` [Snapshot Embedding for EHR Data](https://github.com/criticaldata/mit/tree/main/data/projects/snapshot-embedding-for-ehr-data) | no updates |
 | `Project` [Standard Model of Care](https://github.com/criticaldata/mit/tree/main/data/projects/standard-model-of-care) | no updates |

@@ -6,6 +6,8 @@ team:
 - milit-patel
 - kenneth-paik
 - po-chih-kuo
+related:
+- shortkit-ml
 start_date: '2026-04-30'
 end_date:
 github_repo: https://github.com/criticaldata/synthetic-shortcuts
