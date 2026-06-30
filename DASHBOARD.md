@@ -340,6 +340,7 @@ Automatically added during event reconciliation on 2026-06-23. @leo-celi please 
 
 | Record | Last update |
 |---|---|
+| `Project` [ShortKit-ML](https://github.com/criticaldata/mit/tree/main/data/projects/shortkit-ml) | ⚠️ **85d since last update** |
 | `Project` [Synthetic Shortcuts](https://github.com/criticaldata/mit/tree/main/data/projects/synthetic-shortcuts) | ⚠️ **24d since last update** |
 | `Project` [6 Tools Framework + Jan 15 Event Take-aways](https://github.com/criticaldata/mit/tree/main/data/projects/6-tools-framework-jan-15-event-take-aways) | no updates |
 | `Project` [AGORA: Agentic Game of Research and Academia](https://github.com/criticaldata/mit/tree/main/data/projects/agora-agentic-game-of-research-and-academia) | no updates |
@@ -359,7 +360,6 @@ Automatically added during event reconciliation on 2026-06-23. @leo-celi please 
 | `Project` [Multimodal Data Discordance](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-data-discordance) | no updates |
 | `Project` [Multimodal VE for Cardiovascular Disease](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-ve-for-cardiovascular-disease) | no updates |
 | `Project` [RecursiveJEPA](https://github.com/criticaldata/mit/tree/main/data/projects/recursive-jepa) | no updates |
-| `Project` [ShortKit-ML](https://github.com/criticaldata/mit/tree/main/data/projects/shortkit-ml) | no updates |
 | `Project` [SLICES: SSL Objectives for ICU Representation](https://github.com/criticaldata/mit/tree/main/data/projects/slices-ssl-objectives-for-icu-representation) | no updates |
 | `Project` [Snapshot Embedding for EHR Data](https://github.com/criticaldata/mit/tree/main/data/projects/snapshot-embedding-for-ehr-data) | no updates |
 | `Project` [Standard Model of Care](https://github.com/criticaldata/mit/tree/main/data/projects/standard-model-of-care) | no updates |
