@@ -1,6 +1,6 @@
 # Projects
 
-## Active (30)
+## Active (34)
 
 | Project | Lead | Tags | GitHub |
 |---|---|---|---|
@@ -15,8 +15,10 @@
 | [CXR Vector Embedding Release](cxr-vector-embedding-release/project.yaml) | [Ahram Han](../people/ahram-han/) | `vector-embeddings`, `cxr`, `physionet` | None |
 | [Epidemiology of Sentiments in Clinical Notes](epidemiology-of-sentiments-in-clinical-notes/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `systematic-review` |  |
 | [Impact Analysis of Prediction Models (Causal Inference)](impact-analysis-of-prediction-models/project.yaml) | [Ryohei Kobayashi (Yamamoto)](../people/ryohei-kobayashi-yamamoto/) | `clinical-prediction`, `causal-inference` | [repo](https://github.com/ryohei-hey/mimiciv-rox-strategy-impact-analysis) |
+| [Internal HR — Hire Engineer](internal-hr-hire-engineer/project.yaml) | [Kenneth Paik](../people/kenneth-paik/) |  | None |
 | [Lab-MAE: Foundation Model for Lab Data](lab-mae-foundation-model-for-lab-data/project.yaml) | [Yugang Jia](../people/yugang-jia/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/dsrestrepo/Lab-MAE-Foundation-Tabular) |
 | [LabTube: 3D Temporal Modeling of ICU Labs](labtube-3d-temporal-modeling-of-icu-labs/project.yaml) | [Boya Zhang](../people/boya-zhang/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/tinaboya/LabTube) |
+| [Leo OpenClaw](leo-openclaw/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) |  | None |
 | [LLM Interrogation](llm-interrogation/project.yaml) | [Kenneth Paik](../people/kenneth-paik/) |  | None |
 | [M4: Clinical Research Agent (MCP)](m4-clinical-research-agent/project.yaml) | [Hannes Ill](../people/hannes-ill/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/hannesill/m4) |
 | [MedScope: Pain Documentation Bias](medscope-pain-documentation-bias/project.yaml) | [Boya Zhang](../people/boya-zhang/) | `bias`, `fairness`, `representation` | [repo](https://github.com/tinaboya/MedScope) |
@@ -27,9 +29,11 @@
 | [Multimodal Data Discordance](multimodal-data-discordance/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `multimodal-ehr`, `vector-embeddings` |  |
 | [Multimodal VE for Cardiovascular Disease](multimodal-ve-for-cardiovascular-disease/project.yaml) | [Takeshi Tohyama](../people/takeshi-tohyama/) | `multimodal-ehr`, `vector-embeddings` |  |
 | [RecursiveJEPA](recursive-jepa/project.yaml) | [Quang Bui](../people/quang-bui/), [Leo Anthony Celi](../people/leo-celi/) | `ai`, `ml-infrastructure` | [repo](https://github.com/criticaldata/RecursiveJEPA) |
+| [ShortKit-ML](shortkit-ml/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) |  | [repo](https://github.com/criticaldata/ShortKit-ML) |
 | [SLICES: SSL Objectives for ICU Representation](slices-ssl-objectives-for-icu-representation/project.yaml) | [Hannes Ill](../people/hannes-ill/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/hannesill/SLICES) |
 | [Snapshot Embedding for EHR Data](snapshot-embedding-for-ehr-data/project.yaml) | [Takeshi Tohyama](../people/takeshi-tohyama/) | `multimodal-ehr`, `vector-embeddings` | [repo](https://github.com/ttohya/clinemb) |
 | [Standard Model of Care](standard-model-of-care/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `ai-epistemics`, `framework-design` |  |
+| [Synthetic Shortcuts](synthetic-shortcuts/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) |  | [repo](https://github.com/criticaldata/synthetic-shortcuts) |
 | [This is not a Webinar Series](this-is-not-a-webinar-series/project.yaml) | [Quang Bui](../people/quang-bui/), [Leo Anthony Celi](../people/leo-celi/) | `education`, `events` |  |
 | [Vector Embedding Pipeline (v1)](vector-embedding-pipeline/project.yaml) | [Kenneth Paik](../people/kenneth-paik/) | `vector-embeddings` |  |
 | [WorldmedQA: Cross-Cultural Pain Concepts](worldmedqa-cross-cultural-pain-concepts/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `bias`, `fairness`, `representation` |  |
@@ -45,4 +49,4 @@
 </details>
 
 ---
-_Generated from `data/projects/` — 31 records total._
+_Generated from `data/projects/` — 35 records total._
