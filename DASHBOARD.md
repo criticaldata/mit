@@ -18,7 +18,7 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (15)
+## 🟢 This week (16)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
 _updated 7d ago_
@@ -45,6 +45,106 @@ Tasks:
 _updated 7d ago_
 
 Submitting paper to COLM 2026.
+
+### `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next)
+_updated today_
+
+# Initial Progress Update
+
+## 1. System Overview
+
+### Data Flow
+
+```
+                         ┌─────────────────────────────────────────────┐
+                         │            Configuration Layer              │
+                         │  (YAML configs, site overrides, versions)   │
+                         └──────────────────┬──────────────────────────┘
+                                            │
+  ┌──────────┐    ┌──────────────┐    ┌─────▼──────┐    ┌───────────────┐
+  │  Input   │───▶│ Normalizer  │───▶│  Document  │───▶│   Detector   │
+  │ Adapters │    │ (unicode,    │    │  (tokens,  │    │   Registry    │
+  │ (file,DB,│    │  whitespace, │    │   spans,   │    │  (pattern,    │
+  │  stream*)│    │  sections)   │    │  context)  │    │  denylist,    │
+  └──────────┘    └──────────────┘    └────────────┘    │  NER, dict)   │
+                                                        └───────┬───────┘
+                                                                │
+                                                          List[Span] per detector
+                                                                │
+                                                        ┌───────▼───────┐
+                                                        │  Orchestrator │
+                                                        │  (merge,      │
+                                                        │   conflicts,  │
+                                                        │   policy,     │
+                                                        │   allowlist)  │
+                                                        └───────┬───────┘
+                                                                │
+                                                         resolved spans
+                                                                │
+                                           ┌────────────────────┼────────────────────┐
+                                           │                    │                    │
+                                   ┌───────▼───────┐    ┌───────▼───────┐    ┌───────▼───────┐
+                                   │  Transform    │    │  Audit Logger │    │ Human Review  │
+                                   │  Engine       │    │  (PostgreSQL, │    │ Queue         │
+                                   │  (redact,     │    │   detection   │    │ (uncertain    │
+                                   │   mask,       │    │   log, xform  │    │  spans)       │
+                                   │   surrogate,  │    │   log, rever- │    │               │
+                                   │   tag)        │    │   sibility)   │    └───────────────┘
+                                   └───────┬───────┘    │               │
+                                           │            └───────────────┘
+                                   ┌───────▼───────┐
+                                   │  LLM Verifier │
+                                   │  (OpenAI API, │
+                                   │   residual    │
+                                   │   PHI check)  │
+                                   └───────┬───────┘
+                                           │
+                                   ┌───────▼───────┐
+                                   │    Output     │
+                                   │  (text, CSV,  │
+                                   │   BioC, Brat, │
+                                   │   JSON)       │
+                                   └───────────────┘
+```
+
+### Component Responsibilities
+
+| Component | Responsibility |
+|-----------|---------------|
+| **Input Adapters** | Ingest from files, DB extracts, and message bus*; yield raw text + metadata. (*streaming in Phase 5; interface is streaming-ready from MVP) |
+| **Normalizer** | Unicode normalization, whitespace cleanup, OCR artifact repair (section detection deferred to Phase 5; `Section` dataclass and `doc.sections` field exist as stubs in Phase 1) |
+| **Document** | Text (immutable after construction) + complete token partition + token ledger (audit-only) + character-offset spans + scoped context. Tokens/ledger/sections populated during initialization, read-only thereafter. |
+| **Detector Registry** | Register/discover detectors; fan-out document to all active detectors |
+| **Detectors** | Each returns char-offset `List[Span]` AND writes per-token annotations to the token ledger (hybrid contract) |
+| **Orchestrator** | Merge char-offset spans from DetectorResults, resolve overlaps/conflicts via atomic-segment splitting and evidence-preserving policy; token ledger is not consumed (audit-only) |
+| **Transform Engine** | Apply replacement strategy per span; produce deidentified text + annotation file |
+| **Audit Logger** | Write structured detection + transformation logs to PostgreSQL |
+| **LLM Verifier** | Post-transformation review for residual PHI via OpenAI-compatible API |
+| **Human Review Queue** | Route uncertain spans to reviewers; collect adjudications |
+| **Output Adapters** | Serialize results to various formats |
+
+
+## 2. Progress To Date
+
+### Status: 
+
+- [x] **Phase 1A**: End-to-End Pipeline + Minimal Audit (Critical Path)
+- [x] **Phase 1B**: PostgreSQL Audit + Evaluation Framework
+- [x] **Phase 1C**: Reversibility, Review Queue (Scaffolding Only), Date Shifting, Mask Gating
+- [x] **Phase** 2: Language Packs + Script Routing + Audit Hardening
+- [ ] **Phase 3**: ML/NER + Token Classifier Integration
+   - Coding Done.  Testing Underway
+- [ ] **Phase 4**: Local LLM Verifier + Surrogate Generation
+- [ ] **Phase 5**: Streaming + Human Review UI + Production Hardening
+
+### Timelines:
+
+- **Jul-Aug 2026**: Evaluation/Testing on previously de-identified notes
+- **Jul-Sept 2026**: Phase 4 (Local LLM Verifier)
+   - Needs local infrastructure.
+- **Sept-Dec 2026**: New MIMIC Data
+- **Ongoing**: **Korean** Language Support (onboarding/documentations already drafted).
+   - Possibly **Thai** Language Support
 
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
 _updated 7d ago_
@@ -114,11 +214,10 @@ Please confirm this event was cancelled.
 
 ---
 
-## ⚪ Stale (52)
+## ⚪ Stale (51)
 
 | Record | Last update |
 |---|---|
-| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **27d since last update** |
 | `Project` [6 Tools Framework + Jan 15 Event Take-aways](https://github.com/criticaldata/mit/tree/main/data/projects/6-tools-framework-jan-15-event-take-aways) | no updates |
 | `Project` [AGORA: Agentic Game of Research and Academia](https://github.com/criticaldata/mit/tree/main/data/projects/agora-agentic-game-of-research-and-academia) | no updates |
 | `Project` [AI as a Catalyst (Jan 15, 2026 Event)](https://github.com/criticaldata/mit/tree/main/data/projects/ai-as-a-catalyst) | no updates |
