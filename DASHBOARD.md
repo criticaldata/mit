@@ -170,6 +170,7 @@ Please confirm this event was cancelled.
 | Record | Last update |
 |---|---|
 | `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **27d since last update** |
+| `Project` [Synthetic Shortcuts](https://github.com/criticaldata/mit/tree/main/data/projects/synthetic-shortcuts) | ⚠️ **24d since last update** |
 | `Project` [6 Tools Framework + Jan 15 Event Take-aways](https://github.com/criticaldata/mit/tree/main/data/projects/6-tools-framework-jan-15-event-take-aways) | no updates |
 | `Project` [AGORA: Agentic Game of Research and Academia](https://github.com/criticaldata/mit/tree/main/data/projects/agora-agentic-game-of-research-and-academia) | no updates |
 | `Project` [AI as a Catalyst (Jan 15, 2026 Event)](https://github.com/criticaldata/mit/tree/main/data/projects/ai-as-a-catalyst) | no updates |
@@ -192,7 +193,6 @@ Please confirm this event was cancelled.
 | `Project` [SLICES: SSL Objectives for ICU Representation](https://github.com/criticaldata/mit/tree/main/data/projects/slices-ssl-objectives-for-icu-representation) | no updates |
 | `Project` [Snapshot Embedding for EHR Data](https://github.com/criticaldata/mit/tree/main/data/projects/snapshot-embedding-for-ehr-data) | no updates |
 | `Project` [Standard Model of Care](https://github.com/criticaldata/mit/tree/main/data/projects/standard-model-of-care) | no updates |
-| `Project` [Synthetic Shortcuts](https://github.com/criticaldata/mit/tree/main/data/projects/synthetic-shortcuts) | no updates |
 | `Project` [This is not a Webinar Series](https://github.com/criticaldata/mit/tree/main/data/projects/this-is-not-a-webinar-series) | no updates |
 | `Project` [WorldmedQA: Cross-Cultural Pain Concepts](https://github.com/criticaldata/mit/tree/main/data/projects/worldmedqa-cross-cultural-pain-concepts) | no updates |
 | `Project` [XAI Claims in ICU ML Models (Scoping Review)](https://github.com/criticaldata/mit/tree/main/data/projects/xai-claims-in-icu-ml-models) | no updates |
