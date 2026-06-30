@@ -2,10 +2,8 @@
 
 | Date | Speaker | Affiliation | Title | Type |
 |---|---|---|---|---|
-| Tue 16 Jun 2026 | | | | |
-| Tue 23 Jun 2026 | | | | |
-| Wed 24 Jun 2026 15:00 ET | Korean Guest Students & Faculty |  | Location TBD | other |
 | Tue 30 Jun 2026 | | | | |
+| Mon 06 Jul 2026 11:00 ET | Quarter Inch Water |  | Quarter Inch Water Conference Call | invited |
 | Tue 07 Jul 2026 | | | | |
 | Tue 14 Jul 2026 | | | | |
 | Tue 21 Jul 2026 | | | | |
@@ -21,5 +19,7 @@
 | Tue 29 Sep 2026 | | | | |
 | Tue 06 Oct 2026 | | | | |
 | Tue 13 Oct 2026 | | | | |
+| Tue 20 Oct 2026 | | | | |
+| Tue 27 Oct 2026 | | | | |
 
 _1/18 Tuesday slots filled — generated from `data/talks/`_
