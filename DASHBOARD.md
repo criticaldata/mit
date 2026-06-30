@@ -1,6 +1,6 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-24 · 112 records (31 projects · 6 grants · 75 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-30 · 112 records (31 projects · 6 grants · 75 events) · [contributing guide](docs/contributing.md)_
 
 [Active projects](data/projects/README.md) · [Submit new project](https://forms.gle/fsPGeudtrjyA6sw59) · [Upcoming events](data/events/README.md)
 
@@ -21,7 +21,7 @@ _No blocked items._
 ## 🟢 This week (15)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
-_updated 1d ago_
+_updated 7d ago_
 
 # Update June 23
 
@@ -33,7 +33,7 @@ _updated 1d ago_
 - Submit to Nature (perspective article)
 
 ### `Project` [CXR Vector Embedding Release](https://github.com/criticaldata/mit/tree/main/data/projects/cxr-vector-embedding-release)
-_updated 1d ago_
+_updated 7d ago_
 
 Received approval to release on PhysioNet for all models.
 
@@ -42,12 +42,12 @@ Tasks:
 - Investigate chexagent-2-3b
 
 ### `Project` [LLM Interrogation](https://github.com/criticaldata/mit/tree/main/data/projects/llm-interrogation)
-_updated 1d ago_
+_updated 7d ago_
 
 Submitting paper to COLM 2026.
 
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
-_updated 1d ago_
+_updated 7d ago_
 
 Deliverables:
 - Pipeline code (GitHub + PyPI)
@@ -58,67 +58,67 @@ Tasks:
 - Discuss target journal (JAMIA, NPJ Digital Medicine, JMIR, or conference)
 
 ### `Grant` [NVIDIA Academic Grant Program 2026](https://github.com/criticaldata/mit/tree/main/data/funding/nvidia-2026)
-_updated 1d ago_
+_updated 7d ago_
 
 Awarded: 8xA100 node, July 1 – December 31, 2026.
 
 ### `Grant` [Smith Family Awards Program for Excellence in Biomedical Research](https://github.com/criticaldata/mit/tree/main/data/funding/hria-smith-2026)
-_updated 1d ago_
+_updated 7d ago_
 
 Withdrawing from the Smith Family Awards Program. Applicants must hold a tenure-track faculty position; we do not qualify.
 
 ### `Event` [📅 [2027-01-29] Bunker Hill Community College](https://github.com/criticaldata/mit/tree/main/data/events/2027/bunker-hill-community-college)
-_updated 1d ago_
+_updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-10-01] China](https://github.com/criticaldata/mit/tree/main/data/events/2027/china)
-_updated 1d ago_
+_updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2026-09-26] Dublin Hackathon](https://github.com/criticaldata/mit/tree/main/data/events/2026/dublin-hackathon)
-_updated 1d ago_
+_updated 7d ago_
 
 Please confirm this event was cancelled.
 
 ### `Event` [📅 [2027-10-22] Greece](https://github.com/criticaldata/mit/tree/main/data/events/2027/greece)
-_updated 1d ago_
+_updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-06-01] Norway](https://github.com/criticaldata/mit/tree/main/data/events/2027/norway)
-_updated 1d ago_
+_updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2026-12-09] NYC](https://github.com/criticaldata/mit/tree/main/data/events/2026/nyc)
-_updated 1d ago_
+_updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-04-09] Ohio State University](https://github.com/criticaldata/mit/tree/main/data/events/2027/ohio-state-university)
-_updated 1d ago_
+_updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2027-04-20] Panama](https://github.com/criticaldata/mit/tree/main/data/events/2027/panama)
-_updated 1d ago_
+_updated 7d ago_
 
 Automatically added during event reconciliation on 2026-06-23. @leo-celi please confirm dates, location, and status are correct.
 
 ### `Event` [📅 [2026-09-01] Toronto](https://github.com/criticaldata/mit/tree/main/data/events/2026/toronto)
-_updated 1d ago_
+_updated 7d ago_
 
 Please confirm this event was cancelled.
 
 ---
 
-## ⚪ Stale (53)
+## ⚪ Stale (52)
 
 | Record | Last update |
 |---|---|
-| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **21d since last update** |
+| `Project` [MIMIC DEID Next](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-deid-next) | ⚠️ **27d since last update** |
 | `Project` [6 Tools Framework + Jan 15 Event Take-aways](https://github.com/criticaldata/mit/tree/main/data/projects/6-tools-framework-jan-15-event-take-aways) | no updates |
 | `Project` [AGORA: Agentic Game of Research and Academia](https://github.com/criticaldata/mit/tree/main/data/projects/agora-agentic-game-of-research-and-academia) | no updates |
 | `Project` [AI as a Catalyst (Jan 15, 2026 Event)](https://github.com/criticaldata/mit/tree/main/data/projects/ai-as-a-catalyst) | no updates |
@@ -155,7 +155,6 @@ Please confirm this event was cancelled.
 | `Event` [📅 [2026-09-28] Chile](https://github.com/criticaldata/mit/tree/main/data/events/2026/chile) | no updates |
 | `Event` [📅 [2026-09-24] Conv2x Symposium](https://github.com/criticaldata/mit/tree/main/data/events/2026/conv2x-symposium) | no updates |
 | `Event` [📅 [2026-08-14] Denmark](https://github.com/criticaldata/mit/tree/main/data/events/2026/denmark) | no updates |
-| `Event` [📅 [2026-06-26] Dominican Republic](https://github.com/criticaldata/mit/tree/main/data/events/2026/dominican-republic) | no updates |
 | `Event` [📅 [2026-12-03] France](https://github.com/criticaldata/mit/tree/main/data/events/2026/france) | no updates |
 | `Event` [📅 [2026-09-18] Ireland](https://github.com/criticaldata/mit/tree/main/data/events/2026/ireland) | no updates |
 | `Event` [📅 [2026-09-04] Italy](https://github.com/criticaldata/mit/tree/main/data/events/2026/italy) | no updates |
@@ -175,7 +174,7 @@ Please confirm this event was cancelled.
 ---
 
 <details>
-<summary>🗄️ Inactive (44)</summary>
+<summary>🗄️ Inactive (45)</summary>
 
 - `Project` [Next Generation MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/mimic-next-generation) _on-hold_
 - `Event` [📅 [2025-07-17] Thailand Datathon 2025](https://github.com/criticaldata/mit/tree/main/data/events/2025/datathon-thailand) _completed_
@@ -221,5 +220,6 @@ Please confirm this event was cancelled.
 - `Event` [📅 [2026-05-11] Hong Kong](https://github.com/criticaldata/mit/tree/main/data/events/2026/hong-kong) _prospect_
 - `Event` [📅 [2026-05-29] MeHI's AI Workshop for Primary Care Innovation Challenge](https://github.com/criticaldata/mit/tree/main/data/events/2026/mehis-ai-workshop-for-primary) _prospect_
 - `Event` [📅 [2026-06-12] China/Tibet](https://github.com/criticaldata/mit/tree/main/data/events/2026/chinatibet) _prospect_
+- `Event` [📅 [2026-06-26] Dominican Republic](https://github.com/criticaldata/mit/tree/main/data/events/2026/dominican-republic) _prospect_
 
 </details>
