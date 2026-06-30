@@ -8,4 +8,5 @@ start_date:
 end_date:
 github_repo: https://github.com/criticaldata/ShortKit-ML
 description: |
+  ShortKit-ML — Detect and mitigate shortcuts and biases in machine learning embedding spaces. 20+ detection and mitigation methods with a unified API. Multi-attribute support tests multiple sensitive attributes simultaneously. Model Comparison mode for benchmarking multiple embedding models.
 tags: []
