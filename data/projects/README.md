@@ -20,7 +20,7 @@
 | [LLM Interrogation](llm-interrogation/project.yaml) | [Kenneth Paik](../people/kenneth-paik/) |  | None |
 | [M4: Clinical Research Agent (MCP)](m4-clinical-research-agent/project.yaml) | [Hannes Ill](../people/hannes-ill/) | `ai`, `ml-infrastructure`, `tooling` | [repo](https://github.com/hannesill/m4) |
 | [MedScope: Pain Documentation Bias](medscope-pain-documentation-bias/project.yaml) | [Boya Zhang](../people/boya-zhang/) | `bias`, `fairness`, `representation` | [repo](https://github.com/tinaboya/MedScope) |
-| [MIMIC DEID Next](mimic-deid-next/project.yaml) | [Jesse Raffa](../people/jesse-raffa/) | `mimic`, `deid`, `nlp`, `physionet` | None |
+| [MIMIC DEID Next](mimic-deid-next/project.yaml) | [Jesse Raffa](../people/jesse-raffa/) | `mimic`, `deid`, `nlp`, `physionet` | [repo](https://github.com/jraffa/pydeid2/) |
 | [MIT Critical Data Branding, Events & Comms](mit-critical-data-branding-events-comms/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `lab-operations` |  |
 | [MIT Critical Data Central America](mit-critical-data-central-america/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `global-health`, `regional-data` |  |
 | [Model Drift in MIMIC](model-drift-in-mimic/project.yaml) | [Leo Anthony Celi](../people/leo-celi/) | `clinical-prediction`, `causal-inference` | [repo](https://github.com/HamzaNabulsi/Data-Drift) |
