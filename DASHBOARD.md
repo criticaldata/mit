@@ -1,6 +1,6 @@
 # MIT Critical Data — Lab Dashboard
 
-_Generated 2026-06-30 · 113 records (32 projects · 6 grants · 75 events) · [contributing guide](docs/contributing.md)_
+_Generated 2026-06-30 · 114 records (33 projects · 6 grants · 75 events) · [contributing guide](docs/contributing.md)_
 
 [Active projects](data/projects/README.md) · [Submit new project](https://forms.gle/fsPGeudtrjyA6sw59) · [Upcoming events](data/events/README.md)
 
@@ -18,7 +18,7 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (16)
+## 🟢 This week (17)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
 _updated 7d ago_
@@ -40,6 +40,11 @@ Received approval to release on PhysioNet for all models.
 Tasks:
 - Add torchxrayvision CheXpert weights
 - Investigate chexagent-2-3b
+
+### `Project` [Internal HR — Hire Engineer](https://github.com/criticaldata/mit/tree/main/data/projects/internal-hr-hire-engineer)
+_updated today_
+
+Specify postdoc or research engineer? Visa implications.
 
 ### `Project` [Leo OpenClaw](https://github.com/criticaldata/mit/tree/main/data/projects/leo-openclaw)
 _updated 3d ago_
