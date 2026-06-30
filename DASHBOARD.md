@@ -18,7 +18,7 @@ _No blocked items._
 
 ---
 
-## 🟢 This week (16)
+## 🟢 This week (17)
 
 ### `Project` [AI and Frailty](https://github.com/criticaldata/mit/tree/main/data/projects/ai-frailty)
 _updated 7d ago_
@@ -146,6 +146,77 @@ _updated today_
 - **Ongoing**: **Korean** Language Support (onboarding/documentations already drafted).
    - Possibly **Thai** Language Support
 
+### `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms)
+_updated 2d ago_
+
+To address cultural misalignment and redefine the group's ethos for new members.
+
+Key Takeaways
+
+  - Problem: New members, especially from NSRI, prioritize CV-building and publications over communal learning, causing cultural friction and wasted onboarding time.
+  - Solution: Implement a "vibe-selective" screening process using live, unscripted group interviews (5 applicants/group) with personal questions to assess character and commitment.
+  - Strategy: Launch a "Aura Farm the Good Life" social media campaign to attract aligned members by reframing communal learning as a desirable, niche alternative to self-promotion.
+  - Pilot: Sonya will pilot a new communication structure using a WhatsApp Community for 5 projects, featuring admin-only announcements and topic-based subgroups to improve engagement.
+
+Topics
+
+Cultural Misalignment & Onboarding Inefficiency
+
+  - Problem: New members from NSRI focus on CV-building and publications, not communal learning.
+      - They demand project lead roles without sufficient experience.
+      - They promote their own groups using the MIT Critical Data name without authorization.
+  - Impact: This behavior wastes onboarding time and conflicts with the group's ethos.
+  - Root Cause: A system that rewards "praise" (external validation) over "praiseworthiness" (intrinsic value).
+  - Proposed Solution: A "vibe-selective" screening process to filter for character, not just credentials.
+
+New Screening & Onboarding Process
+
+  - Goal: Assess character, curiosity, and epistemology (ways of knowing) to ensure cultural fit.
+  - Method: Live, unscripted group interviews (5 applicants/group).
+      - Rationale: Prevents applicants from using AI or rehearsing answers.
+      - Questions: Personal, reflective prompts (e.g., "What is the most fun you've had recently?").
+  - Social Media Vetting: Review applicant profiles (LinkedIn, Instagram) to identify self-promotion vs. genuine curiosity.
+  - IRB Application: Leo will apply for an IRB to study this new process, requiring applicant consent.
+
+"Aura Farm the Good Life" Social Media Strategy
+
+  - Goal: Attract aligned members by reframing communal learning as a desirable, niche alternative to self-promotion.
+  - Concept: "Aura Farm the good life" → ascend by lifting others up, not by pushing them down.
+  - Content Strategy:
+      - Focus: Relationships and collaboration, not individual achievement.
+      - Format: Solicit content (audio, video, art) featuring applicants interacting with others (friends, family) in their native languages.
+      - Platforms:
+          - TikTok/Instagram: Broad reach for younger audiences.
+          - Substack: Deeper content for a niche audience.
+          - Synergy: Use short-form video to promote Substack articles.
+  - Inspiration: The Hippocratic Collective's creative, culture-focused approach to social media.
+
+New Communication & Collaboration Structure
+
+  - Pilot: Sonya will pilot a new structure for 5 projects using a WhatsApp Community.
+      - Features: Admin-only announcements and topic-based subgroups.
+      - Rationale: Centralizes communication and prevents direct messages to admins.
+  - Subgroups: Formed around key discussion points from main meetings.
+      - Size: 3 people per group.
+      - Rationale: A "triad is the most psychologically stable small group," preventing stalemates.
+  - Buddy System: Leo will introduce this concept in pilot meetings to encourage deeper, between-meeting discussions.
+
+Next Steps
+
+  - Sonya:
+      - Pilot the WhatsApp Community structure for 5 projects.
+      - Create topic-based subgroups for these projects.
+  - Leo:
+      - Introduce the buddy system concept in pilot project meetings.
+      - Draft a Google Doc for the "Aura Farm the Good Life" paper.
+      - Apply for an IRB to study the new screening process.
+  - All:
+      - Collaborate with Mindy to shape the MIT Critical Data social media strategy.
+  - Next Meeting:
+      - Date: Saturday, July 18th
+      - Time: This meeting's time
+      - Purpose: Follow up on pilot progress and refine the screening process.
+
 ### `Project` [Vector Embedding Pipeline (v1)](https://github.com/criticaldata/mit/tree/main/data/projects/vector-embedding-pipeline)
 _updated 7d ago_
 
@@ -214,7 +285,7 @@ Please confirm this event was cancelled.
 
 ---
 
-## ⚪ Stale (51)
+## ⚪ Stale (50)
 
 | Record | Last update |
 |---|---|
@@ -231,7 +302,6 @@ Please confirm this event was cancelled.
 | `Project` [LabTube: 3D Temporal Modeling of ICU Labs](https://github.com/criticaldata/mit/tree/main/data/projects/labtube-3d-temporal-modeling-of-icu-labs) | no updates |
 | `Project` [M4: Clinical Research Agent (MCP)](https://github.com/criticaldata/mit/tree/main/data/projects/m4-clinical-research-agent) | no updates |
 | `Project` [MedScope: Pain Documentation Bias](https://github.com/criticaldata/mit/tree/main/data/projects/medscope-pain-documentation-bias) | no updates |
-| `Project` [MIT Critical Data Branding, Events & Comms](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-branding-events-comms) | no updates |
 | `Project` [MIT Critical Data Central America](https://github.com/criticaldata/mit/tree/main/data/projects/mit-critical-data-central-america) | no updates |
 | `Project` [Model Drift in MIMIC](https://github.com/criticaldata/mit/tree/main/data/projects/model-drift-in-mimic) | no updates |
 | `Project` [Multimodal Data Discordance](https://github.com/criticaldata/mit/tree/main/data/projects/multimodal-data-discordance) | no updates |
