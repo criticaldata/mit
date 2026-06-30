@@ -1,6 +1,6 @@
 # Lab Members
 
-## Current (23)
+## Current (27)
 
 | Name | Role | Institution | Email | Photo |
 |---|---|---|---|---|
@@ -11,6 +11,7 @@
 | [David Restrepo](david-restrepo/) | Affiliate | CentraleSupélec -  Université Paris-Saclay | davidres@mit.edu |  |
 | [Dimitrios Proios](dimitrios-proios/) | Visiting Scientist | Faculty of Medicine Switzerland | dimi.proios@gmail.com |  |
 | [Fredrik Willumsen Haug](fredrik-willumsen-haug/) | PhD Student | Harvard | fredrik_willumsenhaug@college.harvard.edu |  |
+| [Hyunjun Kim](hyunjun-kim/) | Undergrad |  | isacdavidtheo@gmail.com |  |
 | [Jesse Raffa](jesse-raffa/) | Research Scientist | MIT | jraffa@mit.edu | <img src="jesse-raffa/jesse-raffa.jpg" alt="Jesse" width="120"/> |
 | [Kenneth Paik](kenneth-paik/) | Research Scientist | MIT | kepaik@mit.edu | <img src="kenneth-paik/kenneth-paik.jpg" alt="Kenneth" width="120"/> |
 | [Laurine Sprehe](laurine-sprehe/) | PhD Student | MGH/HMS | lsprehe@mgh.harvard.edu |  |
@@ -18,6 +19,7 @@
 | [Louis Agha-mir-Salim](louis-agha-mir-salim/) | Affiliate |  |  |  |
 | [Marlene Louisa Moerig](marlene-louisa-moerig/) | Visiting Scientist | Charité | moerig@mit.edu |  |
 | [Milit Patel](milit-patel/) | Affiliate |  |  |  |
+| [Po-Chih Kuo](po-chih-kuo/) | Affiliate |  |  |  |
 | [Quang Bui](quang-bui/) | Research Engineer | AIS Vienna, UC Berkeley | quang@synthica.org |  |
 | [Rodrigo Gameiro](rodrigo-gameiro/) | Visiting Scientist | Harvard Medical School | rrgmd@mit.edu |  |
 | [Roger Mark](roger-mark/) | PI | MIT | rgmark@mit.edu | <img src="roger-mark/roger-mark.jpg" alt="Roger" width="120"/> |
@@ -25,7 +27,9 @@
 | [Saleem Ameen](saleem-ameen/) | Visiting Scientist | University of Tasmania & Harvard Medical School | saleemam@mit.edu |  |
 | [Sebastian Cajas](sebastian-cajas/) | Affiliate | MIT Critical data | sebasmos@mit.edu |  |
 | [Sebastien Emile](sebastien-emile/) | Visiting Scientist |  | lydrale@gmail.com | <img src="sebastien-emile/sebastien-emile.jpg" alt="Sebastien" width="120"/> |
+| [Shrey Lakhotia](shrey-lalakhotia/) | Affiliate |  |  |  |
 | [Tiger Krittaphas](tiger-krittaphas/) | Affiliate |  |  |  |
+| [Vinayak Mathur](vinayak-mathur/) | Collaborator |  | None |  |
 | [Yugang Jia](yugang-jia/) | Affiliate |  |  |  |
 
 <details>
@@ -47,4 +51,4 @@
 </details>
 
 ---
-_Generated from `data/people/` — 33 records total._
+_Generated from `data/people/` — 37 records total._
